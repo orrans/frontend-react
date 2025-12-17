@@ -1,11 +1,11 @@
 import { userService } from '../services/user'
-import { StayPreview } from './StayPreview'
+import { StayPreview } from './StayPreview.jsx'
 
 export function StayList({ stays, onRemoveStay, onUpdateStay }) {
-    
+
     function shouldShowActionBtns(stay) {
         const user = userService.getLoggedinUser()
-        
+
         if (!user) return false
         if (user.isAdmin) return true
         return stay.owner?._id === user._id
@@ -15,7 +15,7 @@ export function StayList({ stays, onRemoveStay, onUpdateStay }) {
         <ul className="list">
             {stays.map(stay =>
                 <li key={stay._id}>
-                    <StayPreview stay={stay}/>
+                    <StayPreview stay={stay} />
                     {shouldShowActionBtns(stay) && <div className="actions">
                         <button onClick={() => onUpdateStay(stay)}>Edit</button>
                         <button onClick={() => onRemoveStay(stay._id)}>x</button>

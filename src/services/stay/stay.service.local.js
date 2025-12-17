@@ -16,6 +16,7 @@ window.cs = stayService
 
 
 async function query(filterBy = { txt: '', rsrvDate: 0 }) {
+    // var stays = await storageService.query(STORAGE_KEY)
     var stays = await storageService.query(STORAGE_KEY)
     const { txt, rsrvDate, sortField, sortDir } = filterBy
 
@@ -23,18 +24,7 @@ async function query(filterBy = { txt: '', rsrvDate: 0 }) {
         const regex = new RegExp(filterBy.txt, 'i')
         stays = stays.filter(stay => regex.test(stay.guest) || regex.test(stay.description))
     }
-    if (rsrvDate) {
-        stays = stays.filter(stay => stay.date >= rsrvDate)
-    }
-    if(sortField === 'guest'){
-        stays.sort((stay1, stay2) => 
-            stay1[sortField].localeCompare(stay2[sortField]) * +sortDir)
-    }
-    if(sortField === 'date'){
-        stays.sort((stay1, stay2) => 
-            (stay1[sortField] - stay2[sortField]) * +sortDir)
-    }
-    
+
     stays = stays.map(({ _id, guest, date, owner }) => ({ _id, guest, date, owner }))
     return stays
 }
@@ -82,4 +72,43 @@ async function addStayMsg(stayId, txt) {
     await storageService.put(STORAGE_KEY, stay)
 
     return msg
+}
+
+// Demo data
+const stays = {
+    _id: 's101',
+    name: 'Ribeira Charming Duplex',
+    type: 'House',
+    imgUrls: ['https://e26e9b.jpg', 'otherImg.jpg'],
+    price: 80.0,
+    summary: 'Fantastic duplex apartment...',
+    capacity: 8,
+    amenities: ['TV', 'Wifi', 'Kitchen', 'Smoking allowed', 'Pets allowed', 'Cooking basics'],
+    labels: ['Top of the world', 'Trending', 'Play', 'Tropical'],
+    host: {
+        _id: 'u101',
+        fullname: 'Davit Pok',
+        imgUrl: 'https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small',
+    },
+    loc: {
+        country: 'Portugal',
+        countryCode: 'PT',
+        city: 'Lisbon',
+        address: '17 Kombo st',
+        lat: -8.61308,
+        lng: 41.1413,
+    },
+    reviews: [
+        {
+            id: 'madeId',
+            txt: 'Very helpful hosts. Cooked traditional...',
+            rate: 4,
+            by: {
+                _id: 'u102',
+                fullname: 'user2',
+                imgUrl: '/img/img2.jpg',
+            },
+        },
+    ],
+    likedByUsers: ['mini-user'],
 }
