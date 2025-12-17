@@ -6,7 +6,7 @@ import { reviewReducer } from './reducers/review.reducer'
 import { systemReducer } from './reducers/system.reducer'
 
 const rootReducer = combineReducers({
-    carModule: stayReducer,
+    stayModule: stayReducer,
     userModule: userReducer,
     systemModule: systemReducer,
     reviewModule: reviewReducer,

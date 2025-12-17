@@ -15,17 +15,20 @@ export const stayService = {
 window.cs = stayService
 
 
-async function query(filterBy = { txt: '', rsrvDate: 0 }) {
-    // var stays = await storageService.query(STORAGE_KEY)
-    var stays = await storageService.query(STORAGE_KEY)
-    const { txt, rsrvDate, sortField, sortDir } = filterBy
 
-    if (txt) {
+async function query(filterBy = { txt: '', price: 0 }) {
+    var stays = await storageService.query(STORAGE_KEY)
+
+    if (filterBy.txt) {
         const regex = new RegExp(filterBy.txt, 'i')
-        stays = stays.filter(stay => regex.test(stay.guest) || regex.test(stay.description))
+        stays = stays.filter(stay =>
+            regex.test(stay.name) ||
+            regex.test(stay.summary) ||
+            regex.test(stay.loc.city) ||
+            regex.test(stay.loc.country)
+        )
     }
 
-    stays = stays.map(({ _id, guest, date, owner }) => ({ _id, guest, date, owner }))
     return stays
 }
 
@@ -34,23 +37,17 @@ function getById(stayId) {
 }
 
 async function remove(stayId) {
-    // throw new Error('Nope')
     await storageService.remove(STORAGE_KEY, stayId)
 }
 
 async function save(stay) {
     var savedStay
     if (stay._id) {
-        const stayToSave = {
-            _id: stay._id,
-            date: stay.date
-        }
-        savedStay = await storageService.put(STORAGE_KEY, stayToSave)
+        savedStay = await storageService.put(STORAGE_KEY, stay)
     } else {
         const stayToSave = {
-            guest: stay.guest,
-            date: stay.date,
-            // Later, owner is set by the backend
+            ...stay,
+            imgUrls: stay.imgUrls && stay.imgUrls.length ? stay.imgUrls : [],
             owner: userService.getLoggedinUser(),
             msgs: []
         }
@@ -60,7 +57,6 @@ async function save(stay) {
 }
 
 async function addStayMsg(stayId, txt) {
-    // Later, this is all done by the backend
     const stay = await getById(stayId)
 
     const msg = {
@@ -74,41 +70,54 @@ async function addStayMsg(stayId, txt) {
     return msg
 }
 
-// Demo data
-const stays = {
-    _id: 's101',
-    name: 'Ribeira Charming Duplex',
-    type: 'House',
-    imgUrls: ['https://e26e9b.jpg', 'otherImg.jpg'],
-    price: 80.0,
-    summary: 'Fantastic duplex apartment...',
-    capacity: 8,
-    amenities: ['TV', 'Wifi', 'Kitchen', 'Smoking allowed', 'Pets allowed', 'Cooking basics'],
-    labels: ['Top of the world', 'Trending', 'Play', 'Tropical'],
-    host: {
-        _id: 'u101',
-        fullname: 'Davit Pok',
-        imgUrl: 'https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small',
-    },
-    loc: {
-        country: 'Portugal',
-        countryCode: 'PT',
-        city: 'Lisbon',
-        address: '17 Kombo st',
-        lat: -8.61308,
-        lng: 41.1413,
-    },
-    reviews: [
-        {
-            id: 'madeId',
-            txt: 'Very helpful hosts. Cooked traditional...',
-            rate: 4,
-            by: {
-                _id: 'u102',
-                fullname: 'user2',
-                imgUrl: '/img/img2.jpg',
-            },
-        },
-    ],
-    likedByUsers: ['mini-user'],
+function _createStays() {
+    let stays = localStorage.getItem(STORAGE_KEY)
+
+    if (!stays || stays === '[]' || stays === 'null') {
+        stays = demoStays
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(stays))
+    }
 }
+
+// Demo data - Moved to an array to support multiple demo items
+const demoStays = [
+    {
+        _id: 's101',
+        name: 'Ribeira Charming Duplex',
+        type: 'House',
+        imgUrls: ['https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large', 'otherImg.jpg'],
+        price: 80.0,
+        summary: 'Fantastic duplex apartment...',
+        capacity: 8,
+        amenities: ['TV', 'Wifi', 'Kitchen', 'Smoking allowed', 'Pets allowed', 'Cooking basics'],
+        labels: ['Top of the world', 'Trending', 'Play', 'Tropical'],
+        host: {
+            _id: 'u101',
+            fullname: 'Davit Pok',
+            imgUrl: 'https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small',
+        },
+        loc: {
+            country: 'Portugal',
+            countryCode: 'PT',
+            city: 'Lisbon',
+            address: '17 Kombo st',
+            lat: -8.61308,
+            lng: 41.1413,
+        },
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
+        likedByUsers: ['mini-user'],
+    }
+]
+
+_createStays()
