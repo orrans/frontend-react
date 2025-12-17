@@ -1,13 +1,18 @@
 import { Link } from 'react-router-dom'
 
 export function StayPreview({ stay }) {
-    return <article className="preview">
-        <header>
-            <Link to={`/stay/${stay._id}`}>{stay.vendor}</Link>
-        </header>
-
-        <p>Speed: <span>{stay.speed.toLocaleString()} Km/h</span></p>
-        {stay.owner && <p>Owner: <span>{stay.owner.fullname}</span></p>}
-        
-    </article>
+    return (
+        <Link  to={`/stay/${stay._id}`} target='_blank' className="stay-preview">
+            {stay.imgUrls && stay.imgUrls.length > 0 && (
+                <img src={stay.imgUrls[0]} alt={stay.name} style={{ maxWidth: '200px' }} />
+            )}
+            <h4>{stay.name}</h4>
+            <p>
+                {stay.loc?.city}, {stay.loc?.country}
+            </p>
+            <p>
+                <strong>${stay.price}</strong> / night
+            </p>
+        </Link>
+    )
 }
