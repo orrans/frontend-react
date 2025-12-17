@@ -2,7 +2,8 @@ import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { loadStays, addStay } from '../store/actions/stay.actions'
 import { stayService } from '../services/stay'
-import { StayPreview } from '../cmps/StayPreview'
+import { StayExploreList } from '../cmps/StayExploreList.jsx'
+import { StayList } from '../cmps/StayList.jsx'
 
 export function StayIndex() {
     const stays = useSelector((storeState) => storeState.stayModule.stays)
@@ -30,13 +31,9 @@ export function StayIndex() {
             <header>
                 <h2>Stays List</h2>
             </header>
-            <ul className="stay-list clean-list">
-                {stays.map((stay) => (
-                    <li key={stay._id}>
-                        <StayPreview stay={stay} />
-                    </li>
-                ))}
-            </ul>
+            <StayExploreList stays={stays}/>
+            {/* <StayList stays={stays}/> */}
+
         </main>
     )
 }
