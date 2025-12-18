@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: minmax(0, 2fr) 1fr;
   gap: 80px;
-  align-items: start;
+  /* align-items: start; */
 }
 
 .stay-details-main {
@@ -10,11 +10,13 @@
 }
 
 .stay-booking {
-  position: sticky;
-  top: 80px;
+  align-self: start;
 }
 
+
 .booking-card {
+  position: sticky;
+  top: 80px;
   border: 1px solid var(--clr-border);
   border-radius: 12px;
   padding: 24px;
@@ -90,7 +92,6 @@
 }
 
 .stay-highlights {
-  /* border-top: 1px solid var(--clr-border); */
   margin-top: 32px;
   padding-top: 24px;
 }
@@ -236,6 +237,8 @@
   color: var(--clr-text-main);
 }
 
+/* need to make it look like a button! */
+
  .show-more-btn {
   background: none;
   border: none;
@@ -246,7 +249,6 @@
   font-weight: 600;
   color: #222;
 
-  /* text-decoration: underline; */
   cursor: pointer;
 }
 
@@ -280,7 +282,7 @@
 }
 
 
-/* this part is not finished need to improve the btn position */
+/* this part is not finished need to improve the btn position (ASSY) */
 .modal-close-btn {
   background: none;
   border: none;
