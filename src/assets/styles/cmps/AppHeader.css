@@ -130,8 +130,9 @@
     border: none;
     cursor: pointer;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--clr-text-main);
+    line-height: 18px;
     padding: 12px;
     border-radius: 22px;
     transition: background-color 0.2s;

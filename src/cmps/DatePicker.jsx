@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange }) {
     const [currentDate, setCurrentDate] = useState(new Date())
-
     const daysInMonth = getDaysInMonth(currentDate.getFullYear(), currentDate.getMonth())
     const monthName = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' })
 

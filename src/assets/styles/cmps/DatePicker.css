@@ -1,8 +1,6 @@
 .date-picker-container {
-    /* Scoped container */
     background-color: var(--clr-bg);
     width: 350px;
-    /* Adjust based on desired width */
     padding: 0 12px;
 }
 
@@ -11,7 +9,6 @@
     flex-direction: column;
 }
 
-/* Header with Month and Nav Buttons */
 .calendar-header {
     display: flex;
     justify-content: space-between;
@@ -44,7 +41,6 @@
     color: var(--clr-text-main);
 }
 
-/* Weekday Names Row */
 .weekdays-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -59,7 +55,6 @@
     padding-bottom: 8px;
 }
 
-/* The Grid of Days */
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -68,7 +63,6 @@
 
 .day-cell {
     aspect-ratio: 1;
-    /* Make cells square */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,9 +72,7 @@
     color: var(--clr-text-main);
     position: relative;
     border-radius: 50%;
-    /* Default hover shape */
     border: 1.5px solid transparent;
-    /* Prevent jump on hover border */
     margin: 1px 0;
 }
 
@@ -89,35 +81,24 @@
     pointer-events: none;
 }
 
-/* Hover effect for unselected days */
 .day-cell:not(.selected):not(.in-range):not(.empty):hover {
     border-color: var(--clr-text-main);
 }
 
-/* --- Range Logic Styling --- */
 
-/* The background for the range strip */
 .day-cell.in-range {
     background-color: var(--clr-bg-light);
-    /* Light gray for range */
     border-radius: 0;
-    /* Square edges for connecting flow */
 }
 
-/* First day of range */
 .day-cell.selected {
     background-color: var(--clr-text-main);
-    /* Black */
     color: var(--clr-bg);
-    /* White text */
     border-radius: 50%;
-    /* Circle */
     position: relative;
     z-index: 2;
-    /* Sit on top of potential range background */
 }
 
-/* Logic to add the gray background "under" the start/end circles if they are part of a range */
 .day-cell.range-start::before,
 .day-cell.range-end::before {
     content: '';
@@ -129,12 +110,10 @@
     z-index: -1;
 }
 
-/* Range start needs background on the right half */
 .day-cell.range-start::before {
     right: 0;
 }
 
-/* Range end needs background on the left half */
 .day-cell.range-end::before {
     left: 0;
 }

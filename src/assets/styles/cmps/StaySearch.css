@@ -1,7 +1,6 @@
-/* Scoped Styles for StaySearch */
 .stay-search-container {
     position: relative;
-    /* Use variables for font if available, otherwise inherit or fallback */
+
     color: var(--clr-text-main);
     width: 100%;
     display: flex;
@@ -22,7 +21,6 @@
     transition: background-color 0.2s;
 }
 
-/* Search Items (The clickable sections) */
 .stay-search-container .search-item {
     height: 100%;
     border-radius: 32px;
@@ -37,24 +35,21 @@
 
 .stay-search-container .search-item:hover {
     background-color: var(--clr-bg-light);
-    /* Hover gray */
+
 }
 
-/* Active State - "popped out" white pill with shadow */
 .stay-search-container .search-item.active {
     background-color: var(--clr-bg);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
-/* Specific Width Ratios to match Airbnb layout */
 .stay-search-container .search-item:first-child {
     flex: 1.5;
-    /* Where is usually wider */
 }
 
 .stay-search-container .search-item:nth-child(3) {
-    /* Date section (child 3 because of divider at 2) */
+
     flex: 1.2;
 }
 
@@ -65,10 +60,9 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 8px;
-    /* Less padding to accommodate button */
+
 }
 
-/* Labels (Where, When, Who) */
 .stay-search-container .search-item label {
     font-size: 12px;
     font-weight: 800;
@@ -77,7 +71,6 @@
     letter-spacing: 0.04em;
 }
 
-/* Inputs & Text */
 .stay-search-container .search-input-clean {
     border: none;
     background: transparent;
@@ -108,20 +101,17 @@
     font-weight: 500;
 }
 
-/* Vertical Dividers */
 .stay-search-container .divider {
     height: 32px;
     width: 1px;
     background-color: var(--clr-divider);
 }
 
-/* Hide divider when adjacent item is active */
 .stay-search-container .search-item.active+.divider,
 .stay-search-container .divider:has(+ .search-item.active) {
     opacity: 0;
 }
 
-/* Who Section Specifics */
 .stay-search-container .who-content {
     display: flex;
     flex-direction: column;
@@ -130,7 +120,6 @@
     flex: 1;
 }
 
-/* Pink Search Button */
 .stay-search-container .search-btn-primary {
     background-color: var(--clr-brand);
     color: var(--clr-bg);
@@ -155,9 +144,6 @@
     transform: scale(0.96);
 }
 
-/* ----------------------------------------------------------- */
-/* Dropdown Modals */
-/* ----------------------------------------------------------- */
 
 .stay-search-container .search-modal-dropdown {
     position: absolute;
@@ -172,16 +158,13 @@
     width: fit-content;
     margin: 0 auto;
     min-width: 850px;
-    /* Match search bar width mostly */
     display: flex;
     justify-content: center;
 }
 
-/* Location Suggestions */
 .stay-search-container .modal-content.location-suggestions {
     width: 100%;
     max-width: 400px;
-    /* Align to the left side usually */
     margin-right: auto;
     margin-left: 20px;
 }
@@ -220,86 +203,8 @@
     color: var(--clr-text-main);
 }
 
-/* Date Picker Wrapper */
 .stay-search-container .modal-content.date-picker-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-/* Guest Picker */
-.stay-search-container .modal-content.guest-picker {
-    width: 350px;
-    margin-left: auto;
-    /* Align to right */
-    margin-right: 20px;
-}
-
-.stay-search-container .guest-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 0;
-    border-bottom: 1px solid var(--clr-divider);
-}
-
-.stay-search-container .guest-row:last-child {
-    border-bottom: none;
-}
-
-.stay-search-container .guest-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.stay-search-container .guest-label {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--clr-text-main);
-}
-
-.stay-search-container .guest-sub {
-    font-size: 14px;
-    color: var(--clr-text-sub);
-    margin-top: 4px;
-}
-
-.stay-search-container .guest-actions {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.stay-search-container .counter-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 1px solid var(--clr-text-light);
-    /* light gray border */
-    background: var(--clr-bg);
-    color: var(--clr-text-sub);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 16px;
-    transition: border-color 0.2s, color 0.2s;
-}
-
-.stay-search-container .counter-btn:not(:disabled):hover {
-    border-color: var(--clr-text-main);
-    color: var(--clr-text-main);
-}
-
-.stay-search-container .counter-btn:disabled {
-    border-color: var(--clr-divider);
-    color: var(--clr-divider);
-    cursor: not-allowed;
-}
-
-.stay-search-container .guest-value {
-    font-size: 16px;
-    width: 24px;
-    text-align: center;
-    color: var(--clr-text-main);
 }

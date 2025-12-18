@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { DatePicker } from './DatePicker.jsx'
+import { GuestCounterRow } from './GuestCounterRow.jsx'
 
 export function StaySearch() {
     const [loc, setLoc] = useState('')
@@ -7,7 +8,7 @@ export function StaySearch() {
     const [guests, setGuests] = useState({ adults: 0, children: 0, infants: 0, pets: 0 })
     const [activeField, setActiveField] = useState(null) // 'loc', 'date', 'guests', or null
 
-    const dropdownRef = useRef(null)
+    const modalRef = useRef(null)
 
     // Calculate total guests for display
     const totalGuests = guests.adults + guests.children
@@ -26,13 +27,25 @@ export function StaySearch() {
     // Close dropdown when clicking outside
     useEffect(() => {
         function handleClickOutside(event) {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+
+            if (!activeField) return
+
+
+            if (modalRef.current && modalRef.current.contains(event.target)) {
+                return
+            }
+
+            const isClickOnSearchBar = event.target.closest('.search-bar')
+
+            if (!isClickOnSearchBar) {
                 setActiveField(null)
             }
+
         }
+
         document.addEventListener("mousedown", handleClickOutside)
         return () => document.removeEventListener("mousedown", handleClickOutside)
-    }, [dropdownRef])
+    }, [activeField])
 
     function handleGuestChange(type, operation) {
         setGuests(prev => {
@@ -48,7 +61,7 @@ export function StaySearch() {
     }
 
     return (
-        <div className="stay-search-container" ref={dropdownRef}>
+        <div className="stay-search-container">
 
             <div className="search-bar">
 
@@ -98,7 +111,7 @@ export function StaySearch() {
 
             {/* Floating Modals Area */}
             {activeField && (
-                <div className="search-modal-dropdown">
+                <div className="search-modal-dropdown" ref={modalRef} onClick={(e) => e.stopPropagation()}>
 
                     {activeField === 'loc' && (
                         <div className="modal-content location-suggestions">
@@ -131,29 +144,6 @@ export function StaySearch() {
                     )}
                 </div>
             )}
-        </div>
-    )
-}
-
-function GuestCounterRow({ type, label, sub, value, onChange }) {
-    return (
-        <div className="guest-row">
-            <div className="guest-info">
-                <span className="guest-label">{label}</span>
-                <span className="guest-sub">{sub}</span>
-            </div>
-            <div className="guest-actions">
-                <button
-                    disabled={value <= 0}
-                    onClick={(e) => { e.stopPropagation(); onChange(type, 'dec') }}
-                    className="counter-btn"
-                >-</button>
-                <span className="guest-value">{value}</span>
-                <button
-                    onClick={(e) => { e.stopPropagation(); onChange(type, 'inc') }}
-                    className="counter-btn"
-                >+</button>
-            </div>
         </div>
     )
 }
