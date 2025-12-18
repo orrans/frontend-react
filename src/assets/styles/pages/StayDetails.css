@@ -1,5 +1,5 @@
 .stay-highlights {
-  border-top: 1px solid $clr-border;
+  border-top: 1px solid var(--clr-border);
   margin-top: 32px;
   padding-top: 24px;
 }
@@ -17,7 +17,7 @@
 
 .highlight .icon {
   font-size: 22px;
-  color: $clr-text-main;
+  color: var(--clr-text-main);
   line-height: 1;
   margin-top: 2px;
 }
@@ -26,14 +26,14 @@
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: $clr-text-main;
+  color: var(--clr-text-main);
   line-height: 1.25;
 }
 
 .highlight p {
   margin: 4px 0 0;
   font-size: 14px;
-  color: $clr-text-sub;
+  color: var(--clr-text-sub);
   line-height: 1.4;
 }
 
