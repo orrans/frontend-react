@@ -24,6 +24,7 @@
 /*  Components*/
 @import 'cmps/list.css';
 @import 'cmps/preview.css';
+@import 'cmps/StayIndex.css';
 
 @import 'cmps/AppHeader.css';
 @import 'cmps/AppFooter.css';

@@ -33,7 +33,8 @@ export function StayIndex() {
     return (
         <main className="stay-index">
             {/* <StayExploreList stays={stays} title='Nearby Hotel'/> */}
-            {/* <StayList stays={stays}/> */}
+            <StayList stays={stays}/>
+            <div>Ani mapa</div>
         </main>
     )
 }

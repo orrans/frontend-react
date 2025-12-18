@@ -1,6 +1,12 @@
+.stay-list-container{
+    flex-basis: 50%;
+}
+
 .stay-list {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 24px;
     flex-wrap: wrap;
     list-style: none;
+    padding: 0 48px;
 }
