@@ -239,6 +239,18 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   </div>
 )}
 
+<section className="stay-sleep">
+  <h2>Where you’ll sleep</h2>
+
+  <div className="sleep-card">
+    <img
+      src={stay.imgUrls[0]}
+      alt="Where you’ll sleep"
+    />
+  </div>
+</section>
+
+
   </section>
 
   
