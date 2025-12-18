@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-
+import { StaySearch } from './StaySearch.jsx'
 
 export function AppHeader() {
 
@@ -19,17 +19,7 @@ export function AppHeader() {
                         <NavLink to="/experiences">Experiences</NavLink>
                         <NavLink to="/online">Online Experiences</NavLink>
                     </nav>
-                    <div className="stay-search">
-                        <div className="search-btn">Where</div>
-                        <span className="separator">|</span>
-                        <div className="search-btn">When</div>
-                        <span className="separator">|</span>
-                        <div className="search-btn">Who</div>
-
-                        <button className="search-icon-btn">
-                            🔍
-                        </button>
-                    </div>
+                    <StaySearch />
                 </div>
 
                 <div className="user-actions">
