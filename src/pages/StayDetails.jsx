@@ -55,23 +55,17 @@ export function StayDetails() {
   <section className="stay-details">
 
     <div className="stay-gallery">
-  {stay.imgUrls?.length > 0 && (
-    <img
-      className="main-img"
-      src={stay.imgUrls[0]}
-      alt={stay.name}
-    />
-  )}
+  <div className="gallery-main">
+    <img src={stay.imgUrls[0]} alt={stay.name} />
+  </div>
 
-  <div className="side-imgs">
-    {stay.imgUrls
-      ?.filter(url => url.startsWith('http'))
-      .slice(1, 5)
-      .map((img, idx) => (
-        <img key={idx} src={img} alt={stay.name} />
-      ))}
+  <div className="gallery-side">
+    {stay.imgUrls.slice(1, 5).map((img, idx) => (
+      <img key={idx} src={img} alt={stay.name} />
+    ))}
   </div>
 </div>
+
 
 
     <h1>{stay.name}</h1>

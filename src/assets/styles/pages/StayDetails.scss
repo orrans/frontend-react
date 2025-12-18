@@ -1,5 +1,5 @@
 .stay-highlights {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid $clr-border;
   margin-top: 32px;
   padding-top: 24px;
 }
@@ -17,7 +17,7 @@
 
 .highlight .icon {
   font-size: 22px;
-  color: #222222;
+  color: $clr-text-main;
   line-height: 1;
   margin-top: 2px;
 }
@@ -26,13 +26,41 @@
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: #222222;
+  color: $clr-text-main;
   line-height: 1.25;
 }
 
 .highlight p {
   margin: 4px 0 0;
   font-size: 14px;
-  color: #717171;
+  color: $clr-text-sub;
   line-height: 1.4;
+}
+
+.stay-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-side {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.gallery-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
