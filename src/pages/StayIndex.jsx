@@ -35,7 +35,7 @@ export function StayIndex() {
             <header>
                 <h2>Stays List</h2>
             </header>
-            <StayExploreList stays={stays}/>
+            <StayExploreList stays={stays} title='Nearby Hotel'/>
             {/* <StayList stays={stays}/> */}
 
         </main>

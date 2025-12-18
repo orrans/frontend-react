@@ -7,13 +7,20 @@ export function StayExploreList({ stays, title }) {
     toDate.setDate(toDate.getDate() + 2)
 
     return (
-        <section>
-            <h2>{title}</h2>
+        <section className='explore-list-container'>
+            <div className="stay-list-title-row">
+                <h2>{title}</h2>
+            </div>
             <div className="explore-grid-container">
                 <ul className="stay-explore-list">
                     {stays.map((stay) => (
                         <li key={stay._id}>
-                            <StayPreview stay={stay} fromDate={fromDate} toDate={toDate} variant='explore' />
+                            <StayPreview
+                                stay={stay}
+                                fromDate={fromDate}
+                                toDate={toDate}
+                                variant="explore"
+                            />
                         </li>
                     ))}
                 </ul>
