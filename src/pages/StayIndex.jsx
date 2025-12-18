@@ -31,8 +31,8 @@ export function StayIndex() {
             <header>
                 <h2>Stays List</h2>
             </header>
-            <StayExploreList stays={stays}/>
-            {/* <StayList stays={stays}/> */}
+            {/* <StayExploreList stays={stays}/> */}
+            <StayList stays={stays}/>
 
         </main>
     )
