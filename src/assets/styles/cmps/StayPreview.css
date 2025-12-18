@@ -30,8 +30,30 @@
         color: rgb(106, 106, 106);
         font-weight: 300;
     }
-     
-    &:hover{
+
+    &:hover {
         text-decoration: none;
+    }
+
+    .stay-inner-img {
+        position: relative;
+
+        .img-overlay {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+
+            .favorite {
+                position: absolute;
+                right: 12px;
+                top: 12px;
+                cursor: pointer;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 }

@@ -32,12 +32,8 @@ export function StayIndex() {
 
     return (
         <main className="stay-index">
-            <header>
-                <h2>Stays List</h2>
-            </header>
-            <StayExploreList stays={stays} title='Nearby Hotel'/>
+            {/* <StayExploreList stays={stays} title='Nearby Hotel'/> */}
             {/* <StayList stays={stays}/> */}
-
         </main>
     )
 }

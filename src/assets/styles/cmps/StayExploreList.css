@@ -1,18 +1,48 @@
 .stay-explore-list {
+    --total-columns: 8;
+    --visible-cards: 7;
+    --card-gap: 11px;
+
+    --card-width: calc(
+        (100% - (var(--card-gap) * (var(--visible-cards) - 1))) / var(--visible-cards)
+    );
+
     display: grid;
-    grid-template-columns: repeat(8, 250px);
-    gap: 11px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(var(--total-columns), var(--card-width));
+    gap: var(--card-gap);
     list-style: none;
 }
-.explore-list-container {
-    position: relative;
 
+@media (max-width: 1440px) {
+    .stay-explore-list {
+        --visible-cards: 6;
+    }
+}
+
+@media (max-width: 1130px) {
+    .stay-explore-list {
+        --visible-cards: 5;
+    }
+}
+
+@media (max-width: 950px) {
+    .stay-explore-list {
+        --visible-cards: 4;
+    }
+}
+
+.explore-list-container {
+    --padding: 44px;
+
+    position: relative;
+    padding: 0px var(--padding);
+    max-width: 1920px;
 }
 
 .explore-grid-container {
     --scroll-btn-size: 28px;
     --scroll-btn-spacing: 4px;
+
     scroll-behavior: smooth;
 
     white-space: noWrap;
@@ -23,12 +53,12 @@
     }
 
     &::scroll-button(right) {
-        right: 0;
+        right: var(--padding);
         content: '>';
     }
 
     &::scroll-button(left) {
-        right: calc(var(--scroll-btn-size) + var(--scroll-btn-spacing));
+        right: calc(var(--scroll-btn-size) + var(--scroll-btn-spacing) + var(--padding));
         content: '<';
     }
 
@@ -49,6 +79,9 @@
 
 .stay-list-title-row {
     h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: rgb(34, 34, 34);
         margin-bottom: 0;
     }
 }
