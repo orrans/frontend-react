@@ -52,37 +52,54 @@ export function StayDetails() {
   if (!stay) return <div>Loading...</div>
 
   return (
-    <section className="stay-details">
-      <h1>{stay.name}</h1>
+  <section className="stay-details">
 
-      <p>{stay.loc.city}, {stay.loc.country}</p>
+    <div className="stay-gallery">
+  {stay.imgUrls?.length > 0 && (
+    <img
+      className="main-img"
+      src={stay.imgUrls[0]}
+      alt={stay.name}
+    />
+  )}
 
-      <p>
-        <strong>${stay.price}</strong> / night
-      </p>
+  <div className="side-imgs">
+    {stay.imgUrls
+      ?.filter(url => url.startsWith('http'))
+      .slice(1, 5)
+      .map((img, idx) => (
+        <img key={idx} src={img} alt={stay.name} />
+      ))}
+  </div>
+</div>
 
-      {stay.imgUrls?.length > 0 && (
-        <img
-          src={stay.imgUrls[0]}
-          alt={stay.name}
-          style={{ maxWidth: '400px' }}
-        />
-      )}
 
-      <button
-        style={{
-          backgroundColor: '#FF5A5F',
-          color: 'white',
-          border: 'none',
-          borderRadius: '8px',
-          padding: '12px 24px',
-          fontSize: '16px',
-          fontWeight: '600',
-          cursor: 'pointer'
-        }}
-      >
-        Reserve
-      </button>
-    </section>
-  )
+    <h1>{stay.name}</h1>
+
+    <p>
+      {stay.loc.city}, {stay.loc.country}
+    </p>
+
+    <p>
+      <strong>${stay.price}</strong> / night
+    </p>
+
+    <button
+      style={{
+        backgroundColor: '#FF5A5F',
+        color: 'white',
+        border: 'none',
+        borderRadius: '8px',
+        padding: '12px 24px',
+        fontSize: '16px',
+        fontWeight: '600',
+        cursor: 'pointer'
+      }}
+    >
+      Reserve
+    </button>
+
+  </section>
+)
+
 }
