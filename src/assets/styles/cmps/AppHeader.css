@@ -160,21 +160,15 @@
 }
 
 /* User Menu Pill (Hamburger + Avatar) */
+
 .app-header .user-menu-btn {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 5px 5px 5px 12px;
-    /* Less padding right for avatar */
-    border: 1px solid var(--clr-border);
-    border-radius: 21px;
-    background-color: var(--clr-bg);
-    cursor: pointer;
-    transition: box-shadow 0.2s;
+    gap: 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
     margin-left: 8px;
-    height: 42px;
-    min-width: 80px;
 }
 
 .app-header .user-menu-btn:hover {
@@ -186,6 +180,44 @@
     height: 30px;
     color: #717171;
     /* Generic gray avatar */
+}
+
+.app-header .avatar-btn {
+    width: 42px;
+    height: 42px;
+    padding: 6px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.app-header .avatar-btn .user-avatar-placeholder {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.app-header .menu-toggle-btn {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--clr-bg-light, #f1f1f1);
+    border: none;
+    cursor: pointer;
+    color: var(--clr-text-main);
+}
+
+.app-header .menu-toggle-btn:hover {
+    background: rgba(0, 0, 0, 0.06);
 }
 
 /* --- Bottom Row (Search) --- */
