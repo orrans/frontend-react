@@ -214,28 +214,30 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
     </div>
 {isDescOpen && (
   <div className="modal-overlay" onClick={() => setIsDescOpen(false)}>
-    <div
-      className="modal-content"
-      onClick={(ev) => ev.stopPropagation()}
-    >
-      <button
-        className="modal-close-btn"
-        onClick={() => setIsDescOpen(false)}
-      >
-        ✕
-      </button>
+    <div className="modal" onClick={(ev) => ev.stopPropagation()}>
 
-      <h2>About this place</h2>
-
-      <div className="modal-text">
-        {description.split('\n').map((line, idx) => (
-          <p key={idx}>{line}</p>
-        ))}
+      <div className="modal-header">
+        <button
+          className="modal-close-btn"
+          onClick={() => setIsDescOpen(false)}
+        >
+          ✕
+        </button>
       </div>
+
+      <div className="modal-body">
+        <h2>About this place</h2>
+
+        <div className="modal-text">
+          {description.split('\n').map((line, idx) => (
+            <p key={idx}>{line}</p>
+          ))}
+        </div>
+      </div>
+
     </div>
   </div>
 )}
-
 
   </section>
 
