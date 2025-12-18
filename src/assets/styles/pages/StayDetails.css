@@ -1,3 +1,92 @@
+.stay-details-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.stay-details-main {
+  min-width: 0;
+}
+
+.stay-booking {
+  position: sticky;
+  top: 80px;
+}
+
+.booking-card {
+  border: 1px solid var(--clr-border);
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.booking-price {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.booking-price span:last-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--clr-text-sub);
+}
+
+.booking-box {
+  border: 1px solid var(--clr-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.booking-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.booking-dates div {
+  padding: 12px;
+  border-right: 1px solid var(--clr-border);
+}
+
+.booking-dates div:last-child {
+  border-right: none;
+}
+
+.booking-guests {
+  padding: 12px;
+  border-top: 1px solid var(--clr-border);
+}
+
+.booking-card label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.reserve-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #ff385c, #d70466);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.booking-note {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--clr-text-sub);
+}
+
 .stay-highlights {
   border-top: 1px solid var(--clr-border);
   margin-top: 32px;
