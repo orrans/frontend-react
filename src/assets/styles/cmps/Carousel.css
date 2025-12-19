@@ -84,21 +84,16 @@
         pointer-events: none;
         flex-shrink: 0;
         transform-origin: center;
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
 
     .dot.active {
         background-color: rgba(255, 255, 255, 1);
-        transform: scale(1.2);
+        transform: scale(1.15);
     }
 
     .dot.active + .dot,
     .dot:has(+ .dot.active) {
-        transform: scale(1);
-    }
-
-    .dot.active + .dot + .dot,
-    .dot:has(+ .dot + .dot.active) {
-        transform: scale(0.8);
+        transform: scale(1.1);
     }
 }
