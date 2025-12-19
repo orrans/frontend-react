@@ -64,13 +64,15 @@
 }
 
 .dots-wrapper {
-    width: 50px;
+    width: 53px;
     overflow: hidden;
 }
 
 .dots-container {
     display: flex;
     gap: 5px;
+    align-items: center;
+    height: 12px;
     transition: transform 0.3s ease;
 
     .dot {
@@ -78,13 +80,27 @@
         width: 6px;
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 50%;
-        transition: background-color 0.3s ease, transform 0.3s ease;
+        transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
         pointer-events: none;
         flex-shrink: 0;
+        transform-origin: center;
+        transform: scale(0.8);
+        opacity: 0.9;
+    }
 
-        &.active {
-            background-color: rgba(255, 255, 255, 1);
-            transform: scale(1.1);
-        }
+    .dot.active {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    .dot.active + .dot,
+    .dot:has(+ .dot.active) {
+        transform: scale(1);
+    }
+
+    .dot.active + .dot + .dot,
+    .dot:has(+ .dot + .dot.active) {
+        transform: scale(0.8);
     }
 }

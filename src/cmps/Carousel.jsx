@@ -80,8 +80,6 @@ export function Carousel({ imgs = [] }) {
     const getDotClass = (dotIndex) => {
         const distance = Math.abs(dotIndex - currentImageIndex)
         if (distance === 0) return 'active'
-        if (distance === 1 || distance === 2) return 'near'
-        return 'far'
     }
 
     return (
