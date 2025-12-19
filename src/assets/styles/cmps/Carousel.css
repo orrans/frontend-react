@@ -22,7 +22,7 @@
     gap: 0;
 }
 
-.imgs-container img {
+.imgs-container div {
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%;

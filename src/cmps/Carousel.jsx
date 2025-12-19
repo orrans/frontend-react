@@ -62,16 +62,18 @@ export function Carousel({ imgs = [] }) {
                 className="imgs-container"
                 style={{ display: 'flex', overflow: 'hidden' }}>
                 {imgs.map((img, idx) => (
-                    <img
-                        key={idx}
-                        src={img}
-                        alt={`Slide ${idx}`}
-                        style={{
-                            flex: '0 0 100%',
-                            width: widthForScroll ? `${widthForScroll}px` : '100%',
-                            maxWidth: '100%',
-                        }}
-                    />
+                    <div>
+                        <img
+                            key={idx}
+                            src={img}
+                            alt={`Slide ${idx}`}
+                            style={{
+                                flex: '0 0 100%',
+                                width: widthForScroll ? `${widthForScroll}px` : '100%',
+                                maxWidth: '100%',
+                            }}
+                        />
+                    </div>
                 ))}
             </div>
 
