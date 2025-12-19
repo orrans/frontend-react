@@ -14,7 +14,7 @@
     position: relative;
     display: flex;
     overflow: hidden;
-    white-space: noWrap;
+    white-space: nowrap;
     scroll-behavior: smooth;
 }
 
