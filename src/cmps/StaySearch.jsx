@@ -18,6 +18,7 @@ export function StaySearch() {
     const [guests, setGuests] = useState({ adults: 0, children: 0, infants: 0, pets: 0 })
     const [activeField, setActiveField] = useState(null) // 'loc', 'date', 'guests', or null
     const [filteredLocs, setFilteredLocs] = useState(POPULAR_DESTINATIONS)
+    const [currentMonth, setCurrentMonth] = useState(new Date())
 
     const modalRef = useRef(null)
     const searchBarRef = useRef(null)
@@ -90,6 +91,12 @@ export function StaySearch() {
             // If user types something and hits enter, move to next field
             setActiveField('date')
         }
+    }
+
+    function handleMonthChange(diff) {
+        setCurrentMonth(prev => {
+            return new Date(prev.getFullYear(), prev.getMonth() + diff, 1)
+        })
     }
 
     function formatDate(date) {
@@ -168,20 +175,31 @@ export function StaySearch() {
                     )}
 
                     {activeField === 'date' && (
-                        <div className="modal-content date-picker-wrapper">
+                        <div className="modal-content date-picker-wrapper" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
                             <DatePicker
                                 isOpen={true}
                                 dateRange={dateRange}
                                 onSetDateRange={setDateRange}
-                                onToggle={() => { }}
+                                currentMonth={currentMonth}
+                                onMonthChange={handleMonthChange}
+                                hideNext={true}
+                            />
+                            <DatePicker
+                                isOpen={true}
+                                dateRange={dateRange}
+                                onSetDateRange={setDateRange}
+                                currentMonth={new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1)}
+                                onMonthChange={handleMonthChange}
+                                hidePrev={true}
                             />
                         </div>
+
                     )}
 
                     {activeField === 'guests' && (
                         <div className="modal-content guest-picker">
                             <GuestCounterRow type="adults" label="Adults" sub="Ages 13 or above" value={guests.adults} onChange={handleGuestChange} />
-                            <GuestCounterRow type="children" label="Children" sub="Ages 2–12" value={guests.children} onChange={handleGuestChange} />
+                            <GuestCounterRow type="children" label="Children" sub="Ages 2-12" value={guests.children} onChange={handleGuestChange} />
                             <GuestCounterRow type="infants" label="Infants" sub="Under 2" value={guests.infants} onChange={handleGuestChange} />
                             <GuestCounterRow type="pets" label="Pets" sub="Bringing a service animal?" value={guests.pets} onChange={handleGuestChange} />
                         </div>
