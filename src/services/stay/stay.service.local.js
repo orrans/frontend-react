@@ -30,10 +30,6 @@ async function query(filterBy = {}) {
         stays = stays.filter((stay) => filterBy.guests <= stay.capacity)
     }
 
-    if (filterBy.loc) {
-        const [city, country] = filterBy.loc.split(',').map((loc) => new RegExp(loc.trim(), 'i'))
-        stays = stays.filter((stay) => city.test(stay.loc.city) && country.test(stay.loc.country))
-    }
     return stays
 }
 
