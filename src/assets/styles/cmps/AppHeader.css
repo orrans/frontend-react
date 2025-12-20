@@ -169,10 +169,7 @@
     background: transparent;
     border: none;
     margin-left: 8px;
-}
-
-.app-header .user-menu-btn:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    position: relative;
 }
 
 .app-header .user-avatar-placeholder {
@@ -204,8 +201,8 @@
 }
 
 .app-header .menu-toggle-btn {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -218,6 +215,40 @@
 
 .app-header .menu-toggle-btn:hover {
     background: rgba(0, 0, 0, 0.06);
+}
+
+.app-header .user-nav-modal {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 240px;
+    background-color: var(--clr-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+    padding: 8px 0;
+    z-index: 200;
+    margin-top: 12px;
+    border: 1px solid var(--clr-border);
+}
+
+.app-header .user-nav-modal .nav-item {
+    display: block;
+    padding: 10px 16px;
+    color: var(--clr-text-main);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.2s;
+}
+
+.app-header .user-nav-modal .nav-item:hover {
+    background-color: var(--clr-bg-light);
+}
+
+.app-header .user-nav-modal .divider {
+    height: 1px;
+    background-color: var(--clr-divider);
+    margin: 8px 0;
 }
 
 /* --- Bottom Row (Search) --- */
