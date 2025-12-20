@@ -42,7 +42,7 @@ export function SearchResults({}) {
     return (
         <main className="stay-index">
             <StayList stays={stays} fromDate={fromDate} toDate={toDate} />
-            <GoogleMap />
+            <GoogleMap stays={stays} fromDate={fromDate} toDate={toDate} />
         </main>
     )
 }
