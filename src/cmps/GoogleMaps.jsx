@@ -6,7 +6,7 @@ import {
     useAdvancedMarkerRef,
 } from '@vis.gl/react-google-maps'
 import { useState } from 'react'
-const API_KEY = 'AIzaSyA5YAKbctMWmj2etXv-KY7MSXDMGaWr0qs'
+const API_KEY = ''
 
 export function GoogleMap() {
     const [coords, setCoords] = useState({ lat: 32.0853, lng: 34.7818 })
