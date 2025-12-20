@@ -13,20 +13,27 @@ export const stayService = {
 }
 window.cs = stayService
 
-async function query(filterBy = { txt: '', price: 0 }) {
+async function query(filterBy = {}) {
     var stays = await storageService.query(STORAGE_KEY)
 
     if (filterBy.txt) {
         const regex = new RegExp(filterBy.txt, 'i')
-        stays = stays.filter(
-            (stay) =>
-                regex.test(stay.name) ||
-                regex.test(stay.summary) ||
-                regex.test(stay.loc.city) ||
-                regex.test(stay.loc.country)
-        )
+        stays = stays.filter((stay) => regex.test(stay.name) || regex.test(stay.summary))
     }
 
+    if (filterBy.loc) {
+        const [city, country] = filterBy.loc.split(',').map((loc) => new RegExp(loc.trim(), 'i'))
+        stays = stays.filter((stay) => city.test(stay.loc.city) && country.test(stay.loc.country))
+    }
+
+    if (filterBy.guests) {
+        stays = stays.filter((stay) => filterBy.guests <= stay.capacity)
+    }
+
+    if (filterBy.loc) {
+        const [city, country] = filterBy.loc.split(',').map((loc) => new RegExp(loc.trim(), 'i'))
+        stays = stays.filter((stay) => city.test(stay.loc.city) && country.test(stay.loc.country))
+    }
     return stays
 }
 
