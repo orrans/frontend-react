@@ -7,7 +7,6 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
 
 .app-header.full {
@@ -15,7 +14,7 @@
 }
 
 .app-header .header-container {
-    max-width: 1760px;
+    max-width: 1920px;
     /* Standard wide content width */
     margin: 0 auto;
     padding: 0 80px;

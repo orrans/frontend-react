@@ -1,19 +1,23 @@
 import { useState } from 'react'
 
-export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange }) {
-    const [currentDate, setCurrentDate] = useState(new Date())
-    const daysInMonth = getDaysInMonth(currentDate.getFullYear(), currentDate.getMonth())
-    const monthName = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' })
+export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange, currentMonth, onMonthChange, hidePrev, hideNext }) {
+    const [internalDate, setInternalDate] = useState(new Date())
+
+    // Use controlled date if provided, otherwise internal state
+    const dateToUse = currentMonth || internalDate
+
+    const daysInMonth = getDaysInMonth(dateToUse.getFullYear(), dateToUse.getMonth())
+    const monthName = dateToUse.toLocaleString('default', { month: 'long', year: 'numeric' })
 
     // Get day of week for the 1st of the month (0-6, Sun-Sat)
-    const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay()
+    const firstDayOfMonth = new Date(dateToUse.getFullYear(), dateToUse.getMonth(), 1).getDay()
 
     function getDaysInMonth(year, month) {
         return new Date(year, month + 1, 0).getDate()
     }
 
     function handleDaySelect(day) {
-        const selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), day)
+        const selectedDate = new Date(dateToUse.getFullYear(), dateToUse.getMonth(), day)
 
         if (!dateRange.start || (dateRange.start && dateRange.end)) {
             onSetDateRange({ start: selectedDate, end: null })
@@ -27,8 +31,12 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange }) {
     }
 
     function changeMonth(diff) {
-        const newDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + diff, 1)
-        setCurrentDate(newDate)
+        if (onMonthChange) {
+            onMonthChange(diff)
+        } else {
+            const newDate = new Date(internalDate.getFullYear(), internalDate.getMonth() + diff, 1)
+            setInternalDate(newDate)
+        }
     }
 
     // Only render if open (though parent usually controls this)
@@ -40,12 +48,12 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange }) {
             <div className="date-picker-popup">
 
                 <div className="calendar-header">
-                    <button className="nav-btn prev" onClick={(e) => { e.stopPropagation(); changeMonth(-1) }}>
+                    <button className="nav-btn prev" onClick={(e) => { e.stopPropagation(); changeMonth(-1) }} style={{ visibility: hidePrev ? 'hidden' : 'visible' }}>
                         {/* Simple arrow icon */}
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '12px', width: '12px', stroke: 'currentcolor', strokeWidth: '5.33333', overflow: 'visible' }}><path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path></svg>
                     </button>
                     <span className="month-label">{monthName}</span>
-                    <button className="nav-btn next" onClick={(e) => { e.stopPropagation(); changeMonth(1) }}>
+                    <button className="nav-btn next" onClick={(e) => { e.stopPropagation(); changeMonth(1) }} style={{ visibility: hideNext ? 'hidden' : 'visible' }}>
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '12px', width: '12px', stroke: 'currentcolor', strokeWidth: '5.33333', overflow: 'visible' }}><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path></svg>
                     </button>
                 </div>
@@ -65,7 +73,7 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange }) {
 
                     {/* Days */}
                     {Array.from({ length: daysInMonth }, (_, i) => i + 1).map(day => {
-                        const dateToCheck = new Date(currentDate.getFullYear(), currentDate.getMonth(), day)
+                        const dateToCheck = new Date(dateToUse.getFullYear(), dateToUse.getMonth(), day)
 
                         // Check exact match (ignoring time for comparison safety)
                         const isStart = dateRange.start && dateToCheck.toDateString() === dateRange.start.toDateString()

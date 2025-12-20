@@ -1,0 +1,99 @@
+.img-carousel {
+    overflow: hidden;
+
+    .nav-button {
+        opacity: 0;
+    }
+
+    &:hover {
+        .nav-button {
+            opacity: 1;
+        }
+    }
+}
+
+.imgs-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 0;
+}
+
+.imgs-container div {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 33px;
+    height: 33px;
+    background-color: #ffffff;
+    color: #222222;
+    border-radius: 50%;
+    font-size: 0.875rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    padding: 0;
+    line-height: 1;
+
+    &.right {
+        right: 0;
+    }
+}
+
+.dots {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.dots-wrapper {
+    width: 53px;
+    overflow: hidden;
+}
+
+.dots-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 12px;
+    transition: transform 0.3s ease;
+
+    .dot {
+        height: 6px;
+        width: 6px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+        pointer-events: none;
+        flex-shrink: 0;
+        transform-origin: center;
+        transform: scale(0.9);
+    }
+
+    .dot.active {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1.15);
+    }
+
+    .dot.active + .dot,
+    .dot:has(+ .dot.active) {
+        transform: scale(1.1);
+    }
+}

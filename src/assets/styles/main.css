@@ -24,7 +24,8 @@
 /*  Components*/
 @import 'cmps/list.css';
 @import 'cmps/preview.css';
-
+@import 'cmps/StayIndex.css';
+@import 'cmps/Carousel.css';
 @import 'cmps/AppHeader.css';
 @import 'cmps/AppFooter.css';
 @import 'cmps/UserMsg.css';
@@ -33,7 +34,9 @@
 @import 'cmps/ReviewList.css';
 @import 'cmps/ReviewPreview.css';
 @import 'cmps/StayList.css';
+@import 'cmps/StayExploreList.css';
 @import 'cmps/StayPreview.css';
 @import 'cmps/StaySearch.css';
 @import 'cmps/DatePicker.css';
 @import 'cmps/GuestCounterRow.css';
+@import 'cmps/GoogleMaps.css';

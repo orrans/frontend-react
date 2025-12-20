@@ -18,22 +18,36 @@
     --normal-breakpoint: 960px;
 
     /* Brand Colors */
-    --clr-brand: #ff385c; /* Airbnb Red (Main primary color) */
-    --clr-brand-hover: #d93b58; /* Darker red for hover states */
+    --clr-brand: #ff385c;
+    /* Airbnb Red (Main primary color) */
+    --clr-brand-hover: #d93b58;
+    /* Darker red for hover states */
     /* Text Colors*/
-    --clr-text-main: #222222; /* Main text (almost black)*/
-    --clr-text-sub: #717171; /* Secondary text (gray)*/
-    --clr-text-light: #dddddd; /* Lighter gray for placeholders or disabled text*/
+    --clr-text-main: #222222;
+    /* Main text (almost black)*/
+    --clr-text-sub: #717171;
+    /* Secondary text (gray)*/
+    --clr-text-light: #dddddd;
+    /* Lighter gray for placeholders or disabled text*/
     /* Background Colors*/
-    --clr-bg: #ffffff; /* Main background (white)*/
-    --clr-bg-light: #f7f7f7; /* Light gray background (secondary sections)*/
-    --clr-bg-modal: #ffffff; /* Modal background*/
+    --clr-bg: #ffffff;
+    /* Main background (white)*/
+    --clr-bg-light: #f7f7f7;
+    /* Light gray background (secondary sections)*/
+    --clr-bg-modal: #ffffff;
+    /* Modal background*/
     /* Borders & Dividers*/
-    --clr-border: #dddddd; /* Standard border color*/
-    --clr-divider: #ebebeb; /* Light divider lines*/
+    --clr-border: #dddddd;
+    /* Standard border color*/
+    --clr-divider: #ebebeb;
+    /* Light divider lines*/
     /* Functional Colors*/
-    --clr-success: #008489; /* Green (success messages, available dates)*/
-    --clr-warning: #fc642d; /* Orange (alerts, warnings)*/
-    --clr-error: #c13515; /* Dark red (errors)*/
-    --clr-star: #000000; /* Black stars for ratings*/
+    --clr-success: #008489;
+    /* Green (success messages, available dates)*/
+    --clr-warning: #fc642d;
+    /* Orange (alerts, warnings)*/
+    --clr-error: #c13515;
+    /* Dark red (errors)*/
+    --clr-star: #000000;
+    /* Black stars for ratings*/
 }

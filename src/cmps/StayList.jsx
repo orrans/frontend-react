@@ -6,11 +6,11 @@ export function StayList({ stays, onRemoveStay, onUpdateStay }) {
     toDate.setDate(toDate.getDate() + 2)
 
     return (
-        <section>
+        <section className='stay-list-container'>
             <ul className="stay-list">
                 {stays.map((stay) => (
                     <li key={stay._id}>
-                        <StayPreview stay={stay} fromDate={fromDate} toDate={toDate} />
+                        <StayPreview stay={stay} fromDate={fromDate} toDate={toDate} variant='normal' />
                     </li>
                 ))}
             </ul>

@@ -101,7 +101,6 @@
 
 .day-cell.range-start::before,
 .day-cell.range-end::before {
-    content: '';
     position: absolute;
     top: 0;
     bottom: 0;

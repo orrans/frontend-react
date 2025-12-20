@@ -1,0 +1,9 @@
+.stay-index {
+    --header-height: 169px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-container main.stay-index {
+    overflow: visible;
+}
