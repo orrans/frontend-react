@@ -10,6 +10,7 @@ import { UserMsg } from './cmps/UserMsg.jsx'
 import { StayDetails } from './pages/StayDetails.jsx'
 import { StayCheckout } from './pages/StayCheckout.jsx'
 import { StayExploreList } from './cmps/StayExploreList.jsx'
+import { UserProfile } from './pages/UserProfile'
 
 export function RootCmp() {
     return (
@@ -23,6 +24,7 @@ export function RootCmp() {
                     <Route path="/stay/:stayId/checkout" element={<StayCheckout />} />
                     <Route path="/stay/:stayId" element={<StayDetails />} />
                     <Route path="/stay" element={<StayExploreList stays={[]} />} />
+                    <Route path="/user/profile" element={<UserProfile />} />
                 </Routes>
 
             </main>
