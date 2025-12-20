@@ -73,10 +73,10 @@
 
 .stay-search-container .search-item label {
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 500;
     color: var(--clr-text-main);
     margin-bottom: 2px;
-    letter-spacing: 0.04em;
+    letter-spacing: normal;
 }
 
 .stay-search-container .search-input-clean {
