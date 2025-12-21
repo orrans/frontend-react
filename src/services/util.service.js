@@ -10,7 +10,40 @@ export function makeId(length = 6) {
 }
 
 export function makeLorem(size = 100) {
-    var words = ['The sky', 'above', 'the port', 'was', 'the color of television', 'tuned', 'to', 'a dead channel', '.', 'All', 'this happened', 'more or less', '.', 'I', 'had', 'the story', 'bit by bit', 'from various people', 'and', 'as generally', 'happens', 'in such cases', 'each time', 'it', 'was', 'a different story', '.', 'It', 'was', 'a pleasure', 'to', 'burn']
+    var words = [
+        'The sky',
+        'above',
+        'the port',
+        'was',
+        'the color of television',
+        'tuned',
+        'to',
+        'a dead channel',
+        '.',
+        'All',
+        'this happened',
+        'more or less',
+        '.',
+        'I',
+        'had',
+        'the story',
+        'bit by bit',
+        'from various people',
+        'and',
+        'as generally',
+        'happens',
+        'in such cases',
+        'each time',
+        'it',
+        'was',
+        'a different story',
+        '.',
+        'It',
+        'was',
+        'a pleasure',
+        'to',
+        'burn',
+    ]
     var txt = ''
     while (size > 0) {
         size--
@@ -22,9 +55,8 @@ export function makeLorem(size = 100) {
 export function getRandomIntInclusive(min, max) {
     min = Math.ceil(min)
     max = Math.floor(max)
-    return Math.floor(Math.random() * (max - min + 1)) + min //The maximum is inclusive and the minimum is inclusive 
+    return Math.floor(Math.random() * (max - min + 1)) + min //The maximum is inclusive and the minimum is inclusive
 }
-
 
 export function randomPastTime() {
     const HOUR = 1000 * 60 * 60
@@ -39,7 +71,9 @@ export function debounce(func, timeout = 300) {
     let timer
     return (...args) => {
         clearTimeout(timer)
-        timer = setTimeout(() => { func.apply(this, args) }, timeout)
+        timer = setTimeout(() => {
+            func.apply(this, args)
+        }, timeout)
     }
 }
 
@@ -49,5 +83,28 @@ export function saveToStorage(key, value) {
 
 export function loadFromStorage(key) {
     const data = localStorage.getItem(key)
-    return (data) ? JSON.parse(data) : undefined
+    return data ? JSON.parse(data) : undefined
+}
+
+export function groupBy(arr, key) {
+    const grouped = {}
+    arr.forEach((value) => {
+        const groupKey = value[key]
+        if (grouped[groupKey]) {
+            grouped[groupKey].push(value)
+        } else {
+            grouped[groupKey] = [value]
+        }
+    })
+
+    return grouped
+}
+
+export function formatPrice(price) {
+    return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2,
+    }).format(price)
 }

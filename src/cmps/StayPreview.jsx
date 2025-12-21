@@ -1,24 +1,63 @@
 import { Link } from 'react-router-dom'
 import { differenceInDays, format } from 'date-fns'
 import { shortDateFmt } from '../services/stay/date.service'
+import { Fragment, useState } from 'react'
+import { StarIcon } from './icons/StarIcon'
+import { Heart } from 'lucide-react'
+import { HeartIcon } from './icons/HeartIcon'
+import { Carousel } from './Carousel'
 
-export function StayPreview({ stay, fromDate, toDate }) {
+export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
     const days = differenceInDays(toDate, fromDate)
+    const [isFavorite, setIsFavorite] = useState(false)
+
     return (
         <Link to={`/stay/${stay._id}`} target="_blank" className="stay-preview">
-            {stay.imgUrls && stay.imgUrls.length > 0 && (
-                <img src={stay.imgUrls[0]} alt={stay.name} style={{ maxWidth: '200px' }} />
-            )}
-            <h4>
-                {stay.type} in {stay.name}
-            </h4>
-            <span>{stay.summary}</span>
-            <span>
-                {stay.beds} &bull; {stay.bedrooms}
-            </span>
-            <span>
-                ${stay.price * days} for {days} nights
-            </span>
+            <div className="stay-inner-img">
+                <div className="img-overlay">
+                    <HeartIcon
+                        className="favorite"
+                        onClick={(ev) => {
+                            ev.preventDefault()
+                            ev.stopPropagation()
+                            setIsFavorite((prev) => !prev)
+                        }}
+                        fill={isFavorite ? `var(--clr-brand)` : undefined}
+                    />
+                </div>
+                {variant === 'explore' && stay.imgUrls && stay.imgUrls.length > 0 && (
+                    <img src={stay.imgUrls[0]} alt={stay.name} />
+                )}
+                {variant === 'filtered' && <Carousel imgs={stay.imgUrls} />}
+            </div>
+            <div className="stay-inner-details">
+                <h4>
+                    {stay.type} in {stay.name}
+                </h4>
+                {variant === 'filtered' && (
+                    <Fragment>
+                        <span>{stay.summary}</span>
+                        <span>
+                            {stay.beds} &bull; {stay.bedrooms}
+                        </span>
+                    </Fragment>
+                )}
+                {variant === 'explore' && (
+                    <span>
+                        {format(fromDate, shortDateFmt)} - {format(toDate, 'dd')}
+                    </span>
+                )}
+                <div>
+                    <span>
+                        ${stay.price * days} for {days} nights
+                    </span>
+                    &nbsp; &bull; &nbsp;
+                    <span>
+                        <StarIcon />
+                        4.9
+                    </span>
+                </div>
+            </div>
         </Link>
     )
 }

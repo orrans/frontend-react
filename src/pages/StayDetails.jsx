@@ -8,6 +8,24 @@ export function StayDetails() {
   const [stay, setStay] = useState(null)
   const navigate = useNavigate()
 
+// need to change icons
+
+  const AMENITY_ICON_MAP = {
+  Wifi: '📶',
+  TV: '📺',
+  Kitchen: '🍳',
+  'Air conditioning': '❄️',
+  Elevator: '🛗',
+  'Free parking': '🚗',
+  Pool: '🏊‍♂️',
+  Washer: '🧺',
+  Dryer: '🧺',
+  Fireplace: '🔥',
+  'Outdoor shower': '🚿',
+}
+
+const getAmenityIcon = (amenity) =>
+  AMENITY_ICON_MAP[amenity] || '✔️'
 
   
   useEffect(() => {
@@ -56,7 +74,10 @@ export function StayDetails() {
   const stayType = 'Apartment'
   const hostName = 'Platy'
   const hostYears = 8
+
   
+
+  const [isAmenitiesOpen, setIsAmenitiesOpen] = useState(false)
   const [isDescOpen, setIsDescOpen] = useState(false)
   
   const description = `
@@ -87,13 +108,22 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 
   if (!stay) return <div>Loading...</div>
 
+  const amenities = stay.amenities || []
+
   return (
   <section className="stay-details">
 
-    <header className="stay-title">
+    {/* <header className="stay-title">
   <h1>{stay.name}</h1>
   <p>{stay.loc.city}, {stay.loc.country}</p>
+</header> */}
+
+<header className="stay-header">
+  <h1 className="stay-title-main">
+    Cozy and comfortable place on {stay.loc.city}, {stay.loc.country}
+  </h1>
 </header>
+
 
 
     <div className="stay-gallery">
@@ -112,9 +142,20 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 
       <div className="stay-details-main">
       
-<p className="stay-meta">
+{/* <p className="stay-meta">
   {stayType}, {stay.loc.country}
+</p> */}
+
+<p className="stay-subtitle">
+  Apartment, {stay.loc.city}, {stay.loc.country}
 </p>
+
+<div className="stay-rating-row">
+  <span className="rating">★ 4.89</span>
+  <span className="divider">|</span>
+  <span className="reviews">116 reviews</span>
+</div>
+
 
 <section className="stay-host">
   <img
@@ -124,7 +165,7 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   />
 
   <div className="host-info">
-    <h3>Host: Platy</h3>
+    <h3>Hosted by Platy</h3>
     <p>Superhost · 8 years hosting</p>
   </div>
 </section>
@@ -173,6 +214,8 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
       </div>
 
       <aside className="stay-booking">
+        {/* test */}
+        <div className="booking-sticky">
         <div className="booking-card">
           <div className="booking-price">
             <span className="price">$5,992</span>
@@ -208,6 +251,8 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
           <p className="booking-note">
             You won’t be charged yet
           </p>
+        </div>
+        {/* test */}
         </div>
       </aside>
 
@@ -250,14 +295,59 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   </div>
 </section>
 
+<section className="stay-amenities">
+  <h2>What this place offers</h2>
 
-  </section>
+  <ul className="amenities-list">
+  {amenities.slice(0, 3).map((amenity) => (
+    <li key={amenity}>
+      <span>{getAmenityIcon(amenity)}</span>
+      {amenity}
+    </li>
+  ))}
+</ul>
 
-  
 
-  
+  <button
+  className="show-more-btn"
+  onClick={() => setIsAmenitiesOpen(true)}
+>
+  Show all {amenities.length} amenities
+</button>
+
+</section>
+
+{isAmenitiesOpen && (
+  <div className="modal-overlay" onClick={() => setIsAmenitiesOpen(false)}>
+    <div className="modal" onClick={(ev) => ev.stopPropagation()}>
+
+      <div className="modal-header">
+        <button
+          className="modal-close-btn"
+          onClick={() => setIsAmenitiesOpen(false)}
+        >
+          ✕
+        </button>
+      </div>
+
+      <div className="modal-body">
+        <h2>What this place offers</h2>
+
+        <ul className="amenities-modal-list">
+          {amenities.map((amenity) => (
+            <li key={amenity}>
+              <span>{getAmenityIcon(amenity)}</span>
+              {amenity}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+)}
+
+
+</section>
 )
-
-
-
 }

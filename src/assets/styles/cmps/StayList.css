@@ -1,8 +1,20 @@
+.stay-list-container {
+    flex-basis: 50%;
+}
+
 .stay-list {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 24px;
     flex-wrap: wrap;
     list-style: none;
 
-    padding: 20px 80px;
+    padding: 20px 48px 20px 28px;
+}
+
+@media (max-width: 1130px) {
+    .stay-list {
+        grid-template-columns: 1fr;
+        padding: 20px 32px 20px 12px;
+    }
 }
