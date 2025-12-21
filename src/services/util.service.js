@@ -86,15 +86,25 @@ export function loadFromStorage(key) {
     return data ? JSON.parse(data) : undefined
 }
 
-export function groupBy(arr, key) {
+function getValueByPath(obj, path) {
+    return path.split('.').reduce((acc, key) => {
+        return acc ? acc[key] : undefined
+    }, obj)
+}
+
+export function groupBy(arr, keyPath) {
     const grouped = {}
-    arr.forEach((value) => {
-        const groupKey = value[key]
-        if (grouped[groupKey]) {
-            grouped[groupKey].push(value)
-        } else {
-            grouped[groupKey] = [value]
+
+    arr.forEach((item) => {
+        const groupKey = getValueByPath(item, keyPath)
+
+        if (groupKey === undefined) return
+
+        if (!grouped[groupKey]) {
+            grouped[groupKey] = []
         }
+
+        grouped[groupKey].push(item)
     })
 
     return grouped

@@ -123,11 +123,31 @@ const demoStays = [
         reviews: [
             {
                 id: 'madeId',
-                txt: 'Very helpful hosts. Cooked traditional...',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
                 rate: 4,
                 by: {
                     _id: 'u102',
                     fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
                     imgUrl: '/img/img2.jpg',
                 },
             },
@@ -167,7 +187,38 @@ const demoStays = [
             lat: 35.5951,
             lng: -82.5515,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['mini-user', 'user2'],
     },
     {
@@ -204,7 +255,38 @@ const demoStays = [
             lat: 35.5951,
             lng: -82.5515,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: [],
     },
     {
@@ -241,7 +323,38 @@ const demoStays = [
             lat: 40.7128 + 0.005,
             lng: -74.006 + 0.005,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['mini-user'],
     },
     {
@@ -278,7 +391,38 @@ const demoStays = [
             lat: 34.8019,
             lng: 30.6106,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: [],
     },
     {
@@ -315,7 +459,38 @@ const demoStays = [
             lat: 98.3381,
             lng: 7.8804,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['user3'],
     },
     {
@@ -352,7 +527,38 @@ const demoStays = [
             lat: 98.3381,
             lng: 7.8804,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['user3'],
     },
     {
@@ -389,7 +595,38 @@ const demoStays = [
             lat: 98.3381,
             lng: 7.8804,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['user3'],
     },
     {
@@ -473,7 +710,38 @@ const demoStays = [
             lat: 2.1734,
             lng: 41.3851,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['mini-user', 'user2'],
     },
     {
@@ -510,7 +778,38 @@ const demoStays = [
             lat: 7.1149,
             lng: 60.8608,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: [],
     },
     {
@@ -547,7 +846,38 @@ const demoStays = [
             lat: 40.7128,
             lng: -74.006,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['mini-user'],
     },
     {
@@ -584,7 +914,38 @@ const demoStays = [
             lat: 34.8019,
             lng: 30.6106,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: [],
     },
     {
@@ -621,7 +982,38 @@ const demoStays = [
             lat: 98.3381,
             lng: 7.8804,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['user3'],
     },
     {
@@ -658,7 +1050,38 @@ const demoStays = [
             lat: 98.3381,
             lng: 7.8804,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['user3'],
     },
     {
@@ -695,7 +1118,38 @@ const demoStays = [
             lat: 98.3381,
             lng: 7.8804,
         },
-        reviews: [],
+        reviews: [
+            {
+                id: 'madeId',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u102',
+                    fullname: 'user2',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId1',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u103',
+                    fullname: 'cooler',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+            {
+                id: 'madeId2',
+                txt: 'Very helpful hosts. Cooked traditional...Very helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditionalVery helpful hosts. Cooked traditional',
+                rate: 4,
+                by: {
+                    _id: 'u104',
+                    fullname: 'magnifico',
+                    imgUrl: '/img/img2.jpg',
+                },
+            },
+        ],
         likedByUsers: ['user3'],
     },
     {
@@ -746,7 +1200,7 @@ const demoStays = [
         _id: 'ny103',
         name: 'Brooklyn Industrial Loft',
         type: 'Loft',
-        imgUrls: ['https://images.unsplash.com/photo-1536376074432-cd22f6d71320'],
+        imgUrls: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688'],
         price: 150.0,
         summary: 'High ceilings and exposed brick in the heart of Williamsburg.',
         capacity: 3,

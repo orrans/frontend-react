@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { ChevronRightIcon } from './icons/ChevronRightIcon.jsx'
+import { ChevronLeftIcon } from './icons/ChevronLeftIcon.jsx'
 
 export function Carousel({ imgs = [] }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -59,7 +61,7 @@ export function Carousel({ imgs = [] }) {
         const maxVisibleDots = 5
         const totalImages = imgs.length
         const dotWidth = 6
-        const dotGap = 5 
+        const dotGap = 5
         const dotSpacing = dotWidth + dotGap
 
         if (totalImages <= maxVisibleDots) {
@@ -105,19 +107,21 @@ export function Carousel({ imgs = [] }) {
 
             {currentImageIndex > 0 && (
                 <button className="nav-button left" onClick={handlePreviousClick}>
-                    &lt;
+                    <ChevronLeftIcon />
                 </button>
             )}
 
             {currentImageIndex < imgs.length - 1 && (
                 <button className="nav-button right" onClick={handleNextClick}>
-                    &gt;
+                    <ChevronRightIcon />
                 </button>
             )}
 
             <div className="dots">
                 <div className="dots-wrapper">
-                    <div className="dots-container" style={{ transform: `translateX(-${dotsOffset}px)` }}>
+                    <div
+                        className="dots-container"
+                        style={{ transform: `translateX(-${dotsOffset}px)` }}>
                         {imgs.map((_, index) => (
                             <span key={index} className={`dot ${getDotClass(index)}`}></span>
                         ))}
