@@ -226,7 +226,7 @@ const demoStays = [
         capacity: 2,
         beds: '1 bed',
         bedrooms: '2 bedrooms',
-        amenities: ['Wifi', 'Kitchen', 'Washer', 'Dryer'],
+        amenities: ['Wifi', 'Kitchen', 'Washer', 'Dryer', 'Pets allowed'],
         labels: ['City', 'Design', 'Business'],
         host: {
             _id: 'u104',
@@ -532,7 +532,7 @@ const demoStays = [
         capacity: 2,
         beds: '1 bed',
         bedrooms: '2 bedrooms',
-        amenities: ['Wifi', 'Kitchen', 'Washer', 'Dryer'],
+        amenities: ['Wifi', 'Kitchen', 'Washer', 'Dryer', 'Pets allowed'],
         labels: ['City', 'Design', 'Business'],
         host: {
             _id: 'u104',
@@ -708,7 +708,7 @@ const demoStays = [
         capacity: 4,
         beds: '2 beds',
         bedrooms: '2 bedrooms',
-        amenities: ['Elevator', 'Wifi', 'Kitchen', 'Gym', 'Doorman'],
+        amenities: ['Elevator', 'Wifi', 'Kitchen', 'Gym', 'Doorman', 'per', 'Pets allowed'],
         labels: ['Luxury', 'City', 'Design'],
         host: { _id: 'u201', fullname: 'Sarah J.', imgUrl: '' },
         loc: {
