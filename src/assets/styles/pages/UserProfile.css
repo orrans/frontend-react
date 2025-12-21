@@ -1,0 +1,130 @@
+.user-profile-page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+    color: var(--clr-text-main);
+}
+
+.profile-layout {
+    display: flex;
+    gap: 32px;
+}
+
+/* Left Sidebar */
+.profile-sidebar {
+    width: 308px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--clr-border);
+    padding-right: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.profile-card {
+    border: 1px solid var(--clr-border);
+    border-radius: 24px;
+    padding: 32px 24px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+    background-color: var(--clr-bg);
+    width: 345px;
+    height: 250px;
+    min-height: 230px;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.profile-card .avatar-container img {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.profile-card h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--clr-text-main);
+}
+
+.profile-card .guest-label {
+    font-size: 14px;
+    color: var(--clr-text-main);
+    font-weight: 600;
+}
+
+.profile-nav nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-left: 12px;
+}
+
+.profile-nav button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--clr-text-sub);
+    cursor: pointer;
+    padding: 0;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s;
+}
+
+.profile-nav button:hover {
+    color: var(--clr-text-main);
+    background-color: transparent;
+}
+
+.profile-nav button.active {
+    color: var(--clr-text-main);
+    font-weight: 600;
+    /* border-bottom-color: var(--clr-text-main); */
+}
+
+/* Right Content */
+.profile-content {
+    flex-grow: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 600px;
+}
+
+.profile-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--clr-text-main);
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.info-item {
+    font-size: 16px;
+    color: var(--clr-text-main);
+}
+
+.bio p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--clr-text-main);
+}
+
+.empty-state {
+    color: var(--clr-text-sub);
+    font-size: 16px;
+}

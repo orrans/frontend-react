@@ -21,6 +21,7 @@
 @import 'pages/StayDetails.css';
 @import 'pages/StayCheckout.css';
 @import 'pages/Explore.css';
+@import 'pages/UserProfile.css';
 
 /*  Components*/
 @import 'cmps/list.css';

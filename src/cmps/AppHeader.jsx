@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect } from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom'
 import { StaySearch } from './StaySearch.jsx'
 
 export function AppHeader() {
     const navigate = useNavigate()
+    const location = useLocation()
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const menuRef = useRef(null)
 
@@ -20,6 +21,9 @@ export function AppHeader() {
         return () => document.removeEventListener('mousedown', handleClickOutside)
     }, [isMenuOpen])
 
+    // Hide search bar on profile page
+    const isUserProfile = location.pathname.includes('/user/profile')
+
     return (
         <header className="app-header full">
             <div className="header-container">
@@ -32,17 +36,19 @@ export function AppHeader() {
                         </Link>
                     </div>
 
-                    <nav className="main-nav">
-                        <NavLink to="/" className="nav-link">
-                            <video
-                                className="simi9jf atm_jp_1f51e7f atm_jr_1h6ojuz atm_vy_1osqo2v atm_e2_1osqo2v atm_tr_18ws4an atm_mj_glywfm slt01p9 atm_mk_stnw88 atm_tk_idpfg4 atm_fq_idpfg4 stz1the atm_k4_kb7nvz dir dir-ltr"
-                                playsInline
-                                poster="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/4aae4ed7-5939-4e76-b100-e69440ebeae4.png?im_w=240"
-                                preload="auto"
-                            ></video>
-                            Homes
-                        </NavLink>
-                    </nav>
+                    {!isUserProfile && (
+                        <nav className="main-nav">
+                            <NavLink to="/" className="nav-link">
+                                <video
+                                    className="simi9jf atm_jp_1f51e7f atm_jr_1h6ojuz atm_vy_1osqo2v atm_e2_1osqo2v atm_tr_18ws4an atm_mj_glywfm slt01p9 atm_mk_stnw88 atm_tk_idpfg4 atm_fq_idpfg4 stz1the atm_k4_kb7nvz dir dir-ltr"
+                                    playsInline
+                                    poster="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/4aae4ed7-5939-4e76-b100-e69440ebeae4.png?im_w=240"
+                                    preload="auto"
+                                ></video>
+                                Homes
+                            </NavLink>
+                        </nav>
+                    )}
 
                     <div className="user-actions">
                         <button className="host-btn">Become a Host</button>
@@ -68,9 +74,11 @@ export function AppHeader() {
                 </div>
 
                 {/* Bottom Row: Search Bar */}
-                <div className="header-bottom">
-                    <StaySearch />
-                </div>
+                {!isUserProfile && (
+                    <div className="header-bottom">
+                        <StaySearch />
+                    </div>
+                )}
             </div>
         </header>
     )
