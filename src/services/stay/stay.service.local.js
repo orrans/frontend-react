@@ -1200,7 +1200,7 @@ const demoStays = [
         _id: 'ny103',
         name: 'Brooklyn Industrial Loft',
         type: 'Loft',
-        imgUrls: ['https://images.unsplash.com/photo-1536376074432-cd22f6d71320'],
+        imgUrls: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688'],
         price: 150.0,
         summary: 'High ceilings and exposed brick in the heart of Williamsburg.',
         capacity: 3,

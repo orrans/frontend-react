@@ -11,7 +11,7 @@ export function Explore({}) {
         loadStays()
     }, [])
 
-    const groups = groupBy(stays, 'type')
+    const groups = groupBy(stays, 'loc.country')
     console.log(stays)
 
     return (
