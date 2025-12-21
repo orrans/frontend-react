@@ -210,7 +210,7 @@ export function StaySearch() {
             {/* Floating Modals Area */}
             {activeField && (
                 <div
-                    className="search-modal-dropdown"
+                    className={`search-modal-dropdown ${activeField}`}
                     ref={modalRef}
                     onClick={(e) => e.stopPropagation()}>
                     {activeField === 'loc' && (
@@ -221,8 +221,10 @@ export function StaySearch() {
                                     key={idx}
                                     className="suggestion-item"
                                     onClick={() => handleLocSelect(dest)}>
-                                    <div className="icon-box">📍</div>
-                                    <span>{dest}</span>
+                                    <div className="icon-box">
+                                        <img src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/d2d9f652-03f0-4c23-9246-f825ffd1f0d4.png" alt="Location" />
+                                    </div>
+                                    <span className="suggestion-text">{dest}</span>
                                 </div>
                             ))}
                         </div>
