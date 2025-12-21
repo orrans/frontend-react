@@ -116,3 +116,21 @@
 .day-cell.range-end::before {
     left: 0;
 }
+
+
+/* Date Picker Disabled Styles */
+.date-picker-container .day-cell.disabled {
+    color: var(--clr-text-light);
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+.date-picker-container .day-cell.disabled:hover {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.calendar-header .nav-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}

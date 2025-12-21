@@ -1,5 +1,15 @@
 import { useState } from 'react'
 
+const today = new Date()
+today.setHours(0, 0, 0, 0) // Normalize to the start of the day
+
+function normalizeDate(date) {
+    if (!date) return null
+    const newDate = new Date(date)
+    newDate.setHours(0, 0, 0, 0)
+    return newDate
+}
+
 export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange, currentMonth, onMonthChange, hidePrev, hideNext }) {
     const [internalDate, setInternalDate] = useState(new Date())
 
@@ -17,15 +27,25 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange, curren
     }
 
     function handleDaySelect(day) {
-        const selectedDate = new Date(dateToUse.getFullYear(), dateToUse.getMonth(), day)
+        const selectedDate = new Date(dateToUse.getFullYear(), dateToUse.getMonth(), day);
+        selectedDate.setHours(0, 0, 0, 0);
+
+        if (selectedDate < today) return;
 
         if (!dateRange.start || (dateRange.start && dateRange.end)) {
             onSetDateRange({ start: selectedDate, end: null })
         } else {
+            if (selectedDate.getTime() === normalizeDate(dateRange.start).getTime()) {
+                // User clicked the same day, do nothing.
+                return;
+            }
+
             if (selectedDate < dateRange.start) {
+                // User selected a date before the start date, so reset and set new start date
                 onSetDateRange({ start: selectedDate, end: null })
             } else {
-                onSetDateRange({ ...dateRange, end: selectedDate })
+                // Valid end date
+                onSetDateRange({ ...dateRange, end: selectedDate });
             }
         }
     }
@@ -40,18 +60,21 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange, curren
     }
 
     // Only render if open (though parent usually controls this)
-    if (!isOpen) return null
+    if (!isOpen) return null;
+
+    const calendarMonthStart = new Date(dateToUse.getFullYear(), dateToUse.getMonth(), 1);
+    const todayMonthStart = new Date(today.getFullYear(), today.getMonth(), 1);
+    const canGoBack = calendarMonthStart > todayMonthStart;
 
     return (
         <div className="date-picker-container">
             {/* The popup is now the main content since container is inside modal */}
             <div className="date-picker-popup">
 
-                <div className="calendar-header">
-                    <button className="nav-btn prev" onClick={(e) => { e.stopPropagation(); changeMonth(-1) }} style={{ visibility: hidePrev ? 'hidden' : 'visible' }}>
-                        {/* Simple arrow icon */}
-                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '12px', width: '12px', stroke: 'currentcolor', strokeWidth: '5.33333', overflow: 'visible' }}><path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path></svg>
-                    </button>
+                <div className="calendar-header">                    <button className="nav-btn prev" onClick={(e) => { e.stopPropagation(); changeMonth(-1) }} style={{ visibility: hidePrev ? 'hidden' : 'visible' }} disabled={!canGoBack}>
+                    {/* Simple arrow icon */}
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '12px', width: '12px', stroke: 'currentcolor', strokeWidth: '5.33333', overflow: 'visible' }}><path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path></svg>
+                </button>
                     <span className="month-label">{monthName}</span>
                     <button className="nav-btn next" onClick={(e) => { e.stopPropagation(); changeMonth(1) }} style={{ visibility: hideNext ? 'hidden' : 'visible' }}>
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '12px', width: '12px', stroke: 'currentcolor', strokeWidth: '5.33333', overflow: 'visible' }}><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path></svg>
@@ -60,7 +83,7 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange, curren
 
                 {/* Weekday Names */}
                 <div className="weekdays-grid">
-                    {['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'].map(day => (
+                    {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map(day => (
                         <div key={day} className="weekday-name">{day}</div>
                     ))}
                 </div>
@@ -73,19 +96,24 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange, curren
 
                     {/* Days */}
                     {Array.from({ length: daysInMonth }, (_, i) => i + 1).map(day => {
-                        const dateToCheck = new Date(dateToUse.getFullYear(), dateToUse.getMonth(), day)
+                        const dateToCheck = new Date(dateToUse.getFullYear(), dateToUse.getMonth(), day);
+                        dateToCheck.setHours(0, 0, 0, 0);
 
                         // Check exact match (ignoring time for comparison safety)
-                        const isStart = dateRange.start && dateToCheck.toDateString() === dateRange.start.toDateString()
-                        const isEnd = dateRange.end && dateToCheck.toDateString() === dateRange.end.toDateString()
+                        const isStart = dateRange.start && dateToCheck.getTime() === normalizeDate(dateRange.start).getTime();
+                        const isEnd = dateRange.end && dateToCheck.getTime() === normalizeDate(dateRange.end).getTime();
 
                         const isInRange =
                             dateRange.start && dateRange.end &&
-                            dateToCheck > dateRange.start && dateToCheck < dateRange.end
+                            dateToCheck > normalizeDate(dateRange.start) &&
+                            dateToCheck < normalizeDate(dateRange.end);
+
+                        const isPast = dateToCheck < today;
 
                         let className = "day-cell"
                         if (isStart || isEnd) className += " selected"
                         if (isInRange) className += " in-range"
+                        if (isPast) className += " disabled"
 
                         // Edge cases for styling the range background
                         if (isStart && dateRange.end) className += " range-start"
@@ -95,7 +123,7 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange, curren
                             <div
                                 key={day}
                                 className={className}
-                                onClick={(e) => { e.stopPropagation(); handleDaySelect(day) }}
+                                onClick={(e) => { e.stopPropagation(); handleDaySelect(day); }}
                             >
                                 <div className="day-content">{day}</div>
                             </div>
