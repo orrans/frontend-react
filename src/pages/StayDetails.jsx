@@ -113,10 +113,17 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   return (
   <section className="stay-details">
 
-    <header className="stay-title">
+    {/* <header className="stay-title">
   <h1>{stay.name}</h1>
   <p>{stay.loc.city}, {stay.loc.country}</p>
+</header> */}
+
+<header className="stay-header">
+  <h1 className="stay-title-main">
+    Cozy and comfortable place on {stay.loc.city}, {stay.loc.country}
+  </h1>
 </header>
+
 
 
     <div className="stay-gallery">
@@ -135,9 +142,20 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 
       <div className="stay-details-main">
       
-<p className="stay-meta">
+{/* <p className="stay-meta">
   {stayType}, {stay.loc.country}
+</p> */}
+
+<p className="stay-subtitle">
+  Apartment, {stay.loc.city}, {stay.loc.country}
 </p>
+
+<div className="stay-rating-row">
+  <span className="rating">★ 4.89</span>
+  <span className="divider">|</span>
+  <span className="reviews">116 reviews</span>
+</div>
+
 
 <section className="stay-host">
   <img
@@ -147,7 +165,7 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   />
 
   <div className="host-info">
-    <h3>Host: Platy</h3>
+    <h3>Hosted by Platy</h3>
     <p>Superhost · 8 years hosting</p>
   </div>
 </section>

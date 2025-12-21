@@ -368,4 +368,31 @@
   gap: 12px;
 }
 
+/* under the gallery */
+
+.stay-header {
+  margin-bottom: 16px;
+}
+
+.stay-title-main {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.stay-subtitle {
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.stay-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.divider {
+  opacity: 0.5;
+}
 

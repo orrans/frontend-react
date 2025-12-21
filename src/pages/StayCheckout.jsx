@@ -6,6 +6,8 @@ export function StayCheckout() {
   const { stayId } = useParams()
   const navigate = useNavigate()
   const [stay, setStay] = useState(null)
+  const [isSuccessOpen, setIsSuccessOpen] = useState(false)
+
 
   useEffect(() => {
     loadStay()
@@ -63,6 +65,46 @@ export function StayCheckout() {
         </div>
 
       </div>
+
+      <div className="checkout-card checkout-payment">
+
+  <h2 className="payment-title">1. Add payment method</h2>
+
+  <div className="payment-option active">
+    <div className="payment-header">
+      <span>💳 Credit or debit card</span>
+      <input type="radio" checked readOnly />
+    </div>
+
+    <input placeholder="1234 1234 1234 1234" />
+    <div className="payment-row">
+      <input placeholder="01 / 26" />
+      <input placeholder="123" />
+    </div>
+    <input placeholder="12345" />
+    <input placeholder="Israel" />
+  </div>
+
+  <button className="pay-btn" onClick={() => setIsSuccessOpen(true)}>
+    Continue
+  </button>
+
+</div>
+
+{isSuccessOpen && (
+  <div className="modal-overlay">
+    <div className="success-modal">
+      <button
+        className="close-btn"
+        onClick={() => setIsSuccessOpen(false)}
+      >
+        ✕
+      </button>
+      <h2>Payment successful!</h2>
+    </div>
+  </div>
+)}
+
     </section>
   )
 }
