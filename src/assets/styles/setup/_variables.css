@@ -51,4 +51,7 @@
     /* Dark red (errors)*/
     --clr-star: #000000;
     /* Black stars for ratings*/
+
+    --palette-rausch-gradient-linear-gradient: linear-gradient(90deg, #ff385c 0%, #e61e4d 50%, #d70466 100%);
+    /* Rausch gradient for backgrounds and highlights */
 }

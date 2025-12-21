@@ -37,7 +37,7 @@ export function StaySearch() {
         guests.adults > 0 || guests.children > 0 || guests.infants > 0 || guests.pets > 0
 
     // Format date label for the single "Date" field
-    let dateLabel = 'Any week'
+    let dateLabel = 'Add dates'
     if (dateRange.start && dateRange.end) {
         dateLabel = `${formatDate(dateRange.start)} - ${formatDate(dateRange.end)}`
     } else if (dateRange.start) {
