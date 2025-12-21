@@ -8,6 +8,24 @@ export function StayDetails() {
   const [stay, setStay] = useState(null)
   const navigate = useNavigate()
 
+// need to change icons
+
+  const AMENITY_ICON_MAP = {
+  Wifi: '📶',
+  TV: '📺',
+  Kitchen: '🍳',
+  'Air conditioning': '❄️',
+  Elevator: '🛗',
+  'Free parking': '🚗',
+  Pool: '🏊‍♂️',
+  Washer: '🧺',
+  Dryer: '🧺',
+  Fireplace: '🔥',
+  'Outdoor shower': '🚿',
+}
+
+const getAmenityIcon = (amenity) =>
+  AMENITY_ICON_MAP[amenity] || '✔️'
 
   
   useEffect(() => {
@@ -56,6 +74,7 @@ export function StayDetails() {
   const stayType = 'Apartment'
   const hostName = 'Platy'
   const hostYears = 8
+
   
 
   const [isAmenitiesOpen, setIsAmenitiesOpen] = useState(false)
@@ -88,6 +107,8 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 //   const description = stay.description
 
   if (!stay) return <div>Loading...</div>
+
+  const amenities = stay.amenities || []
 
   return (
   <section className="stay-details">
@@ -260,19 +281,22 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   <h2>What this place offers</h2>
 
   <ul className="amenities-list">
-    <li>🌆 City skyline view</li>
-    <li>📶 Wifi</li>
-    <li>🚗 Free street parking</li>
-    <li>📺 42 inch HDTV with standard cable</li>
-    <li>🛗 Elevator</li>
-  </ul>
+  {amenities.slice(0, 3).map((amenity) => (
+    <li key={amenity}>
+      <span>{getAmenityIcon(amenity)}</span>
+      {amenity}
+    </li>
+  ))}
+</ul>
+
 
   <button
-    className="show-more-btn"
-    onClick={() => setIsAmenitiesOpen(true)}
-  >
-    Show all 20 amenities
-  </button>
+  className="show-more-btn"
+  onClick={() => setIsAmenitiesOpen(true)}
+>
+  Show all {amenities.length} amenities
+</button>
+
 </section>
 
 {isAmenitiesOpen && (
@@ -292,26 +316,12 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
         <h2>What this place offers</h2>
 
         <ul className="amenities-modal-list">
-          <li>🌆 City skyline view</li>
-          <li>📶 Wifi</li>
-          <li>🚗 Free street parking</li>
-          <li>📺 42 inch HDTV with standard cable</li>
-          <li>🛗 Elevator</li>
-          <li>❄️ Air conditioning</li>
-          <li>🔥 Heating</li>
-          <li>🍳 Kitchen</li>
-          <li>🧺 Washer</li>
-          <li>🧴 Essentials</li>
-          <li>🛏 Extra pillows & blankets</li>
-          <li>☕ Coffee maker</li>
-          <li>🌿 Balcony</li>
-          <li>🔑 Self check-in</li>
-          <li>🚿 Hot water</li>
-          <li>🧯 Fire extinguisher</li>
-          <li>🚨 Smoke alarm</li>
-          <li>📦 Luggage dropoff allowed</li>
-          <li>🧹 Cleaning available</li>
-          <li>📡 Ethernet connection</li>
+          {amenities.map((amenity) => (
+            <li key={amenity}>
+              <span>{getAmenityIcon(amenity)}</span>
+              {amenity}
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -319,13 +329,7 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   </div>
 )}
 
-  </section>
 
-  
-
-  
+</section>
 )
-
-
-
 }
