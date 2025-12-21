@@ -25,6 +25,7 @@
 
         .filtered-rating {
             font-weight: 400;
+            white-space: noWrap;
         }
     }
 
