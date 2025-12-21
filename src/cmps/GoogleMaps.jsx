@@ -15,7 +15,6 @@ export function GoogleMap({ stays, fromDate, toDate }) {
     const [isOpen, setIsOpen] = useState(false)
     const [markerRef, marker] = useAdvancedMarkerRef()
     const days = differenceInDays(toDate, fromDate)
-    const map = useMap()
 
     function handleMapClick(ev) {
         ev.map.panTo(ev.detail.latLng)
