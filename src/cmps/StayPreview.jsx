@@ -28,13 +28,13 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
                 {variant === 'explore' && stay.imgUrls && stay.imgUrls.length > 0 && (
                     <img src={stay.imgUrls[0]} alt={stay.name} />
                 )}
-                {variant === 'normal' && <Carousel imgs={stay.imgUrls} />}
+                {variant === 'filtered' && <Carousel imgs={stay.imgUrls} />}
             </div>
             <div className="stay-inner-details">
                 <h4>
                     {stay.type} in {stay.name}
                 </h4>
-                {variant === 'normal' && (
+                {variant === 'filtered' && (
                     <Fragment>
                         <span>{stay.summary}</span>
                         <span>

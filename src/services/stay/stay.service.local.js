@@ -13,18 +13,25 @@ export const stayService = {
 }
 window.cs = stayService
 
-async function query(filterBy = { txt: '', price: 0 }) {
+async function query(filterBy = {}) {
     var stays = await storageService.query(STORAGE_KEY)
 
     if (filterBy.txt) {
         const regex = new RegExp(filterBy.txt, 'i')
-        stays = stays.filter(
-            (stay) =>
-                regex.test(stay.name) ||
-                regex.test(stay.summary) ||
-                regex.test(stay.loc.city) ||
-                regex.test(stay.loc.country)
-        )
+        stays = stays.filter((stay) => regex.test(stay.name) || regex.test(stay.summary))
+    }
+
+    if (filterBy.loc) {
+        const [city, country] = filterBy.loc.split(',').map((loc) => new RegExp(loc.trim(), 'i'))
+        stays = stays.filter((stay) => city.test(stay.loc.city) && country.test(stay.loc.country))
+    }
+
+    if (filterBy.guests) {
+        stays = stays.filter((stay) => filterBy.guests <= stay.capacity)
+    }
+
+    if (filterBy.pets) {
+        stays = stays.filter((stay) => stay.amenities.includes('Pets allowed'))
     }
 
     return stays
@@ -145,7 +152,7 @@ const demoStays = [
         capacity: 4,
         beds: '1 bed',
         bedrooms: '2 bedrooms',
-        amenities: ['TV', 'Wifi', 'Air conditioning', 'Kitchen', 'Elevator'],
+        amenities: ['TV', 'Wifi', 'Air conditioning', 'Pets allowed', 'Kitchen', 'Elevator'],
         labels: ['Trending', 'Sea view', 'Romantic'],
         host: {
             _id: 'u102',
@@ -153,12 +160,12 @@ const demoStays = [
             imgUrl: 'https://a0.muscache.com/im/pictures/8a4f3a5d-2c4d-4c91-bf43-8c7e9a5c3d2f.jpg?aki_policy=profile_small',
         },
         loc: {
-            country: 'Spain',
-            countryCode: 'ES',
-            city: 'Barcelona',
+            country: 'United States',
+            countryCode: 'US',
+            city: 'Asheville',
             address: '22 Marina Blvd',
-            lat: 2.1734,
-            lng: 41.3851,
+            lat: 35.5951,
+            lng: -82.5515,
         },
         reviews: [],
         likedByUsers: ['mini-user', 'user2'],
@@ -190,12 +197,12 @@ const demoStays = [
             imgUrl: 'https://a0.muscache.com/im/pictures/2f6b3a7d-5c1e-4b8a-b9f2-1e3a7d5c9b8f.jpg?aki_policy=profile_small',
         },
         loc: {
-            country: 'Norway',
-            countryCode: 'NO',
-            city: 'Flåm',
+            country: 'United States',
+            countryCode: 'US',
+            city: 'Asheville',
             address: '8 Pine Tree Rd',
-            lat: 7.1149,
-            lng: 60.8608,
+            lat: 35.5951,
+            lng: -82.5515,
         },
         reviews: [],
         likedByUsers: [],
@@ -227,12 +234,12 @@ const demoStays = [
             imgUrl: 'https://a0.muscache.com/im/pictures/6a7c5b9d-3e4a-4f8c-9b2a-1d5e6c7a8b9f.jpg?aki_policy=profile_small',
         },
         loc: {
-            country: 'USA',
+            country: 'United States',
             countryCode: 'US',
             city: 'New York',
             address: '45 Spring St',
-            lat: -74.006,
-            lng: 40.7128,
+            lat: 40.7128 + 0.005,
+            lng: -74.006 + 0.005,
         },
         reviews: [],
         likedByUsers: ['mini-user'],
@@ -533,12 +540,12 @@ const demoStays = [
             imgUrl: 'https://a0.muscache.com/im/pictures/6a7c5b9d-3e4a-4f8c-9b2a-1d5e6c7a8b9f.jpg?aki_policy=profile_small',
         },
         loc: {
-            country: 'USA',
+            country: 'United States',
             countryCode: 'US',
             city: 'New York',
             address: '45 Spring St',
-            lat: -74.006,
-            lng: 40.7128,
+            lat: 40.7128,
+            lng: -74.006,
         },
         reviews: [],
         likedByUsers: ['mini-user'],
@@ -690,6 +697,160 @@ const demoStays = [
         },
         reviews: [],
         likedByUsers: ['user3'],
+    },
+    {
+        _id: 'ny101',
+        name: 'Skyline View Penthouse',
+        type: 'Apartment',
+        imgUrls: ['https://images.unsplash.com/photo-1522708323590-d24dbb6b0267'],
+        price: 250.0,
+        summary: 'High-end luxury in Midtown Manhattan with views of the Empire State Building.',
+        capacity: 4,
+        beds: '2 beds',
+        bedrooms: '2 bedrooms',
+        amenities: ['Elevator', 'Wifi', 'Kitchen', 'Gym', 'Doorman'],
+        labels: ['Luxury', 'City', 'Design'],
+        host: { _id: 'u201', fullname: 'Sarah J.', imgUrl: '' },
+        loc: {
+            country: 'United States',
+            countryCode: 'US',
+            city: 'New York',
+            address: '350 5th Ave',
+            lat: 40.7484,
+            lng: -73.9857,
+        },
+    },
+    {
+        _id: 'ny102',
+        name: 'Charming West Village Studio',
+        type: 'Studio',
+        imgUrls: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688'],
+        price: 185.0,
+        summary: 'Authentic NYC living in a brownstone on a tree-lined street.',
+        capacity: 2,
+        beds: '1 bed',
+        bedrooms: '1 bedroom',
+        amenities: ['Wifi', 'Kitchen', 'Fireplace'],
+        labels: ['Romantic', 'City', 'Trending'],
+        host: { _id: 'u202', fullname: 'Michael R.', imgUrl: '' },
+        loc: {
+            country: 'United States',
+            countryCode: 'US',
+            city: 'New York',
+            address: '121 Perry St',
+            lat: 40.7334,
+            lng: -74.007,
+        },
+    },
+    {
+        _id: 'ny103',
+        name: 'Brooklyn Industrial Loft',
+        type: 'Loft',
+        imgUrls: ['https://images.unsplash.com/photo-1536376074432-cd22f6d71320'],
+        price: 150.0,
+        summary: 'High ceilings and exposed brick in the heart of Williamsburg.',
+        capacity: 3,
+        beds: '2 beds',
+        bedrooms: '1 bedroom',
+        amenities: ['Washer', 'Dryer', 'Wifi', 'Pets allowed'],
+        labels: ['Creative', 'Design', 'Play'],
+        host: { _id: 'u203', fullname: 'Lena K.', imgUrl: '' },
+        loc: {
+            country: 'United States',
+            countryCode: 'US',
+            city: 'Brooklyn',
+            address: '240 Wythe Ave',
+            lat: 40.7163,
+            lng: -73.9625,
+        },
+    },
+    {
+        _id: 'ny104',
+        name: 'Central Park North Oasis',
+        type: 'Apartment',
+        imgUrls: ['https://images.unsplash.com/photo-1493809842364-78817add7ffb'],
+        price: 120.0,
+        summary: 'Bright and airy apartment just steps away from Central Park.',
+        capacity: 2,
+        beds: '1 bed',
+        bedrooms: '1 bedroom',
+        amenities: ['Wifi', 'Kitchen', 'Air conditioning'],
+        labels: ['Nature', 'City', 'Relax'],
+        host: { _id: 'u204', fullname: 'David B.', imgUrl: '' },
+        loc: {
+            country: 'United States',
+            countryCode: 'US',
+            city: 'New York',
+            address: '1 Central Park N',
+            lat: 40.7997,
+            lng: -73.9524,
+        },
+    },
+    {
+        _id: 'ny105',
+        name: 'DUMBO Waterfront Suite',
+        type: 'Apartment',
+        imgUrls: ['https://images.unsplash.com/photo-1484154218962-a197022b5858'],
+        price: 310.0,
+        summary: 'Stunning views of the Brooklyn Bridge and Manhattan skyline.',
+        capacity: 4,
+        beds: '2 beds',
+        bedrooms: '2 bedrooms',
+        amenities: ['Wifi', 'Kitchen', 'Gym', 'Parking'],
+        labels: ['Top of the world', 'Luxury', 'City'],
+        host: { _id: 'u205', fullname: 'Elena G.', imgUrl: '' },
+        loc: {
+            country: 'United States',
+            countryCode: 'US',
+            city: 'Brooklyn',
+            address: '1 Main St',
+            lat: 40.7033,
+            lng: -73.9896,
+        },
+    },
+    {
+        _id: 'ny106',
+        name: 'Artist Garden Room - Queens',
+        type: 'Private Room',
+        imgUrls: ['https://images.unsplash.com/photo-1554995207-c18c203602cb'],
+        price: 75.0,
+        summary: 'A quiet, colorful room with access to a private backyard garden.',
+        capacity: 2,
+        beds: '1 bed',
+        bedrooms: '1 bedroom',
+        amenities: ['Wifi', 'Garden', 'Coffee maker'],
+        labels: ['Eco', 'Budget', 'Unique'],
+        host: { _id: 'u206', fullname: 'Marco P.', imgUrl: '' },
+        loc: {
+            country: 'United States',
+            countryCode: 'US',
+            city: 'Queens',
+            address: '45-10 Court Square',
+            lat: 40.7489,
+            lng: -73.941,
+        },
+    },
+    {
+        _id: 'ny107',
+        name: 'Upper East Side Classic',
+        type: 'House',
+        imgUrls: ['https://images.unsplash.com/photo-1512917774080-9991f1c4c750'],
+        price: 450.0,
+        summary: 'Magnificent 4-story townhome perfect for large families.',
+        capacity: 10,
+        beds: '6 beds',
+        bedrooms: '5 bedrooms',
+        amenities: ['Kitchen', 'Washer', 'Dryer', 'Wifi', 'TV'],
+        labels: ['Family', 'Luxury', 'Design'],
+        host: { _id: 'u207', fullname: 'Rose T.', imgUrl: '' },
+        loc: {
+            country: 'United States',
+            countryCode: 'US',
+            city: 'New York',
+            address: '150 E 74th St',
+            lat: 40.7713,
+            lng: -73.9602,
+        },
     },
 ]
 

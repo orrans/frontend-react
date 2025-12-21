@@ -5,6 +5,8 @@ import { stayService } from '../services/stay'
 import { StayExploreList } from '../cmps/StayExploreList.jsx'
 import { StayList } from '../cmps/StayList.jsx'
 import { GoogleMap } from '../cmps/GoogleMaps.jsx'
+import { useParams, useSearchParams } from 'react-router-dom'
+import { Explore } from './Explore.jsx'
 
 export function StayIndex() {
     const stays = useSelector((storeState) => storeState.stayModule.stays)
@@ -13,25 +15,14 @@ export function StayIndex() {
         loadStays()
     }, [])
 
-    async function onAddStay() {
-        const stay = stayService.getEmptyStay()
-        stay.name = prompt('Stay name?')
-        stay.price = +prompt('Price?')
-        try {
-            const savedStay = await addStay(stay)
-            console.log('Stay added', savedStay)
-        } catch (err) {
-            console.log('Cannot add stay', err)
-        }
-    }
-
     if (!stays) return <div>Loading...</div>
 
     return (
         <main className="stay-index">
-            {/* <StayExploreList stays={stays} title='Nearby Hotel'/> */}
-            <StayList stays={stays} />
-            <GoogleMap />
+            {/* <Explore /> */}
+
+            {/* <StayExploreList stays={stays} title="Nearby Hotel" /> */}
+            {/* <StayList stays={stays} /> */}
         </main>
     )
 }

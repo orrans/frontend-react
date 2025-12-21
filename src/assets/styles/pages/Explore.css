@@ -1,0 +1,4 @@
+.stay-explore-list-container{
+    display: flex;
+    flex-direction: column;
+}

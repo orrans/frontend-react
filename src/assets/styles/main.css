@@ -20,6 +20,7 @@
 @import 'pages/Chat.css';
 @import 'pages/StayDetails.css';
 @import 'pages/StayCheckout.css';
+@import 'pages/Explore.css';
 
 /*  Components*/
 @import 'cmps/list.css';
