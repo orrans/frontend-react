@@ -6,7 +6,6 @@ import { StayExploreList } from '../cmps/StayExploreList.jsx'
 import { StayList } from '../cmps/StayList.jsx'
 import { GoogleMap } from '../cmps/GoogleMaps.jsx'
 import { useParams, useSearchParams } from 'react-router-dom'
-import { Explore } from './Explore.jsx'
 import { groupBy } from '../services/util.service.js'
 
 export function StayIndex() {

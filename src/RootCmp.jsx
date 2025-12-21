@@ -11,7 +11,6 @@ import { StayCheckout } from './pages/StayCheckout.jsx'
 import { StayExploreList } from './cmps/StayExploreList.jsx'
 import { UserProfile } from './pages/UserProfile'
 import { SearchResults } from './pages/SearchResults.jsx'
-import { Explore } from './pages/Explore.jsx'
 
 export function RootCmp() {
     return (

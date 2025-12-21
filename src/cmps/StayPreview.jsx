@@ -6,6 +6,7 @@ import { StarIcon } from './icons/StarIcon'
 import { Heart } from 'lucide-react'
 import { HeartIcon } from './icons/HeartIcon'
 import { Carousel } from './Carousel'
+import { formatPrice } from '../services/util.service'
 
 export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
     const days = differenceInDays(toDate, fromDate)
@@ -31,32 +32,43 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
                 {variant === 'filtered' && <Carousel imgs={stay.imgUrls} />}
             </div>
             <div className="stay-inner-details">
-                <h4>
+                <h4 className="filtered-title">
                     {stay.type} in {stay.name}
+                    <span className="filtered-rating">
+                        <StarIcon size={12} />
+                        4.9 (509)
+                    </span>
                 </h4>
                 {variant === 'filtered' && (
-                    <Fragment>
+                    <div className="filtered-summary">
                         <span>{stay.summary}</span>
                         <span>
-                            {stay.beds} &bull; {stay.bedrooms}
+                            {stay.beds}&nbsp;·&nbsp;{stay.bedrooms}
                         </span>
-                    </Fragment>
+                        <span>
+                            {format(fromDate, shortDateFmt)} - {format(toDate, 'dd')}
+                        </span>
+                        <span className="filtered-price">{formatPrice(stay.price * days)}</span>
+                        <span> for {days} nights</span>
+                    </div>
                 )}
                 {variant === 'explore' && (
-                    <span>
-                        {format(fromDate, shortDateFmt)} - {format(toDate, 'dd')}
-                    </span>
+                    <>
+                        <span>
+                            {format(fromDate, shortDateFmt)} - {format(toDate, 'dd')}
+                        </span>
+                        <div>
+                            <span>
+                                {formatPrice(stay.price * days)} for {days} nights
+                            </span>
+                            &nbsp; &bull; &nbsp;
+                            <span>
+                                <StarIcon />
+                                4.9
+                            </span>
+                        </div>
+                    </>
                 )}
-                <div>
-                    <span>
-                        ${stay.price * days} for {days} nights
-                    </span>
-                    &nbsp; &bull; &nbsp;
-                    <span>
-                        <StarIcon />
-                        4.9
-                    </span>
-                </div>
             </div>
         </Link>
     )
