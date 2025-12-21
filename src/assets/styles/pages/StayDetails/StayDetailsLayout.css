@@ -1,0 +1,10 @@
+.stay-details-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.stay-details-main {
+    min-width: 0;
+}

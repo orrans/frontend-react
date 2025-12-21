@@ -18,7 +18,7 @@
 @import 'pages/TaskDetails.css';
 @import 'pages/LoginSignup.css';
 @import 'pages/Chat.css';
-@import 'pages/StayDetails.css';
+@import 'pages/StayDetails/StayDetails.css';
 @import 'pages/StayCheckout.css';
 @import 'pages/Explore.css';
 

@@ -1,0 +1,16 @@
+.stay-description {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    margin-top: 24px;
+}
+
+.description-preview {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

@@ -1,0 +1,29 @@
+.stay-sleep {
+    border-top: 1px solid var(--clr-border);
+    padding-top: 32px;
+    margin-top: 32px;
+}
+
+.stay-sleep h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--clr-text-main);
+}
+
+.sleep-card {
+    width: 100%;
+    max-width: 360px;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.sleep-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}

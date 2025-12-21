@@ -1,0 +1,146 @@
+
+@import './StayDetailsLayout.css';
+@import './BookingCard.css';
+@import './StayHighlights.css';
+@import './StayGallery.css';
+@import './StayHost.css';
+@import './StayDescription.css';
+@import './StaySleep.css';
+@import './StayAmenities.css';
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.modal-text p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    color: var(--clr-text-main);
+}
+
+.modal-body h2 {
+    color: var(--clr-text-main);
+}
+
+.show-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 24px;
+  margin-top: 16px;
+
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+
+    cursor: pointer;
+}
+
+.show-more-btn:hover {
+  background-color: #e6e6e6;
+}
+
+
+.modal {
+    background: #fff;
+    width: 100%;
+    max-width: 780px;
+    max-height: 85vh;
+
+    border-radius: 4%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modal-header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 16px 24px;
+
+    z-index: 2;
+}
+
+
+/* this part is not finished need to improve the btn position (ASSY) */
+.modal-close-btn {
+    background: none;
+    border: none;
+
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 24px;
+    overflow-y: auto;
+}
+
+
+
+/* under the gallery */
+
+.stay-header {
+  margin-bottom: 8px;
+}
+
+.stay-title-main {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.stay-subtitle {
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.stay-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.divider {
+  opacity: 0.5;
+}
+
+
+.stay-details {
+  display: grid;
+  grid-template-columns:
+    minmax(24px, 1fr)
+    minmax(0, 1120px)
+    minmax(24px, 1fr);
+}
+
+.stay-header,
+.stay-gallery,
+.stay-details-layout,
+.stay-sleep,
+.stay-amenities {
+  grid-column: 2;
+}
