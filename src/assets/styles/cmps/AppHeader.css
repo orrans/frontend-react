@@ -81,12 +81,19 @@
 .app-header .main-nav .nav-link {
     text-decoration: none;
     color: var(--clr-text-sub);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     padding: 10px 0;
     position: relative;
     transition: color 0.2s, font-weight 0.1s;
     background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.app-header .main-nav .nav-link video {
+    width: 65px;
+    height: 65px;
 }
 
 .app-header .main-nav .nav-link:hover {

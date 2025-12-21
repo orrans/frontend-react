@@ -33,9 +33,15 @@ export function AppHeader() {
                     </div>
 
                     <nav className="main-nav">
-                        <NavLink to="/" className="nav-link">Homes</NavLink>
-                        <NavLink to="/experiences" className="nav-link">Experiences</NavLink>
-                        <NavLink to="/online" className="nav-link">Services</NavLink>
+                        <NavLink to="/" className="nav-link">
+                            <video
+                                className="simi9jf atm_jp_1f51e7f atm_jr_1h6ojuz atm_vy_1osqo2v atm_e2_1osqo2v atm_tr_18ws4an atm_mj_glywfm slt01p9 atm_mk_stnw88 atm_tk_idpfg4 atm_fq_idpfg4 stz1the atm_k4_kb7nvz dir dir-ltr"
+                                playsInline
+                                poster="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/4aae4ed7-5939-4e76-b100-e69440ebeae4.png?im_w=240"
+                                preload="auto"
+                            ></video>
+                            Homes
+                        </NavLink>
                     </nav>
 
                     <div className="user-actions">
