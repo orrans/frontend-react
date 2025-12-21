@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { useNavigate, createSearchParams } from 'react-router-dom'
+import { useNavigate, createSearchParams, useLocation } from 'react-router-dom'
 import { DatePicker } from './DatePicker.jsx'
 import { GuestCounterRow } from './GuestCounterRow.jsx'
 import { ClearIcon } from './icons/ClearIcon.jsx'
@@ -22,6 +22,7 @@ export function StaySearch() {
     const [filteredLocs, setFilteredLocs] = useState(POPULAR_DESTINATIONS)
     const [currentMonth, setCurrentMonth] = useState(new Date())
     const navigate = useNavigate()
+    const location = useLocation()
 
     const modalRef = useRef(null)
     const searchBarRef = useRef(null)
@@ -63,6 +64,29 @@ export function StaySearch() {
         document.addEventListener('mousedown', handleClickOutside)
         return () => document.removeEventListener('mousedown', handleClickOutside)
     }, [activeField])
+
+    // Reset state on navigation to home or profile
+    const prevPathnameRef = useRef(location.pathname)
+    useEffect(() => {
+        const prevPathname = prevPathnameRef.current
+        const currentPathname = location.pathname
+
+        const isReturningHome = currentPathname === '/' && prevPathname !== '/'
+        const isEnteringProfile = currentPathname.startsWith('/user')
+
+        if (isReturningHome || isEnteringProfile) {
+            resetSearchState()
+        }
+
+        prevPathnameRef.current = currentPathname
+    }, [location.pathname])
+
+    function resetSearchState() {
+        setLoc('')
+        setDateRange({ start: null, end: null })
+        setGuests({ adults: 0, children: 0, infants: 0, pets: 0 })
+        setActiveField(null)
+    }
 
     function handleGuestChange(type, operation) {
         setGuests((prev) => {
@@ -111,6 +135,9 @@ export function StaySearch() {
 
     function handleSearch(e) {
         e.stopPropagation()
+
+        // Close any open modals
+        setActiveField(null)
 
         const params = {
             loc,
