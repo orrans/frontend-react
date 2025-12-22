@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { userService } from '../services/user/index.js'
 import { ChevronRightIcon } from './icons/ChevronRightIcon.jsx'
 import { StayPreview } from './StayPreview.jsx'
 

@@ -68,13 +68,13 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange, curren
 
     return (
         <div className="date-picker-container">
-            {/* The popup is now the main content since container is inside modal */}
             <div className="date-picker-popup">
 
-                <div className="calendar-header">                    <button className="nav-btn prev" onClick={(e) => { e.stopPropagation(); changeMonth(-1) }} style={{ visibility: hidePrev ? 'hidden' : 'visible' }} disabled={!canGoBack}>
-                    {/* Simple arrow icon */}
-                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '12px', width: '12px', stroke: 'currentcolor', strokeWidth: '5.33333', overflow: 'visible' }}><path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path></svg>
-                </button>
+                <div className="calendar-header">
+                    <button className="nav-btn prev" onClick={(e) => { e.stopPropagation(); changeMonth(-1) }} style={{ visibility: hidePrev ? 'hidden' : 'visible' }} disabled={!canGoBack}>
+                        {/* Arrow icon */}
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '12px', width: '12px', stroke: 'currentcolor', strokeWidth: '5.33333', overflow: 'visible' }}><path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path></svg>
+                    </button>
                     <span className="month-label">{monthName}</span>
                     <button className="nav-btn next" onClick={(e) => { e.stopPropagation(); changeMonth(1) }} style={{ visibility: hideNext ? 'hidden' : 'visible' }}>
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '12px', width: '12px', stroke: 'currentcolor', strokeWidth: '5.33333', overflow: 'visible' }}><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path></svg>
@@ -83,8 +83,8 @@ export function DatePicker({ isOpen, onToggle, dateRange, onSetDateRange, curren
 
                 {/* Weekday Names */}
                 <div className="weekdays-grid">
-                    {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map(day => (
-                        <div key={day} className="weekday-name">{day}</div>
+                    {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, index) => (
+                        <div key={index} className="weekday-name">{day}</div>
                     ))}
                 </div>
 
