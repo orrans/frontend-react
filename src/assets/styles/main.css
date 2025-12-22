@@ -11,9 +11,7 @@
 /*  pages*/
 @import 'RootCmp.css';
 
-@import 'pages/AboutUs.css';
 /*  @import "pages/HomePage";*/
-@import 'pages/CarIndex.css';
 @import 'pages/UserDetails.css';
 @import 'pages/TaskDetails.css';
 @import 'pages/LoginSignup.css';
@@ -31,7 +29,6 @@
 @import 'cmps/AppHeader.css';
 @import 'cmps/AppFooter.css';
 @import 'cmps/UserMsg.css';
-@import 'cmps/CarFilter.css';
 @import 'cmps/ReviewEdit.css';
 @import 'cmps/ReviewList.css';
 @import 'cmps/ReviewPreview.css';
