@@ -45,7 +45,8 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
                     <div className="filtered-summary">
                         <span className="stay-summary-content">{stay.summary}</span>
                         <span className="filtered-beds-capacity">
-                            {stay.bedrooms} bedrooms&nbsp;·&nbsp;{stay.bathrooms} bathrooms
+                            {stay.bedrooms} bedroom{stay.bedrooms !== 1 ? 's' : ''}&nbsp;·&nbsp;
+                            {stay.bathrooms} bathroom{stay.bathrooms !== 1 ? 's' : ''}
                         </span>
                         {/* <span className="filtered-dates">
                             {format(fromDate, shortDateFmt)} - {format(toDate, 'dd')}
