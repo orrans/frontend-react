@@ -241,21 +241,26 @@
 
     overscroll-behavior-y: contain;
     scrollbar-gutter: stable;
-    scrollbar-width: thin;
-    scrollbar-color: var(--gray2) transparent;
 }
 
 .stay-search-container .search-modal-dropdown.loc::-webkit-scrollbar {
-    width: 6px;
+    width: 14px;
 }
 
 .stay-search-container .search-modal-dropdown.loc::-webkit-scrollbar-track {
     background: transparent;
 }
 
+.stay-search-container .search-modal-dropdown.loc::-webkit-scrollbar-button {
+    display: block;
+    height: 18px;
+}
+
 .stay-search-container .search-modal-dropdown.loc::-webkit-scrollbar-thumb {
     background-color: var(--gray2);
-    border-radius: 3px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
 }
 
 .stay-search-container .search-modal-dropdown.guests {
