@@ -64,6 +64,7 @@ export function AppHeader() {
                             {isMenuOpen && (
                                 <div className="user-nav-modal">
                                     <Link to="#" className="nav-item">Wishlists</Link>
+                                    <Link to="#" className="nav-item">Trips</Link>
                                     <Link to="#" className="nav-item">Profiles</Link>
                                     <div className="divider"></div>
                                     <Link to="#" className="nav-item">Log out</Link>
