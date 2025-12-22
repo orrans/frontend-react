@@ -1,14 +1,9 @@
-import {
-    AdvancedMarker,
-    APIProvider,
-    InfoWindow,
-    Map,
-    useMap,
-} from '@vis.gl/react-google-maps'
+import { AdvancedMarker, APIProvider, InfoWindow, Map, useMap } from '@vis.gl/react-google-maps'
 import { differenceInDays } from 'date-fns'
 import { useEffect, useState } from 'react'
 import { formatPrice } from '../services/util.service'
 import { StayPreview } from './StayPreview'
+import { ClearIcon } from './icons/ClearIcon.jsx'
 const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
 export function GoogleMap({ stays, fromDate, toDate }) {
@@ -37,7 +32,6 @@ export function GoogleMap({ stays, fromDate, toDate }) {
         return null
     }
 
-
     return (
         <section className="google-map-container">
             <APIProvider apiKey={API_KEY}>
@@ -53,22 +47,28 @@ export function GoogleMap({ stays, fromDate, toDate }) {
                                 key={stay._id}
                                 position={stay.loc}
                                 onClick={() => setSelectedStay(stay)}>
-                                <div className="map-marker">{formatPrice(stay.price * days)}</div>
+                                <div
+                                    className={`map-marker ${
+                                        selectedStay?._id === stay._id ? 'selected-marker' : ''
+                                    }`}>
+                                    {formatPrice(stay.price * days)}
+                                </div>
                             </AdvancedMarker>
                         ))}
                         {selectedStay && (
-                            <InfoWindow 
-                                position={selectedStay.loc} 
-                                onCloseClick={() => setSelectedStay(null)}>
+                            <AdvancedMarker position={selectedStay.loc}>
                                 <div className="map-stay-preview">
-                                    <StayPreview 
-                                        stay={selectedStay} 
-                                        fromDate={fromDate} 
+                                    <button className="close-marker">
+                                        <ClearIcon onClick={() => setSelectedStay(null)} />
+                                    </button>
+                                    <StayPreview
+                                        stay={selectedStay}
+                                        fromDate={fromDate}
                                         toDate={toDate}
                                         variant="explore"
                                     />
                                 </div>
-                            </InfoWindow>
+                            </AdvancedMarker>
                         )}
                     </Map>
                 </div>

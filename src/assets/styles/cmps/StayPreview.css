@@ -63,7 +63,7 @@
             inset: 0;
             width: 100%;
 
-            .favorite {
+            .favorite-icon-container {
                 position: absolute;
                 right: 12px;
                 top: 12px;

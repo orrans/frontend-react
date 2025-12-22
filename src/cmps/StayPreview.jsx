@@ -16,15 +16,17 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
         <Link to={`/stay/${stay._id}`} target="_blank" className="stay-preview">
             <div className="stay-inner-img">
                 <div className="img-overlay">
-                    <HeartIcon
-                        className="favorite"
-                        onClick={(ev) => {
-                            ev.preventDefault()
-                            ev.stopPropagation()
-                            setIsFavorite((prev) => !prev)
-                        }}
-                        fill={isFavorite ? `var(--clr-brand)` : undefined}
-                    />
+                    <div className="favorite-icon-container">
+                        <HeartIcon
+                            className="favorite"
+                            onClick={(ev) => {
+                                ev.preventDefault()
+                                ev.stopPropagation()
+                                setIsFavorite((prev) => !prev)
+                            }}
+                            fill={isFavorite ? `var(--clr-brand)` : undefined}
+                        />
+                    </div>
                 </div>
                 {variant === 'explore' && stay.imgUrls && stay.imgUrls.length > 0 && (
                     <img src={stay.imgUrls[0]} alt={stay.name} />
@@ -42,7 +44,7 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
                 {variant === 'filtered' && (
                     <div className="filtered-summary">
                         <span>{stay.summary}</span>
-                        <span className='filtered-beds-capacity'>
+                        <span className="filtered-beds-capacity">
                             {stay.beds}&nbsp;·&nbsp;{stay.bedrooms}
                         </span>
                         {/* <span className="filtered-dates">
