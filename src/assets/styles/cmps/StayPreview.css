@@ -35,6 +35,15 @@
         font-weight: 400;
         font-size: 0.9375rem;
         line-height: 1.18;
+
+        .stay-summary-content {
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; /* The number of lines after which to clamp the text */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     .stay-inner-details {
