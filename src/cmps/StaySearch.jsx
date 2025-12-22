@@ -152,7 +152,7 @@ export function StaySearch() {
         navigate({
             pathname: '/stay',
             search: `?${createSearchParams(params)}`,
-        })
+        }, { replace: true })
     }
 
     function formatDate(date) {
