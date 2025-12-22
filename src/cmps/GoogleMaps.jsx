@@ -17,7 +17,7 @@ export function GoogleMap({ stays, fromDate, toDate }) {
             if (!map || !stays.length) return
 
             const bounds = new google.maps.LatLngBounds()
-            stays.forEach((stay) => bounds.extend(stay.loc))
+            stays.forEach((stay) => bounds.extend(fixLoc(stay.loc)))
 
             map.fitBounds(bounds)
 
@@ -45,7 +45,7 @@ export function GoogleMap({ stays, fromDate, toDate }) {
                         {stays.map((stay) => (
                             <AdvancedMarker
                                 key={stay._id}
-                                position={stay.loc}
+                                position={fixLoc(stay.loc)}
                                 onClick={() => setSelectedStay(stay)}>
                                 <div
                                     className={`map-marker ${
@@ -56,7 +56,7 @@ export function GoogleMap({ stays, fromDate, toDate }) {
                             </AdvancedMarker>
                         ))}
                         {selectedStay && (
-                            <AdvancedMarker position={selectedStay.loc}>
+                            <AdvancedMarker position={fixLoc(selectedStay.loc)}>
                                 <div className="map-stay-preview">
                                     <button className="close-marker">
                                         <ClearIcon onClick={() => setSelectedStay(null)} />
@@ -75,4 +75,8 @@ export function GoogleMap({ stays, fromDate, toDate }) {
             </APIProvider>
         </section>
     )
+}
+
+function fixLoc(loc) {
+    return { lng: loc.lat, lat: loc.lng }
 }
