@@ -2,6 +2,7 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { stayService } from '../services/stay'
+import { StarIcon } from '../cmps/icons/StarIcon'
 
 export function StayDetails() {
   const { stayId } = useParams()
@@ -138,6 +139,8 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
       </div>
     </div>
 
+{/* the new div  */}
+{/* <div className="stay-overview"> */}
     <div className="stay-details-layout">
 
       <div className="stay-details-main">
@@ -151,11 +154,17 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 </p>
 
 <div className="stay-rating-row">
-  <span className="rating">★ 4.89</span>
+  <span className="rating">
+  <StarIcon size={8} />
+  <span>4.89</span>
+</span>
+
   <span className="divider">|</span>
   <span className="reviews">116 reviews</span>
 </div>
 
+{/* end of new div  */}
+{/* </div> */}
 
 <section className="stay-host">
   <img
@@ -229,7 +238,7 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
                 <span>31.01.2026</span>
               </div>
               <div>
-                <label>CHECK-OUT</label>
+                <label>CHECKOUT</label>
                 <span>05.02.2026</span>
               </div>
             </div>
