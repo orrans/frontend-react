@@ -3,7 +3,7 @@
 }
 
 :root {
-    --font-primary: 'Cereal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-primary: 'Cereal', sans-serif;
 }
 
 

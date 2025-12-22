@@ -20,7 +20,7 @@
 }
 
 .stay-search-container .search-bar.bar-active {
-    background-color: var(--clr-bg-gray);
+    background-color: var(--clr-divider);
 }
 
 .stay-search-container .search-item {
@@ -44,7 +44,7 @@
 }
 
 .stay-search-container .search-bar.bar-active .search-item:not(.active):hover {
-    background-color: var(--gray1);
+    background-color: var(--clr-bg-gray);
 }
 
 .stay-search-container .search-item.active {
