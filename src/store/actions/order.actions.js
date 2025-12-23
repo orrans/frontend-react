@@ -1,4 +1,4 @@
-import { orderService } from '../../services/order/order.service.remote.js'
+import { orderService } from '../../services/order/order.index.js'
 import { store } from '../store'
 import {
     ADD_ORDER,
@@ -77,41 +77,41 @@ export async function loadHostOrders(hostId) {
 function getCmdSetOrders(orders) {
     return {
         type: SET_ORDERS,
-        orders
+        orders,
     }
 }
 
 function getCmdSetUserOrders(orders) {
     return {
         type: SET_USER_ORDERS,
-        orders
+        orders,
     }
 }
 
 function getCmdSetHostOrders(orders) {
     return {
         type: SET_HOST_ORDERS,
-        orders
+        orders,
     }
 }
 
 function getCmdAddOrder(order) {
     return {
         type: ADD_ORDER,
-        order
+        order,
     }
 }
 
 function getCmdUpdateOrder(order) {
     return {
         type: UPDATE_ORDER,
-        order
+        order,
     }
 }
 
 function getCmdRemoveOrder(orderId) {
     return {
         type: REMOVE_ORDER,
-        orderId
+        orderId,
     }
 }
