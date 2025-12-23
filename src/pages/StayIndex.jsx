@@ -3,12 +3,14 @@ import { useSelector } from 'react-redux'
 import { loadStays } from '../store/actions/stay.actions'
 import { StayExploreList } from '../cmps/StayExploreList.jsx'
 import { groupBy } from '../services/util.service.js'
+import { loadOrders } from '../store/actions/order.actions.js'
 
 export function StayIndex() {
     const stays = useSelector((storeState) => storeState.stayModule.stays)
 
     useEffect(() => {
         loadStays()
+        loadOrders()
     }, [])
 
     const groups = groupBy(stays, 'loc.country')
