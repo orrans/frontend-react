@@ -3,6 +3,7 @@ import { useNavigate, createSearchParams, useLocation } from 'react-router-dom'
 import { DatePicker } from './DatePicker.jsx'
 import { GuestCounterRow } from './GuestCounterRow.jsx'
 import { ClearIcon } from './icons/ClearIcon.jsx'
+import { setFilterBy } from '../store/actions/stay.actions.js'
 
 const POPULAR_DESTINATIONS = [
     "I'm flexible",
@@ -138,6 +139,15 @@ export function StaySearch() {
 
         // Close any open modals
         setActiveField(null)
+
+        const filterBy = {
+            loc,
+            checkIn: dateRange.start,
+            checkOut: dateRange.end,
+            guests: guests.adults + guests.children + guests.infants,
+            pets: guests.pets
+        }
+        setFilterBy(filterBy)
 
         const params = {
             loc,
