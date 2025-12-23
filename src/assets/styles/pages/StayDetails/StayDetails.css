@@ -6,6 +6,7 @@
 @import './StayDescription.css';
 @import './StaySleep.css';
 @import './StayAmenities.css';
+@import './PlatypusLoader.css';
 
 .modal-overlay {
     position: fixed;

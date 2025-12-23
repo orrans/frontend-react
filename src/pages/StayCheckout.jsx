@@ -27,7 +27,7 @@ export function StayCheckout() {
 
       <header className="checkout-header">
         <button className="back-btn" onClick={() => navigate(-1)}>
-  <ReserveBackIcon />
+  <ReserveBackIcon className="ResereveBackIcon" stroke='black'/>
 </button>
 
 

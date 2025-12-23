@@ -1,0 +1,42 @@
+.platypus-loader {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platypus {
+  overflow: visible;
+  animation: plat-walk 900ms ease-in-out infinite;
+}
+
+.platypus .stroke {
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.platypus .leg {
+  transform-origin: 50% 60%;
+}
+
+.platypus .leg1 { animation: leg 450ms ease-in-out infinite; }
+.platypus .leg2 { animation: leg 450ms ease-in-out infinite 225ms; }
+.platypus .leg3 { animation: leg 450ms ease-in-out infinite; }
+.platypus .leg4 { animation: leg 450ms ease-in-out infinite 225ms; }
+
+@keyframes leg {
+  0%, 100% { transform: rotate(10deg) translateY(0); }
+  50%      { transform: rotate(-14deg) translateY(1px); }
+}
+
+@keyframes plat-walk {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  50%      { transform: translateX(3px) translateY(1px); }
+}
+
+.loader-center {
+  display: grid;
+  place-items: center;
+  min-height: 40vh;
+}

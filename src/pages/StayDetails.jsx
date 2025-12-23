@@ -5,6 +5,10 @@ import { stayService } from '../services/stay/stay.service.local'
 
 import { StarIcon } from '../cmps/icons/StarIcon'
 
+import { PlatypusLoader } from '../cmps/PlatypusLoader'
+
+
+
 import {
   AirConditioning,
   Dryer,
@@ -93,12 +97,6 @@ const getAmenityIcon = (amenity) =>
   }
 
   
-  //   For demo purposes
-  // const stayType = 'Apartment'
-  // const hostName = 'Platy'
-  // const hostYears = 8
-
-  
 
   const [isAmenitiesOpen, setIsAmenitiesOpen] = useState(false)
   const [isDescOpen, setIsDescOpen] = useState(false)
@@ -126,10 +124,16 @@ Azure Cliff Retreat is more than just a place to stay — it is an invitation to
 
 Book your stay through Airbnb or Booking and allow yourself to experience a dream vacation where calm, beauty, and inspiration come together above the sea.
   `
-//   for the future 
-//   const description = stay.description
 
-  if (!stay) return <div>Loading...</div>
+  // if (!stay) return <div>Loading...</div>
+
+if (!stay) {
+  return (
+    <div className="loader-center">
+      <PlatypusLoader size={72} />
+    </div>
+  )
+}
 
   const amenities = stay.amenities || []
 
@@ -171,10 +175,9 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 </p>
 
 <p className="stay-capacity">
-  {stay.capacity} guests <span className="dot">·</span>
-  {stay.bedrooms} <span className="dot">·</span>
-  {stay.beds} <span className="dot">·</span>
-  1 bath
+  {stay.capacity} guests&nbsp;·&nbsp;
+  {stay.bedrooms} bedroom{stay.bedrooms !== 1 ? 's' : ''}&nbsp;·&nbsp;
+  {stay.bathrooms} bathroom{stay.bathrooms !== 1 ? 's' : ''}
 </p>
 
 <div className="stay-rating-row">
@@ -182,9 +185,7 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
     <StarIcon size={8} />
     <span>4.73</span>
   </span>
-
-  <span className="dot">·</span>
-
+  &nbsp;·&nbsp;
   <span className="reviews">
     {stay.reviews?.length || 0} reviews
   </span>
