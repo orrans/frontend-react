@@ -4,6 +4,13 @@ import { useEffect, useState } from 'react'
 import { stayService } from '../services/stay'
 import { StarIcon } from '../cmps/icons/StarIcon'
 import { PetsIcon } from '../cmps/icons/amenities/PetsIcon'
+import { Wifi } from '../cmps/icons/amenities/Wifi'
+import { FreeParking } from '../cmps/icons/amenities/FreeParking'
+import { Kitchen } from '../cmps/icons/amenities/Kitchen'
+import { AirConditioning } from '../cmps/icons/amenities/AirConditioning'
+import { TV } from '../cmps/icons/amenities/TV'
+import { Washer } from '../cmps/icons/amenities/Washer'
+import { Dryer } from '../cmps/icons/amenities/Dryer'
 import { CheckIn } from '../cmps/icons/highlights/CheckIn'
 import { GreatLocation } from '../cmps/icons/highlights/GreatLocation'
 import { RemoteWork } from '../cmps/icons/highlights/RemoteWork'
@@ -16,15 +23,16 @@ export function StayDetails() {
 // need to change icons
 
   const AMENITY_ICON_MAP = {
-  Wifi: '📶',
-  TV: '📺',
-  Kitchen: '🍳',
-  'Air conditioning': '❄️',
+  Wifi: <Wifi/>,
+  'Free parking': <FreeParking/>,
+  TV: <TV/>,
+  Kitchen: <Kitchen/>,
+  'Air conditioning': <AirConditioning/>,
   Elevator: '🛗',
   'Free parking': '🚗',
   Pool: '🏊‍♂️',
-  Washer: '🧺',
-  Dryer: '🧺',
+  Washer: <Washer/>,
+  Dryer: <Dryer/>,
   Fireplace: '🔥',
   'Outdoor shower': '🚿',
 }
