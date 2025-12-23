@@ -1,4 +1,4 @@
-import { orderService } from '../../services/order/order.index.js'
+import { orderService } from '../../services/order/'
 import { store } from '../store'
 import {
     ADD_ORDER,
