@@ -1,12 +1,15 @@
 import { storageService } from '../async-storage.service'
-import { data } from '../../assets/data/order.json'
+import orderData from '../../assets/data/order.json'
 const STORAGE_KEY = 'order'
 
 createOrders()
 
 export const orderServiceLocal = {
-    saveOrder,
+    save,
     query,
+    remove,
+    getUserOrders,
+    getHostOrders,
 }
 async function query(filterBy = {}) {
     let orders = await storageService.query(STORAGE_KEY)
@@ -30,7 +33,7 @@ async function query(filterBy = {}) {
     return orders
 }
 
-function saveOrder(order) {
+function save(order) {
     if (order._id) {
         return storageService.put(STORAGE_KEY, order)
     } else {
@@ -38,11 +41,26 @@ function saveOrder(order) {
     }
 }
 
+function remove(orderId) {
+    return storageService.remove(STORAGE_KEY, orderId)
+}
+
+async function getUserOrders(userId) {
+    const orders = await storageService.query(STORAGE_KEY)
+    return orders.filter((order) => order.guest._id === userId)
+}
+
+async function getHostOrders(hostId) {
+    const orders = await storageService.query(STORAGE_KEY)
+    return orders.filter((order) => order.host._id === hostId)
+}
+
 async function createOrders() {
     var orders = await storageService.query(STORAGE_KEY)
-    if (!orders.length) {
-        const orders = data.orders
-        console.log(orders)
-        storageService.save(STORAGE_KEY, orders)
+    if (!orders || !orders.length) {
+        console.log('Creating orders from JSON data:', orderData)
+        for (const order of orderData) {
+            await storageService.post(STORAGE_KEY, order)
+        }
     }
 }
