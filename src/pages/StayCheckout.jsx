@@ -10,6 +10,7 @@ export function StayCheckout() {
   const [stay, setStay] = useState(null)
   const [isSuccessOpen, setIsSuccessOpen] = useState(false)
 
+  
 
   useEffect(() => {
     loadStay()
@@ -21,6 +22,8 @@ export function StayCheckout() {
   }
 
   if (!stay) return <div>Loading...</div>
+
+  
 
   return (
     <section className="stay-checkout">

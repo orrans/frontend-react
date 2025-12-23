@@ -6,6 +6,8 @@ import { stayService } from '../services/stay/stay.service.local'
 import { StarIcon } from '../cmps/icons/StarIcon'
 
 import { PlatypusLoader } from '../cmps/PlatypusLoader'
+import { UseBookingDetails } from '../customHooks/UseBookingDetails'
+import { useLocation } from 'react-router-dom'
 
 
 
@@ -126,14 +128,16 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   `
 
   // if (!stay) return <div>Loading...</div>
-
-if (!stay) {
-  return (
-    <div className="loader-center">
+  
+  const booking = UseBookingDetails(stay?.price)
+  if (!stay) {
+    return (
+      <div className="loader-center">
       <PlatypusLoader size={72} />
     </div>
   )
 }
+
 
   const amenities = stay.amenities || []
 
@@ -254,10 +258,25 @@ if (!stay) {
         {/* test */}
         <div className="booking-sticky">
         <div className="booking-card">
-          <div className="booking-price">
-            <span className="price">$5,992</span>
-            <span className="sub"> for 5 nights</span>
-          </div>
+
+         <div className="booking-price">
+  {booking.nights === 0 ? (
+    <span className="price-placeholder">
+      Add dates for prices
+    </span>
+  ) : (
+    <>
+      <span>
+        {booking.nights} nights × ${stay.price.toLocaleString()}
+      </span>
+      <span>
+        ${booking.totalPrice.toLocaleString()}
+      </span>
+    </>
+  )}
+</div>
+
+
 
           <div className="booking-box">
             <div className="booking-dates">
