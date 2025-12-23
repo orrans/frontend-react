@@ -11,6 +11,7 @@ export const stayService = {
     save,
     remove,
     addStayMsg,
+    getFilterFromParams,
 }
 window.cs = stayService
 
@@ -36,6 +37,29 @@ async function query(filterBy = {}) {
     }
 
     return stays
+}
+
+function getFilterFromParams(searchParams) {
+    const loc = searchParams.get('loc') || ''
+    const checkInRaw = searchParams.get('checkIn')
+    const checkOutRaw = searchParams.get('checkOut')
+
+    const checkIn = checkInRaw ? new Date(checkInRaw) : null
+    const checkOut = checkOutRaw ? new Date(checkOutRaw) : null
+
+    const adults = +searchParams.get('adults') || 0
+    const children = +searchParams.get('children') || 0
+    const infants = +searchParams.get('infants') || 0
+    const pets = +searchParams.get('pets') || 0
+    const guests = adults + children + infants
+
+    return {
+        loc,
+        checkIn,
+        checkOut,
+        guests,
+        pets,
+    }
 }
 
 function getById(stayId) {

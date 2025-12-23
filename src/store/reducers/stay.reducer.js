@@ -4,10 +4,12 @@ export const REMOVE_STAY = 'REMOVE_STAY'
 export const ADD_STAY = 'ADD_STAY'
 export const UPDATE_STAY = 'UPDATE_STAY'
 export const ADD_STAY_MSG = 'ADD_STAY_MSG'
+export const SET_FILTER_BY = 'SET_FILTER_BY'
 
 const initialState = {
     stays: [],
-    stay: null
+    stay: null,
+    filterBy: {}
 }
 
 export function stayReducer(state = initialState, action) {
@@ -37,6 +39,9 @@ export function stayReducer(state = initialState, action) {
                 newState = { ...state, stay: { ...state.stay, msgs: [...state.stay.msgs || [], action.msg] } }
                 break
             }
+        case SET_FILTER_BY:
+            newState = { ...state, filterBy: { ...state.filterBy, ...action.filterBy } }
+            break
         default:
     }
     return newState
@@ -71,4 +76,3 @@ export function stayReducer(state = initialState, action) {
 //     state = stayReducer(state, { type: ADD_STAY_MSG, stayId: stay1._id, msg })
 //     console.log('After ADD_STAY_MSG:', state)
 // }
-
