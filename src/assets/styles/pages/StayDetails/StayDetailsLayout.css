@@ -78,3 +78,82 @@
 }
 
 
+/* reviews */
+.stay-reviews {
+  grid-column: 2;
+  column-count: 2;
+  column-gap: 32px;
+}
+
+
+.review-card {
+  display: inline-block; 
+  width: 100%;
+  margin: 0 0 32px;
+
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+
+.review-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.show-more {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #222222;
+}
+
+
+.stay-amenities::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #ddd;
+  margin-bottom: 30px;
+}
+ /* the map area  */
+
+ .stay-location {
+  grid-column: 2;
+  margin-bottom: 64px;
+}
+
+.location-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.location-subtitle {
+  color: #717171;
+  margin-bottom: 24px;
+}
+
+.location-map-container {
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #eaeaea;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #eaeaea;
+}

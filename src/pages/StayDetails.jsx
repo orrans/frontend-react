@@ -15,6 +15,9 @@ import { CheckIn } from '../cmps/icons/highlights/CheckIn'
 import { GreatLocation } from '../cmps/icons/highlights/GreatLocation'
 import { RemoteWork } from '../cmps/icons/highlights/RemoteWork'
 
+import { StayLocationMap } from '../cmps/StayLocationMap'
+
+
 export function StayDetails() {
   const { stayId } = useParams()
   const [stay, setStay] = useState(null)
@@ -28,13 +31,13 @@ export function StayDetails() {
   TV: <TV/>,
   Kitchen: <Kitchen/>,
   'Air conditioning': <AirConditioning/>,
-  Elevator: '🛗',
-  'Free parking': '🚗',
-  Pool: '🏊‍♂️',
+  // Elevator: '🛗',
+  // 'Free parking': '🚗',
+  // Pool: '🏊‍♂️',
   Washer: <Washer/>,
   Dryer: <Dryer/>,
-  Fireplace: '🔥',
-  'Outdoor shower': '🚿',
+  // Fireplace: '🔥',
+  // 'Outdoor shower': '🚿',
 }
 
 const getAmenityIcon = (amenity) =>
@@ -84,9 +87,9 @@ const getAmenityIcon = (amenity) =>
 
   
   //   For demo purposes
-  const stayType = 'Apartment'
-  const hostName = 'Platy'
-  const hostYears = 8
+  // const stayType = 'Apartment'
+  // const hostName = 'Platy'
+  // const hostYears = 8
 
   
 
@@ -130,9 +133,10 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 
 <header className="stay-header">
   <h1 className="stay-title-main">
-    Cozy and comfortable place on {stay.loc.city}, {stay.loc.country}
+    {stay.name}
   </h1>
 </header>
+
 
 
 
@@ -156,17 +160,27 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 <div className="stay-overview">
 
 <p className="stay-subtitle">
-  Apartment, {stay.loc.city}, {stay.loc.country}
+  {stay.type} in {stay.loc.city}, {stay.loc.country}
+</p>
+
+<p className="stay-capacity">
+  {stay.capacity} guests <span className="dot">·</span>
+  {stay.bedrooms} <span className="dot">·</span>
+  {stay.beds} <span className="dot">·</span>
+  1 bath
 </p>
 
 <div className="stay-rating-row">
   <span className="rating">
-  <StarIcon size={8} />
-  <span>4.89</span>
-</span>
+    <StarIcon size={8} />
+    <span>4.73</span>
+  </span>
 
-  <span className="divider">|</span>
-  <span className="reviews">116 reviews</span>
+  <span className="dot">·</span>
+
+  <span className="reviews">
+    {stay.reviews?.length || 0} reviews
+  </span>
 </div>
 
 </div>
@@ -174,15 +188,16 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 <section className="stay-host">
   <img
     className="host-avatar"
-    src="/img/platy.jpg"
-    alt="Host Platy"
+    src={'/img/platy.jpg'}
+    alt={stay.host.fullname}
   />
 
   <div className="host-info">
-    <h3>Hosted by Platy</h3>
-    <p>Superhost · 8 years hosting</p>
+    <h3>Hosted by {stay.host.fullname}</h3>
   </div>
 </section>
+
+
 
 
         <section className="stay-highlights">
@@ -329,6 +344,42 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 </button>
 
 </section>
+
+<section className="stay-reviews">
+  {stay.reviews.map(review => (
+    <article key={review.id} className="review-card">
+      <header className="review-header">
+        <img
+          className="review-avatar"
+          src={'/img/platy.jpg'}
+          alt={review.by.fullname}
+        />
+        <div>
+          <h4>{review.by.fullname}</h4>
+          <span>★★★★★</span>
+        </div>
+      </header>
+
+      <p>{review.txt}</p>
+
+      <button className="show-more">Show more</button>
+    </article>
+  ))}
+</section>
+
+<section className="stay-location">
+  <h2 className="location-title">Where you’ll be</h2>
+
+  <p className="location-subtitle">
+    {stay.loc.city}, {stay.loc.country}
+  </p>
+
+  <div className="location-map-container">
+    {/* the map will be here  */}
+<StayLocationMap stay={stay} />
+  </div>
+</section>
+
 
 {isAmenitiesOpen && (
   <div className="modal-overlay" onClick={() => setIsAmenitiesOpen(false)}>
