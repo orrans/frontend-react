@@ -39,6 +39,7 @@ export function GoogleMap({ stays, fromDate, toDate }) {
                     <Map
                         className="map"
                         defaultZoom={12}
+                        defaultCenter={{ lat: 32.0853, lng: 34.7818 }}
                         mapId="cce1a61f00cdb4a0a238fe28"
                         disableDefaultUI={true}>
                         <MapHandler stays={stays} />
