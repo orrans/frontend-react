@@ -2,7 +2,7 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { stayService } from '../services/stay/stay.service.local'
-
+import { StayHighlights } from '../cmps/StayHighlights'
 import { StarIcon } from '../cmps/icons/StarIcon'
 
 import { PlatypusLoader } from '../cmps/PlatypusLoader'
@@ -21,12 +21,6 @@ import {
   Washer,
   Wifi
 } from '../cmps/icons/amenities'
-
-import { 
-  CheckIn,
-GreatLocation,
-RemoteWork
- } from '../cmps/icons/highlights'
 
 import { StayLocationMap } from '../cmps/StayLocationMap'
 
@@ -201,6 +195,7 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   <img
     className="host-avatar"
     src={'/img/platy.jpg'}
+    // src={stay.host.pictureUrl}
     alt={stay.host.fullname}
   />
 
@@ -209,34 +204,8 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   </div>
 </section>
 
+<StayHighlights />
 
-
-
-        <section className="stay-highlights">
-          <div className="highlight">
-            <span className="icon"><GreatLocation/></span>
-            <div>
-              <h4>Great location</h4>
-              <p>Guests who stayed here in the past year loved the location.</p>
-            </div>
-          </div>
-
-          <div className="highlight">
-            <span className="icon"><CheckIn/></span>
-            <div>
-              <h4>Self check-in</h4>
-              <p>You can check in with the building staff.</p>
-            </div>
-          </div>
-
-          <div className="highlight">
-            <span className="icon"><RemoteWork/></span>
-            <div>
-              <h4>Great for remote work</h4>
-              <p>Fast wifi at 52 Mbps, plus a dedicated workspace.</p>
-            </div>
-          </div>
-        </section>
 
 <section className="stay-description">
   <p className="description-preview">
@@ -267,7 +236,7 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
   ) : (
     <>
       <span>
-        {booking.nights} nights × ${stay.price.toLocaleString()}
+        {booking.nights} nights
       </span>
       <span>
         ${booking.totalPrice.toLocaleString()}
@@ -282,11 +251,21 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
             <div className="booking-dates">
               <div>
                 <label>CHECK-IN</label>
-                <span>31.01.2026</span>
+                <span>
+  {booking.checkIn
+    ? new Date(booking.checkIn).toLocaleDateString('en-GB')
+    : 'Add date'}
+</span>
+
               </div>
               <div>
                 <label>CHECKOUT</label>
-                <span>05.02.2026</span>
+                <span>
+  {booking.checkOut
+    ? new Date(booking.checkOut).toLocaleDateString('en-GB')
+    : 'Add date'}
+</span>
+
               </div>
             </div>
 
@@ -403,7 +382,7 @@ Book your stay through Airbnb or Booking and allow yourself to experience a drea
 
   <div className="location-map-container">
     {/* the map will be here  */}
-<StayLocationMap stay={stay} />
+{/* <StayLocationMap stay={stay} /> */}
   </div>
 </section>
 
