@@ -16,6 +16,7 @@
         display: block;
         aspect-ratio: 250 / 240;
         border-radius: 20px;
+        object-fit: cover;
     }
     h4 {
         margin-bottom: 0;
@@ -89,6 +90,15 @@
     .filtered-title {
         display: flex;
         justify-content: space-between;
+        font-size: 0.9375rem;
+    }
+
+    .explore-title {
+        font-size: 0.8125rem;
+    }
+
+    .explore-details {
+        font-size: 0.75rem;
     }
 
     .filtered-beds-capacity {

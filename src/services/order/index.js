@@ -3,10 +3,20 @@ const { DEV, VITE_LOCAL } = import.meta.env
 import { orderServiceLocal as local } from './order.service.local'
 import { orderService as remote } from './order.service.remote'
 
+// index.js
+
 function getEmptyOrder() {
     return {
-        hostId: '',
-        buyerId: '',
+        _id: '',
+        hostId: {
+            _id: '',
+            fullname: '',
+            imgUrl: '',
+        },
+        guest: {
+            _id: '',
+            fullname: '',
+        },
         totalPrice: 0,
         startDate: '',
         endDate: '',
@@ -21,6 +31,7 @@ function getEmptyOrder() {
             name: '',
             price: 0,
         },
+        msgs: [],
         status: 'pending',
     }
 }

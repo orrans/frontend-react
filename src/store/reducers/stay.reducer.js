@@ -12,6 +12,7 @@ const initialState = {
     filterBy: {}
 }
 
+
 export function stayReducer(state = initialState, action) {
     var newState = state
     var stays
