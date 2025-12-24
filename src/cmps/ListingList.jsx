@@ -16,7 +16,7 @@ export function ListingList({}) {
 
     if (!listings.length) return 'loading...'
     return (
-        <div className="listings-table">
+        <div className="listing-table">
             <table>
                 <thead>
                     <tr>
