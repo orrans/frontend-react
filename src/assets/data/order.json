@@ -1,7 +1,7 @@
 [
     {
         "_id": "o1225",
-        "host": {
+        "hostId": {
             "_id": "622f3403e36c59e6164faf93",
             "fullname": "Patty And Beckett",
             "imgUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small"
@@ -20,14 +20,14 @@
         "stay": {
             "_id": "622f337a75c7d36e498aaaf8",
             "name": "Westin Kaanapali KORVN 2BR",
-            "price": 595.0
+            "price": 595
         },
         "msgs": [],
         "status": "pending"
     },
     {
         "_id": "o1226",
-        "host": {
+        "hostId": {
             "_id": "622f3401e36c59e6164fabab",
             "fullname": "Ghislaine",
             "imgUrl": "https://a0.muscache.com/im/pictures/9e0eb9da-8469-464c-8f02-638c9250b60f.jpg?aki_policy=profile_small"
@@ -46,14 +46,14 @@
         "stay": {
             "_id": "622f337a75c7d36e498aaaf9",
             "name": "Belle chambre à côté Metro Papineau",
-            "price": 30.0
+            "price": 30
         },
         "msgs": [],
         "status": "approved"
     },
     {
         "_id": "o1227",
-        "host": {
+        "hostId": {
             "_id": "622f3403e36c59e6164fb266",
             "fullname": "Manuela",
             "imgUrl": "https://a0.muscache.com/im/pictures/c8b1b9e3-0c77-48a4-9be4-5898da6a74c6.jpg?aki_policy=profile_small"
@@ -72,14 +72,14 @@
         "stay": {
             "_id": "622f337a75c7d36e498aaafa",
             "name": "M&M Space MM2  Apartamento no centro da cidade",
-            "price": 65.0
+            "price": 65
         },
         "msgs": [],
         "status": "approved"
     },
     {
         "_id": "o1228",
-        "host": {
+        "hostId": {
             "_id": "622f3402e36c59e6164fac46",
             "fullname": "Shaila",
             "imgUrl": "https://a0.muscache.com/im/pictures/5e3a9cc9-bbad-48c5-8618-d60e3edeeffc.jpg?aki_policy=profile_small"
@@ -98,25 +98,155 @@
         "stay": {
             "_id": "622f337a75c7d36e498aaafb",
             "name": "Fresh and modern 1BR in Bed-Stuy",
-            "price": 79.0
+            "price": 79
         },
         "msgs": [],
         "status": "pending"
     },
     {
         "_id": "o1229",
-        "host": {
-            "_id": "622f3403e36c59e6164faf93",
-            "fullname": "Patty And Beckett",
-            "imgUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small"
+        "hostId": {
+            "_id": "622f3407e36c59e6164fbdae",
+            "fullname": "Marián",
+            "imgUrl": "https://a0.muscache.com/im/users/31635864/profile_pic/1429604852/original.jpg?aki_policy=profile_small"
         },
         "guest": {
             "_id": "622f3403e36c59e6164fb204",
             "fullname": "Chris"
         },
-        "totalPrice": 4165,
+        "totalPrice": 160,
         "startDate": "2025/12/24",
-        "endDate": "2025/12/31",
+        "endDate": "2025/12/28",
+        "guests": {
+            "adults": 2,
+            "kids": 0
+        },
+        "stay": {
+            "_id": "622f337a75c7d36e498aaafc",
+            "name": "Habitación centro de Barcelona",
+            "price": 40
+        },
+        "msgs": [],
+        "status": "approved"
+    },
+    {
+        "_id": "o1230",
+        "hostId": {
+            "_id": "622f3404e36c59e6164fb63a",
+            "fullname": "Isabel",
+            "imgUrl": "https://a0.muscache.com/im/pictures/72a579ce-37d7-466e-9c25-9876ee8de037.jpg?aki_policy=profile_small"
+        },
+        "guest": {
+            "_id": "622f3405e36c59e6164fb87c",
+            "fullname": "Jonathan"
+        },
+        "totalPrice": 75,
+        "startDate": "2026/02/01",
+        "endDate": "2026/02/04",
+        "guests": {
+            "adults": 1,
+            "kids": 0
+        },
+        "stay": {
+            "_id": "622f337a75c7d36e498aaafd",
+            "name": "DOUBLE ROOM IN THE HEART OF BCN",
+            "price": 25
+        },
+        "msgs": [],
+        "status": "rejected"
+    },
+    {
+        "_id": "o1231",
+        "hostId": {
+            "_id": "622f3405e36c59e6164fb914",
+            "fullname": "Kevin",
+            "imgUrl": "https://a0.muscache.com/im/pictures/61b62b90-e38b-4609-a3c4-ff5ff06b5c08.jpg?aki_policy=profile_small"
+        },
+        "guest": {
+            "_id": "622f3403e36c59e6164fb110",
+            "fullname": "Maria Tereza"
+        },
+        "totalPrice": 550,
+        "startDate": "2026/04/10",
+        "endDate": "2026/04/15",
+        "guests": {
+            "adults": 2,
+            "kids": 1
+        },
+        "stay": {
+            "_id": "622f337a75c7d36e498aaafe",
+            "name": "Home, Sweet, Harlem. Welcome!",
+            "price": 110
+        },
+        "msgs": [],
+        "status": "pending"
+    },
+    {
+        "_id": "o1232",
+        "hostId": {
+            "_id": "622f3401e36c59e6164fab5c",
+            "fullname": "Apartments2Enjoy",
+            "imgUrl": "https://a0.muscache.com/im/pictures/f3e85f0c-e28d-4698-9da9-2f203aea1f3d.jpg?aki_policy=profile_small"
+        },
+        "guest": {
+            "_id": "622f3403e36c59e6164fb274",
+            "fullname": "Nicole"
+        },
+        "totalPrice": 203,
+        "startDate": "2026/03/15",
+        "endDate": "2026/03/22",
+        "guests": {
+            "adults": 2,
+            "kids": 0
+        },
+        "stay": {
+            "_id": "622f337a75c7d36e498aaaff",
+            "name": "Heroísmo IV",
+            "price": 29
+        },
+        "msgs": [],
+        "status": "approved"
+    },
+    {
+        "_id": "o1233",
+        "hostId": {
+            "_id": "622f3404e36c59e6164fb54f",
+            "fullname": "Patrícia Sousa Casimiro",
+            "imgUrl": "https://a0.muscache.com/im/pictures/87b9ccba-154a-4546-8cbe-8bdb25ddb36c.jpg?aki_policy=profile_small"
+        },
+        "guest": {
+            "_id": "622f3405e36c59e6164fb703",
+            "fullname": "Kim"
+        },
+        "totalPrice": 156,
+        "startDate": "2026/05/20",
+        "endDate": "2026/05/26",
+        "guests": {
+            "adults": 1,
+            "kids": 1
+        },
+        "stay": {
+            "_id": "622f337a75c7d36e498aab00",
+            "name": "Monte dos Burgos - Cosy Room",
+            "price": 26
+        },
+        "msgs": [],
+        "status": "pending"
+    },
+    {
+        "_id": "o1234",
+        "hostId": {
+            "_id": "622f3403e36c59e6164faf93",
+            "fullname": "Patty And Beckett",
+            "imgUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small"
+        },
+        "guest": {
+            "_id": "622f3401e36c59e6164fab5b",
+            "fullname": "Daniela"
+        },
+        "totalPrice": 2380,
+        "startDate": "2026/02/20",
+        "endDate": "2026/02/24",
         "guests": {
             "adults": 4,
             "kids": 2
@@ -124,14 +254,40 @@
         "stay": {
             "_id": "622f337a75c7d36e498aaaf8",
             "name": "Westin Kaanapali KORVN 2BR",
-            "price": 595.0
+            "price": 595
         },
         "msgs": [],
         "status": "approved"
     },
     {
-        "_id": "o1230",
-        "host": {
+        "_id": "o1235",
+        "hostId": {
+            "_id": "622f3403e36c59e6164fb266",
+            "fullname": "Manuela",
+            "imgUrl": "https://a0.muscache.com/im/pictures/c8b1b9e3-0c77-48a4-9be4-5898da6a74c6.jpg?aki_policy=profile_small"
+        },
+        "guest": {
+            "_id": "622f3407e36c59e6164fc004",
+            "fullname": "Kiesha"
+        },
+        "totalPrice": 260,
+        "startDate": "2026/06/01",
+        "endDate": "2026/06/05",
+        "guests": {
+            "adults": 2,
+            "kids": 1
+        },
+        "stay": {
+            "_id": "622f337a75c7d36e498aaafa",
+            "name": "M&M Space MM2  Apartamento no centro da cidade",
+            "price": 65
+        },
+        "msgs": [],
+        "status": "pending"
+    },
+    {
+        "_id": "o1236",
+        "hostId": {
             "_id": "622f3401e36c59e6164fabab",
             "fullname": "Ghislaine",
             "imgUrl": "https://a0.muscache.com/im/pictures/9e0eb9da-8469-464c-8f02-638c9250b60f.jpg?aki_policy=profile_small"
@@ -140,9 +296,9 @@
             "_id": "622f3405e36c59e6164fb87c",
             "fullname": "Jonathan"
         },
-        "totalPrice": 60,
-        "startDate": "2026/02/01",
-        "endDate": "2026/02/03",
+        "totalPrice": 90,
+        "startDate": "2026/07/10",
+        "endDate": "2026/07/13",
         "guests": {
             "adults": 1,
             "kids": 0
@@ -150,111 +306,85 @@
         "stay": {
             "_id": "622f337a75c7d36e498aaaf9",
             "name": "Belle chambre à côté Metro Papineau",
-            "price": 30.0
+            "price": 30
         },
         "msgs": [],
         "status": "rejected"
     },
     {
-        "_id": "o1231",
-        "host": {
-            "_id": "622f3403e36c59e6164fb266",
-            "fullname": "Manuela",
-            "imgUrl": "https://a0.muscache.com/im/pictures/c8b1b9e3-0c77-48a4-9be4-5898da6a74c6.jpg?aki_policy=profile_small"
-        },
-        "guest": {
-            "_id": "622f3403e36c59e6164fb110",
-            "fullname": "Maria Tereza"
-        },
-        "totalPrice": 195,
-        "startDate": "2026/04/10",
-        "endDate": "2026/04/13",
-        "guests": {
-            "adults": 2,
-            "kids": 1
-        },
-        "stay": {
-            "_id": "622f337a75c7d36e498aaafa",
-            "name": "M&M Space MM2  Apartamento no centro da cidade",
-            "price": 65.0
-        },
-        "msgs": [],
-        "status": "pending"
-    },
-    {
-        "_id": "o1232",
-        "host": {
+        "_id": "o1237",
+        "hostId": {
             "_id": "622f3402e36c59e6164fac46",
             "fullname": "Shaila",
             "imgUrl": "https://a0.muscache.com/im/pictures/5e3a9cc9-bbad-48c5-8618-d60e3edeeffc.jpg?aki_policy=profile_small"
         },
         "guest": {
-            "_id": "622f3403e36c59e6164fb274",
-            "fullname": "Nicole"
+            "_id": "622f3403e36c59e6164fb204",
+            "fullname": "Chris"
         },
-        "totalPrice": 553,
-        "startDate": "2026/03/15",
-        "endDate": "2026/03/22",
+        "totalPrice": 474,
+        "startDate": "2026/08/05",
+        "endDate": "2026/08/11",
         "guests": {
-            "adults": 2,
+            "adults": 3,
             "kids": 0
         },
         "stay": {
             "_id": "622f337a75c7d36e498aaafb",
             "name": "Fresh and modern 1BR in Bed-Stuy",
-            "price": 79.0
+            "price": 79
         },
         "msgs": [],
         "status": "approved"
     },
     {
-        "_id": "o1233",
-        "host": {
-            "_id": "622f3403e36c59e6164faf93",
-            "fullname": "Patty And Beckett",
-            "imgUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small"
+        "_id": "o1238",
+        "hostId": {
+            "_id": "622f3407e36c59e6164fbdae",
+            "fullname": "Marián",
+            "imgUrl": "https://a0.muscache.com/im/users/31635864/profile_pic/1429604852/original.jpg?aki_policy=profile_small"
         },
         "guest": {
-            "_id": "622f3405e36c59e6164fb703",
-            "fullname": "Kim"
+            "_id": "622f3403e36c59e6164fb110",
+            "fullname": "Maria Tereza"
         },
-        "totalPrice": 2975,
-        "startDate": "2026/05/20",
-        "endDate": "2026/05/25",
+        "totalPrice": 280,
+        "startDate": "2026/09/15",
+        "endDate": "2026/09/22",
         "guests": {
-            "adults": 3,
-            "kids": 1
+            "adults": 2,
+            "kids": 2
         },
         "stay": {
-            "_id": "622f337a75c7d36e498aaaf8",
-            "name": "Westin Kaanapali KORVN 2BR",
-            "price": 595.0
+            "_id": "622f337a75c7d36e498aaafc",
+            "name": "Habitación centro de Barcelona",
+            "price": 40
         },
         "msgs": [],
         "status": "pending"
     },
     {
-        "_id": "o1234",
-        "host": {
-            "_id": "622f3403e36c59e6164fb266",
-            "fullname": "Manuela",
-            "imgUrl": "https://a0.muscache.com/im/pictures/c8b1b9e3-0c77-48a4-9be4-5898da6a74c6.jpg?aki_policy=profile_small"
+        "_id": "o1239",
+        "hostId": {
+            "_id": "622f3405e36c59e6164fb914",
+            "fullname": "Kevin",
+            "imgUrl": "https://a0.muscache.com/im/pictures/61b62b90-e38b-4609-a3c4-ff5ff06b5c08.jpg?aki_policy=profile_small"
         },
         "guest": {
-            "_id": "622f3401e36c59e6164fab5b",
-            "fullname": "Daniela"
+            "_id": "622f3403e36c59e6164fb274",
+            "fullname": "Nicole"
         },
-        "totalPrice": 130,
-        "startDate": "2026/02/20",
-        "endDate": "2026/02/22",
+        "totalPrice": 330,
+        "startDate": "2026/10/01",
+        "endDate": "2026/10/04",
         "guests": {
-            "adults": 1,
-            "kids": 1
+            "adults": 2,
+            "kids": 0
         },
         "stay": {
-            "_id": "622f337a75c7d36e498aaafa",
-            "name": "M&M Space MM2  Apartamento no centro da cidade",
-            "price": 65.0
+            "_id": "622f337a75c7d36e498aaafe",
+            "name": "Home, Sweet, Harlem. Welcome!",
+            "price": 110
         },
         "msgs": [],
         "status": "approved"
