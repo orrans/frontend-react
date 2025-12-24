@@ -10,24 +10,26 @@ export function GoogleMap({ stays, fromDate, toDate }) {
     const [selectedStay, setSelectedStay] = useState(null)
     const days = differenceInDays(toDate, fromDate)
 
-    function MapHandler({ stays }) {
+    function MapHandler({ stays, selectedStay }) {
         const map = useMap()
 
         useEffect(() => {
-            if (!map || !stays.length) return
+            if (!map || !stays.length || selectedStay) return
 
             const bounds = new google.maps.LatLngBounds()
             stays.forEach((stay) => bounds.extend(fixLoc(stay.loc)))
-
             map.fitBounds(bounds)
 
-            if (stays.length === 1) {
-                const listener = google.maps.event.addListener(map, 'idle', () => {
-                    if (map.getZoom() > 15) map.setZoom(15)
-                    google.maps.event.removeListener(listener)
-                })
+        }, [map, stays]) 
+
+        useEffect(() => {
+            if (selectedStay && map) {
+                const stayLocation = fixLoc(selectedStay.loc)
+
+                map.panTo(stayLocation)
+                map.panBy(0, -150)
             }
-        }, [map, stays])
+        }, [selectedStay, map])
 
         return null
     }
@@ -42,7 +44,7 @@ export function GoogleMap({ stays, fromDate, toDate }) {
                         defaultCenter={{ lat: 32.0853, lng: 34.7818 }}
                         mapId="cce1a61f00cdb4a0a238fe28"
                         disableDefaultUI={true}>
-                        <MapHandler stays={stays} />
+                        <MapHandler stays={stays} selectedStay={selectedStay} />
                         {stays.map((stay) => (
                             <AdvancedMarker
                                 key={stay._id}

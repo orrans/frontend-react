@@ -4,6 +4,7 @@ export const REMOVE_ORDER = 'REMOVE_ORDER'
 export const SET_USER_ORDERS = 'SET_USER_ORDERS'
 export const SET_HOST_ORDERS = 'SET_HOST_ORDERS'
 export const UPDATE_ORDER = 'UPDATE_ORDER'
+export const UPDATE_ORDER_STATUS = 'UPDATE_ORDER_STATUS'
 
 const initialState = {
     orders: [],
@@ -22,6 +23,25 @@ export function orderReducer(state = initialState, action = {}) {
                 ...state,
                 orders: state.orders.map((order) =>
                     order._id === action.order._id ? action.order : order
+                ),
+                userOrders: state.userOrders.map((order) =>
+                    order._id === action.order._id ? action.order : order
+                ),
+                hostOrders: state.hostOrders.map((order) =>
+                    order._id === action.order._id ? action.order : order
+                ),
+            }
+        case UPDATE_ORDER_STATUS:
+            return {
+                ...state,
+                orders: state.orders.map((order) =>
+                    order._id === action.order._id ? { ...order, status: action.order.status } : order
+                ),
+                userOrders: state.userOrders.map((order) =>
+                    order._id === action.order._id ? { ...order, status: action.order.status } : order
+                ),
+                hostOrders: state.hostOrders.map((order) =>
+                    order._id === action.order._id ? { ...order, status: action.order.status } : order
                 ),
             }
         case REMOVE_ORDER:

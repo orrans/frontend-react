@@ -7,6 +7,7 @@ import {
     SET_USER_ORDERS,
     SET_HOST_ORDERS,
     UPDATE_ORDER,
+    UPDATE_ORDER_STATUS,
 } from '../reducers/order.reducer.js'
 
 function handleError(actionName, err) {
@@ -31,6 +32,16 @@ export async function updateOrder(order) {
         return updatedOrder
     } catch (err) {
         handleError('updateOrder', err)
+    }
+}
+
+export async function updateOrderStatus(orderId, status) {
+    try {
+        const updatedOrder = await orderService.updateStatus(orderId, status)
+        store.dispatch(getCmdUpdateOrderStatus(updatedOrder))
+        return updatedOrder
+    } catch (err) {
+        handleError('updateOrderStatus', err)
     }
 }
 
@@ -105,6 +116,13 @@ function getCmdAddOrder(order) {
 function getCmdUpdateOrder(order) {
     return {
         type: UPDATE_ORDER,
+        order,
+    }
+}
+
+function getCmdUpdateOrderStatus(order) {
+    return {
+        type: UPDATE_ORDER_STATUS,
         order,
     }
 }

@@ -6,6 +6,7 @@ export const orderService = {
     remove,
     getUserOrders,
     getHostOrders,
+    updateStatus,
 }
 
 function query(filterBy = {}) {
@@ -35,4 +36,8 @@ function getHostOrders(hostId) {
 
 function getUserOrders(userId) {
     return httpService.get(`order/${userId}/user-orders`)
+}
+
+function updateStatus(orderId, status) {
+    return httpService.patch(`order/${orderId}/status`, { status })
 }
