@@ -159,7 +159,8 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
           <section className="stay-host">
             <img
               className="host-avatar"
-              src={'/img/platy.jpg'}
+              // src={'/img/platy.jpg'}
+              src={`https://i.pravatar.cc/150?u=${Math.random()}`}
               alt={stay.host.fullname}
             />
             <div className="host-info">
@@ -274,37 +275,14 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
         </button>
       </section>
 
-{/* Review section  */}
-
-{/* <section className="stay-reviews">
-  {stay.reviews.slice(0, 6).map((review, idx) => (
-  <article key={review.id || idx} className="review-card">
-      <header className="review-header">
-        <img
-          className="review-avatar"
-          src={'/img/platy.jpg'}
-          alt={review.by.fullname}
-        />
-        <div>
-          <h4>{review.by.fullname}</h4>
-          <span><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/></span>
-        </div>
-      </header>
-
-      <p>{review.txt}</p>
-
-      <button className="show-more">Show more</button>
-    </article>
-  ))}
-</section> */}
-
 <section className="stay-reviews">
   {stay.reviews && stay.reviews.slice(0, 6).map((review, idx) => (
     <article key={review.id || idx} className="review-card">
       <header className="review-header">
         <img
           className="review-avatar"
-          src={'/img/platy.jpg'} 
+          // src={'/img/platy.jpg'} 
+          src={`https://i.pravatar.cc/150?u=${Math.random()}`}
           alt={review.by.fullname}
         />
         <div className="review-author-info">
