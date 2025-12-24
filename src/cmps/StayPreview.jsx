@@ -53,7 +53,7 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
                             {stay.loc.city}
                             <span className="filtered-rating">
                                 <StarIcon size={12} />
-                                &nbsp;4.93 (509)
+                                &nbsp;4.93&nbsp;(509)
                             </span>
                         </h4>
                         <div className="filtered-summary">
