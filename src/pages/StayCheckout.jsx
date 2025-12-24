@@ -2,7 +2,8 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { stayService } from '../services/stay'
 import { ReserveBackIcon } from '../cmps/icons/ReserveBackIcon'
-
+import { orderServiceLocal } from '../services/order/order.service.local.js'
+// import { userService } from '../services/user.service.js' 
 
 export function StayCheckout() {
   const { stayId } = useParams()
@@ -31,6 +32,42 @@ export function StayCheckout() {
   async function loadStay() {
     const stay = await stayService.getById(stayId)
     setStay(stay)
+  }
+
+async function onConfirmBooking() {
+    try {
+        const orderToSave = {
+            startDate: checkIn,
+            endDate: checkOut,
+            totalPrice: totalPrice,
+            stay: {
+                _id: stay._id,
+                name: stay.name,
+                price: pricePerNight
+            },
+            host: {
+                _id: stay.host._id,
+                fullname: stay.host.fullname
+            },
+            guest: {
+                _id: 'u101', 
+                fullname: 'User Name'
+            },
+            guests: {
+                adults: guests,
+                kids: 0
+            },
+            status: 'pending',
+            msgs: []
+        }
+
+        await orderServiceLocal.save(orderToSave)
+        setIsSuccessOpen(true) 
+        
+    } catch (err) {
+        console.error('Had issues booking:', err)
+        alert('Could not complete booking')
+    }
   }
 
   if (!stay) return <div>Loading...</div>
@@ -106,7 +143,8 @@ export function StayCheckout() {
     <input placeholder="Israel" />
   </div>
 
-  <button className="pay-btn" onClick={() => setIsSuccessOpen(true)}>
+  {/* <button className="pay-btn" onClick={() => setIsSuccessOpen(true)}> */}
+  <button className="pay-btn" onClick={onConfirmBooking}>
     Continue
   </button>
 

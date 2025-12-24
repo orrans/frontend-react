@@ -276,6 +276,19 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
         </button>
       </section>
 
+      <section className="stay-sleep">
+  <h2>Where you’ll sleep</h2>
+
+  <div className="sleep-card">
+    <img
+      src={stay.imgUrls[0]}
+      alt="Where you’ll sleep"
+    />
+  </div>
+</section>
+
+{/* <div className="divider"></div> */}
+
 <section className="stay-reviews">
   {stay.reviews && stay.reviews.slice(0, 6).map((review, idx) => (
     <article key={review.id || idx} className="review-card">

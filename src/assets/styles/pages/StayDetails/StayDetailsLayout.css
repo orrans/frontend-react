@@ -154,7 +154,6 @@
   background-color: #e6e6e6;
 }
 
-/* --- Review Modal Settings (Always Fixed) --- */
 .review-modal-overlay {
     position: fixed;
     top: 0;
@@ -165,7 +164,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10000; /* מוודא שהוא מעל ה-Sticky */
+    z-index: 10000;
 }
 
 .review-modal-container {
@@ -225,6 +224,8 @@
 }
 
 .stay-location {
+    grid-column: 2;
+    width: 100%;
     margin-bottom: 64px;
 }
 
@@ -240,31 +241,9 @@
 }
 
 .location-map-container {
-    height: 420px;
+   height: 480px;
     border-radius: 12px;
     overflow: hidden;
     background: #eaeaea;
-}
-
-
-@media (max-width: 744px) {
-    .stay-details-layout {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .stay-reviews {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .stay-location {
-        grid-column: 1;
-    }
-}
-
-@media (min-width: 745px) {
-    .stay-location {
-        grid-column: 1 / span 2; 
-    }
+    width: 100%;
 }
