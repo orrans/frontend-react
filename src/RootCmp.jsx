@@ -10,6 +10,7 @@ import { SearchResults } from './pages/SearchResults.jsx'
 import { Login } from './pages/Login.jsx'
 import { OrderList } from './cmps/OrderList.jsx'
 import { ListingList } from './cmps/ListingList.jsx'
+import { ListingForm } from './pages/ListingForm.jsx'
 
 export function RootCmp() {
     return (
@@ -27,6 +28,8 @@ export function RootCmp() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/orders" element={<OrderList />} />
                     <Route path="/listings" element={<ListingList />} />
+                    <Route path="/listings/create" element={<ListingForm />} />
+                    <Route path="/listings/:stayId" element={<ListingForm />} />
                 </Routes>
             </main>
             <AppFooter />

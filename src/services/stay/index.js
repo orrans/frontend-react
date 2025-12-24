@@ -4,7 +4,7 @@ const { DEV, VITE_LOCAL } = import.meta.env
 import { stayService as local } from './stay.service.local'
 import { stayService as remote } from './stay.service.remote'
 
-function getEmptyStay() {
+export function getEmptyStay() {
     return {
         name: '',
         type: '',

@@ -5,15 +5,16 @@ import { loadStays } from '../store/actions/stay.actions'
 
 export function ListingList({}) {
     const loggedInUser = useSelector((state) => state.userModule.user)
-    console.log(loggedInUser)
-    const listings = useSelector((state) =>
-        state.stayModule.stays.filter((stay) => stay.host._id === loggedInUser?._id)
+    const listings = useSelector(
+        (state) =>
+            state.stayModule.stays.filter((stay) => true || stay.host._id === loggedInUser?._id) // TODO: remove true to enable filtering after testing
     )
 
     useEffect(() => {
         loadStays()
     }, [])
 
+    if (!listings.length) return 'loading...'
     return (
         <div className="listings-table">
             <table>

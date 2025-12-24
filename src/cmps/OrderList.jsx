@@ -6,13 +6,14 @@ import { OrderPreview } from './OrderPreview'
 export function OrderList({}) {
     const loggedInUser = useSelector((state) => state.userModule.user)
     const orders = useSelector((state) =>
-        state.orderModule.orders.filter((order) => order.hostId._id === loggedInUser?._id)
+        state.orderModule.orders.filter((order) => true || order.hostId._id === loggedInUser?._id) // TODO: remove true to enable filtering after testing
     )
 
     useEffect(() => {
         loadOrders()
     }, [])
 
+    if (!orders.length) return 'loading...'
     return (
         <div className="orders-table">
             <table>
