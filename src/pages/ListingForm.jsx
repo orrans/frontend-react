@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useParams } from 'react-router'
 import { loadStay } from '../store/actions/stay.actions'
 import { getEmptyStay } from '../services/stay'
+import { PlatypusLoader } from '../cmps/PlatypusLoader'
 
 export function ListingForm() {
     const { stayId } = useParams()
@@ -13,7 +14,7 @@ export function ListingForm() {
         else setStay(getEmptyStay())
     }, [])
 
-    if(!stay) return 'loading...'
+    if(!stay) return <PlatypusLoader/>
     return (
         <div>
             <label>

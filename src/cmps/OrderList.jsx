@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import { loadOrders } from '../store/actions/order.actions'
 import { OrderPreview } from './OrderPreview'
+import { PlatypusLoader } from './PlatypusLoader'
 
 export function OrderList({}) {
     const loggedInUser = useSelector((state) => state.userModule.user)
@@ -13,7 +14,7 @@ export function OrderList({}) {
         loadOrders()
     }, [])
 
-    if (!orders.length) return 'loading...'
+    if (!orders.length) return <PlatypusLoader/>
     return (
         <div className="orders-table">
             <table>

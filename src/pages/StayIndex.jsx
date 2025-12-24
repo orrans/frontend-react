@@ -4,6 +4,7 @@ import { loadStays } from '../store/actions/stay.actions'
 import { StayExploreList } from '../cmps/StayExploreList.jsx'
 import { groupBy } from '../services/util.service.js'
 import { loadOrders } from '../store/actions/order.actions.js'
+import { PlatypusLoader } from '../cmps/PlatypusLoader.jsx'
 
 export function StayIndex() {
     const stays = useSelector((storeState) => storeState.stayModule.stays)
@@ -15,7 +16,7 @@ export function StayIndex() {
 
     const groups = groupBy(stays, 'loc.country')
 
-    if (!stays) return <div>Loading...</div>
+    if (!stays) return <PlatypusLoader/>
 
     return (
         <main className="stay-index">

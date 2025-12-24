@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import { ListingPreview } from './ListingPreview'
 import { loadStays } from '../store/actions/stay.actions'
+import { PlatypusLoader } from './PlatypusLoader'
 
 export function ListingList({}) {
     const loggedInUser = useSelector((state) => state.userModule.user)
@@ -14,7 +15,7 @@ export function ListingList({}) {
         loadStays()
     }, [])
 
-    if (!listings.length) return 'loading...'
+    if (!listings.length) return <PlatypusLoader/>
     return (
         <div className="listing-table">
             <table>
