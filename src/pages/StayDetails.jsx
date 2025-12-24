@@ -95,6 +95,7 @@ export function StayDetails() {
 
   const [isAmenitiesOpen, setIsAmenitiesOpen] = useState(false)
   const [isDescOpen, setIsDescOpen] = useState(false)
+  const [selectedReview, setSelectedReview] = useState(null)
 
   const description = `
 Looking for a serene and unforgettable escape on the edge of nature, far from the rush yet close to authentic local life? Welcome to Azure Cliff Retreat, a peaceful hideaway overlooking the Mediterranean coastline near a quiet seaside village.
@@ -302,7 +303,7 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
 
       <p className="review-text">{review.txt}</p>
       
-      <button className="show-more">Show more</button>
+      <button className="show-more" onClick={() => setSelectedReview(review)}>Show more</button>
     </article>
   ))}
 
@@ -326,38 +327,73 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
 </section>
 
 
-{isAmenitiesOpen && (
-  <div className="modal-overlay" onClick={() => setIsAmenitiesOpen(false)}>
-    <div className="modal" onClick={(ev) => ev.stopPropagation()}>
-
-      <div className="modal-header">
-        <button
-          className="modal-close-btn"
-          onClick={() => setIsAmenitiesOpen(false)}
-        >
-          ✕
-        </button>
+  
+  {isAmenitiesOpen && (
+    <div className="modal-overlay" onClick={() => setIsAmenitiesOpen(false)}>
+      <div className="modal" onClick={(ev) => ev.stopPropagation()}>
+        <div className="modal-header">
+          <button className="modal-close-btn" onClick={() => setIsAmenitiesOpen(false)}>✕</button>
+        </div>
+        <div className="modal-body">
+          <h2>What this place offers</h2>
+          <ul className="amenities-modal-list">
+            {amenities.map((amenity, idx) => (
+              <li key={`${amenity}-${idx}`}>
+                <span>{getAmenityIcon(amenity)}</span>
+                {amenity}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-
-      <div className="modal-body">
-        <h2>What this place offers</h2>
-
-        <ul className="amenities-modal-list">
-          {amenities.map((amenity) => (
-            <li key={amenity}>
-              <span>{getAmenityIcon(amenity)}</span>
-              {amenity}
-            </li>
-          ))}
-        </ul>
-      </div>
-
     </div>
-  </div>
-)}
+  )}
 
-    </section>
-    
+  
+  {selectedReview && (
+    <div className="review-modal-overlay" onClick={() => setSelectedReview(null)}>
+      <div className="review-modal-container" onClick={(ev) => ev.stopPropagation()}>
+        <div className="review-modal-header">
+          <button className="modal-close-x" onClick={() => setSelectedReview(null)}>✕</button>
+        </div>
+        <div className="review-modal-body">
+          <header className="review-header">
+            <img
+              className="review-avatar"
+              src={`https://i.pravatar.cc/150?u=${selectedReview.by?.fullname || 'guest'}`}
+              alt="avatar"
+            />
+            <div className="review-author-info">
+              <h4 style={{ margin: 0 }}>{selectedReview.by?.fullname}</h4>
+              <span className="review-date">
+                {selectedReview.at ? new Date(selectedReview.at).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' }) : ''}
+              </span>
+            </div>
+          </header>
+          <div className="review-rating-stars" style={{ margin: '16px 0' }}>
+            <StarIcon /> <StarIcon /> <StarIcon /> <StarIcon /> <StarIcon />
+          </div>
+          <p className="full-review-txt">{selectedReview.txt}</p>
+        </div>
+      </div>
+    </div>
+  )}
+
+  
+  {isDescOpen && (
+    <div className="modal-overlay" onClick={() => setIsDescOpen(false)}>
+      <div className="modal" onClick={(ev) => ev.stopPropagation()}>
+        <div className="modal-header">
+          <button className="modal-close-btn" onClick={() => setIsDescOpen(false)}>✕</button>
+        </div>
+        <div className="modal-body">
+          <h2>About this place</h2>
+          <p style={{ whiteSpace: 'pre-line', lineHeight: '1.6' }}>{description}</p>
+        </div>
+      </div>
+    </div>
+  )}
+</section>
   )
 }
-
+  
