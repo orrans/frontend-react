@@ -5,10 +5,11 @@ export const stayService = {
     getById,
     save,
     remove,
-    addStayMsg
+    addStayMsg,
+    getFilterFromParams
 }
 
-async function query(filterBy = { txt: '', price: 0 }) {
+async function query(filterBy = {}) {
     return httpService.get(`stay`, filterBy)
 }
 
@@ -31,6 +32,18 @@ async function save(stay) {
 }
 
 async function addStayMsg(stayId, txt) {
+    // Backend expects an object {txt: "..."}
     const savedMsg = await httpService.post(`stay/${stayId}/msg`, { txt })
     return savedMsg
+}
+
+function getFilterFromParams(searchParams = new URLSearchParams()) {
+    return {
+        txt: searchParams.get('txt') || '',
+        minPrice: +searchParams.get('minPrice') || 0,
+        maxPrice: +searchParams.get('maxPrice') || 0,
+        guests: +searchParams.get('guests') || 0,
+        pets: searchParams.get('pets') === 'true',
+        loc: searchParams.get('loc') || ''
+    }
 }
