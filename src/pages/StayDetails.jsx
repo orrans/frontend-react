@@ -273,6 +273,71 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
           Show all {amenities.length} amenities
         </button>
       </section>
+<section className="stay-reviews">
+  {stay.reviews.map((review, idx) => (
+  <article key={review.id || idx} className="review-card">
+      <header className="review-header">
+        <img
+          className="review-avatar"
+          src={'/img/platy.jpg'}
+          alt={review.by.fullname}
+        />
+        <div>
+          <h4>{review.by.fullname}</h4>
+          <span>★★★★★</span>
+        </div>
+      </header>
+
+      <p>{review.txt}</p>
+
+      <button className="show-more">Show more</button>
+    </article>
+  ))}
+</section>
+
+<section className="stay-location">
+  <h2 className="location-title">Where you’ll be</h2>
+
+  <p className="location-subtitle">
+    {stay.loc.city}, {stay.loc.country}
+  </p>
+
+  <div className="location-map-container">
+    {/* the map will be here  */}
+{/* <StayLocationMap stay={stay} /> */}
+  </div>
+</section>
+
+
+{isAmenitiesOpen && (
+  <div className="modal-overlay" onClick={() => setIsAmenitiesOpen(false)}>
+    <div className="modal" onClick={(ev) => ev.stopPropagation()}>
+
+      <div className="modal-header">
+        <button
+          className="modal-close-btn"
+          onClick={() => setIsAmenitiesOpen(false)}
+        >
+          ✕
+        </button>
+      </div>
+
+      <div className="modal-body">
+        <h2>What this place offers</h2>
+
+        <ul className="amenities-modal-list">
+          {amenities.map((amenity) => (
+            <li key={amenity}>
+              <span>{getAmenityIcon(amenity)}</span>
+              {amenity}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+)}
 
     </section>
     
