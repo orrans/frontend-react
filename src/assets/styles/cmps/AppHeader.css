@@ -282,7 +282,6 @@
     }
 }
 
-
 /* Responsive padding for smaller screens */
 @media (max-width: 1200px) {
     .app-header .header-container {

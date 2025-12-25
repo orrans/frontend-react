@@ -118,3 +118,7 @@ export function formatPrice(price) {
         maximumFractionDigits: 2,
     }).format(price)
 }
+
+export function formatDate(date) {
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+}

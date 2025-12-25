@@ -1,15 +1,34 @@
-import React from 'react'
+import { useSelector } from 'react-redux'
+import { formatDate } from '../services/util.service'
 
 export function StaySearchCollapsed({ onToggleSearch }) {
+    const filterBy = useSelector(storeState => storeState.stayModule.filterBy)
+
+    const locationText = filterBy.loc || 'Anywhere'
+
+    let dateText = 'Any week'
+    if (filterBy.checkIn && filterBy.checkOut) {
+        const start = new Date(filterBy.checkIn)
+        const end = new Date(filterBy.checkOut)
+        dateText = `${formatDate(start)} - ${formatDate(end)}`
+    }
+
+    const totalGuests = (filterBy.guests) ||
+        ((filterBy.adults || 0) + (filterBy.children || 0) + (filterBy.infants || 0)) || 0
+
+    const guestText = totalGuests > 0 ? `${totalGuests} guests` : 'Add guests'
+
     return (
         <div className="stay-search-collapsed" onClick={onToggleSearch}>
             <button className="collapsed-search-btn">
-                <span className="search-text-segment strong">Anywhere</span>
+                <span className="search-text-segment strong">{locationText}</span>
                 <span className="divider"></span>
-                <span className="search-text-segment strong">Anytime</span>
+                <span className="search-text-segment strong">{dateText}</span>
                 <span className="divider"></span>
                 <div className="guest-segment">
-                    <span className="search-text-segment placeholder">Add guests</span>
+                    <span className={`search-text-segment ${totalGuests ? 'strong' : 'placeholder'}`}>
+                        {guestText}
+                    </span>
                     <div className="search-icon-wrapper">
                         <svg
                             viewBox="0 0 32 32"

@@ -31,9 +31,16 @@ export function getEmptyStay() {
 function getDefaultFilter() {
     return {
         txt: '',
-        price: 0,
-        sortField: '',
-        sortDir: '',
+        loc: '',
+        checkIn: null,
+        checkOut: null,
+        minPrice: 0,
+        maxPrice: 0,
+        guests: 0,
+        adults: 0,
+        children: 0,
+        infants: 0,
+        pets: 0
     }
 }
 

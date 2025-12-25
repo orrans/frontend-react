@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { loadStays } from '../store/actions/stay.actions'
+import { loadStays, setFilterBy } from '../store/actions/stay.actions'
+import { stayService } from '../services/stay'
 import { StayExploreList } from '../cmps/StayExploreList.jsx'
 import { groupBy } from '../services/util.service.js'
 import { loadOrders } from '../store/actions/order.actions.js'
@@ -10,13 +11,16 @@ export function StayIndex() {
     const stays = useSelector((storeState) => storeState.stayModule.stays)
 
     useEffect(() => {
+        const emptyFilter = stayService.getDefaultFilter()
+        setFilterBy(emptyFilter)
+
         loadStays()
         loadOrders()
     }, [])
 
     const groups = groupBy(stays, 'loc.country')
 
-    if (!stays) return <PlatypusLoader/>
+    if (!stays) return <PlatypusLoader />
 
     return (
         <main className="stay-index">
