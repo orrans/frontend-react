@@ -24,6 +24,7 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
         'Townhouse',
         'Chalet',
     ]
+    const [randomStayType] = useState(stayType[getRandomIntInclusive(0, stayType.length - 1)])
 
     return (
         // <Link to={`/stay/${stay._id}`} target="_blank" className="stay-preview">
@@ -63,7 +64,7 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
                 {variant === 'filtered' && (
                     <>
                         <h4 className="filtered-title">
-                            {stayType[getRandomIntInclusive(0, stayType.length - 1)]} in{' '}
+                            {randomStayType} in{' '}
                             {stay.loc.city}
                             <span className="filtered-rating">
                                 <StarIcon size={12} />
@@ -88,7 +89,7 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
                 {variant === 'explore' && (
                     <>
                         <h4 className="explore-title">
-                            {stayType[getRandomIntInclusive(0, stayType.length - 1)]} in{' '}
+                            {randomStayType} in{' '}
                             {stay.loc.city}
                         </h4>
                         <div className="explore-details">

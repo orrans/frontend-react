@@ -31,7 +31,7 @@ export function SearchResults({ }) {
 
     return (
         <main className="stay-index">
-            <StayList stays={stays} fromDate={fromDate} toDate={toDate} />
+            <StayList stays={stays} fromDate={fromDate} toDate={toDate} location={filterBy?.loc} />
             <GoogleMap stays={stays} fromDate={fromDate} toDate={toDate} />
         </main>
     )
