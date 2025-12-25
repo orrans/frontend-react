@@ -1,4 +1,6 @@
 .order-row {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 70px;
     transition: background-color 0.2s;
 
     &:hover {
@@ -75,16 +77,19 @@
     .pending {
         color: #ff9800;
         font-weight: 500;
+        text-transform: capitalize;
     }
 
     .approved,
     .completed {
         color: #67c23a;
         font-weight: 500;
+        text-transform: capitalize;
     }
 
     .rejected {
         color: #ff5a5f;
         font-weight: 500;
+        text-transform: capitalize;
     }
 }

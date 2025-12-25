@@ -23,9 +23,9 @@ export function OrderPreview({ order }) {
                     <img src={order.guest.imgUrl} /> {order.guest.fullname}
                 </div>
             </td>
-            <td>{format(new Date(order.startDate), dateFormat)}</td>
-            <td>{format(new Date(order.endDate), dateFormat)}</td>
-            <td>{format(new Date(order.bookDate), dateFormat)}</td>
+            <td>{order.startDate ? format(new Date(order.startDate), dateFormat) : '-'}</td>
+            <td>{order.endDate ? format(new Date(order.endDate), dateFormat) : '-'}</td>
+            <td>{order.bookDate ? format(new Date(order.bookDate), dateFormat) : '-'}</td>
             <td>{order.stay.name}</td>
             <td>{formatPrice(order.stay.price)}</td>
             <td className={order.status.toLowerCase()}>{order.status}</td>
