@@ -2,7 +2,8 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { stayService } from '../services/stay'
 import { ReserveBackIcon } from '../cmps/icons/ReserveBackIcon'
-import { orderServiceLocal } from '../services/order/order.service.local.js'
+import { orderService } from '../services/order'
+
 // import { userService } from '../services/user.service.js' 
 
 export function StayCheckout() {
@@ -35,40 +36,34 @@ export function StayCheckout() {
   }
 
 async function onConfirmBooking() {
-    try {
-        const orderToSave = {
-            startDate: checkIn,
-            endDate: checkOut,
-            totalPrice: totalPrice,
-            stay: {
-                _id: stay._id,
-                name: stay.name,
-                price: pricePerNight
-            },
-            host: {
-                _id: stay.host._id,
-                fullname: stay.host.fullname
-            },
-            guest: {
-                _id: 'u101', 
-                fullname: 'User Name'
-            },
-            guests: {
-                adults: guests,
-                kids: 0
-            },
-            status: 'pending',
-            msgs: []
-        }
+  try {
+    const order = orderService.getEmptyOrder()
 
-        await orderServiceLocal.save(orderToSave)
-        setIsSuccessOpen(true) 
-        
-    } catch (err) {
-        console.error('Had issues booking:', err)
-        alert('Could not complete booking')
-    }
+    order.startDate = checkIn
+    order.endDate = checkOut
+    order.totalPrice = totalPrice
+
+    order.guests.adults = guests
+
+    order.stay._id = stay._id
+    order.stay.name = stay.name
+    order.stay.price = pricePerNight
+
+    order.hostId._id = stay.host._id
+    order.hostId.fullname = stay.host.fullname
+
+    order.guest._id = 'u101'
+    order.guest.fullname = 'User Name'
+
+    await orderService.save(order)
+    setIsSuccessOpen(true)
+
+  } catch (err) {
+    console.error('Had issues booking:', err)
+    alert('Could not complete booking')
   }
+}
+
 
   if (!stay) return <div>Loading...</div>
 
