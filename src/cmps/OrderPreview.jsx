@@ -31,8 +31,8 @@ export function OrderPreview({ order }) {
             <td className={order.status.toLowerCase()}>{order.status}</td>
             <td>
                 <div className="order-row-actions">
-                    <button onClick={handleAccept} disabled={!isPending}>Accept</button>
-                    <button onClick={handleReject} disabled={!isPending}>Reject</button>
+                    <button className='accept-btn' onClick={handleAccept} disabled={!isPending}>Accept</button>
+                    <button className='reject-btn' onClick={handleReject} disabled={!isPending}>Reject</button>
                 </div>
             </td>
         </tr>
