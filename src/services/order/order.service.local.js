@@ -2,7 +2,7 @@ import { storageService } from '../async-storage.service'
 import orderData from '../../assets/data/order.json'
 const STORAGE_KEY = 'order'
 
-createOrders()
+let ordersInitPromise = createOrders()
 
 export const orderServiceLocal = {
     save,
@@ -13,6 +13,7 @@ export const orderServiceLocal = {
     updateStatus,
 }
 async function query(filterBy = {}) {
+    await ordersInitPromise
     let orders = await storageService.query(STORAGE_KEY)
 
     if (filterBy.hostId) {

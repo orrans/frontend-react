@@ -5,16 +5,28 @@ import { OrderPreview } from './OrderPreview'
 import { PlatypusLoader } from './PlatypusLoader'
 
 export function OrderList({}) {
+    const [isLoading, setIsLoading] = useState(true)
     const loggedInUser = useSelector((state) => state.userModule.user)
     const orders = useSelector((state) =>
         state.orderModule.orders.filter((order) => true || order.hostId._id === loggedInUser?._id) // TODO: remove true to enable filtering after testing
     )
 
     useEffect(() => {
-        loadOrders()
+        const loadData = async () => {
+            await loadOrders()
+            setIsLoading(false)
+        }
+        loadData()
     }, [])
 
-    if (!orders.length) return <PlatypusLoader/>
+    useEffect(() => {
+        if (orders.length > 0 && isLoading) {
+            setIsLoading(false)
+        }
+    }, [orders.length])
+
+    if (isLoading) return <PlatypusLoader/>
+    if (!orders.length) return <div>No orders found</div>
     return (
         <div className="orders-table">
             <table>
