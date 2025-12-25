@@ -6,6 +6,7 @@ import { formatPrice } from '../services/util.service'
 
 export function OrderPreview({ order }) {
     const dateFormat = 'dd/MM/yyyy'
+    const isPending = order.status.toLowerCase() === 'pending'
 
     function handleAccept() {
         updateOrderStatus(order._id, 'approved')
@@ -30,8 +31,8 @@ export function OrderPreview({ order }) {
             <td className={order.status.toLowerCase()}>{order.status}</td>
             <td>
                 <div className="order-row-actions">
-                    <button onClick={handleAccept}>Accept</button>
-                    <button onClick={handleReject}>Reject</button>
+                    <button onClick={handleAccept} disabled={!isPending}>Accept</button>
+                    <button onClick={handleReject} disabled={!isPending}>Reject</button>
                 </div>
             </td>
         </tr>
