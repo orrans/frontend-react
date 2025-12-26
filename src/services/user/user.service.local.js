@@ -85,9 +85,9 @@ async function _createUsers() {
     const usersToSave = [
         {
             _id: 'u101',
-            fullname: 'User 1',
-            imgUrl: 'https://robohash.org/user1?set=set4&size=180x180',
-            username: 'user1',
+            fullname: 'John Traveler',
+            imgUrl: 'https://randomuser.me/api/portraits/men/32.jpg',
+            username: 'John Traveler',
             password: 'secret',
             reviews: [
                 {
@@ -96,17 +96,17 @@ async function _createUsers() {
                     rate: 4,
                     by: {
                         _id: 'u102',
-                        fullname: 'user2',
-                        imgUrl: 'https://robohash.org/user2?set=set4&size=180x180',
+                        fullname: 'Maria Host',
+                        imgUrl: 'https://randomuser.me/api/portraits/women/44.jpg',
                     },
                 },
             ],
         },
         {
             _id: 'u102',
-            fullname: 'User 2',
-            imgUrl: 'https://robohash.org/user2?set=set4&size=180x180',
-            username: 'user2',
+            fullname: 'Maria Host',
+            imgUrl: 'https://randomuser.me/api/portraits/women/44.jpg',
+            username: 'Maria Host',
             password: 'secret',
         },
     ]
