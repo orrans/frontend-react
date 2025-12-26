@@ -7,7 +7,7 @@ import { ClearIcon } from './icons/ClearIcon.jsx'
 import { HouseIcon } from './icons/HouseIcon.jsx'
 const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
-export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), wishlist = false }) {
+export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), wishlist = false, hoveredStayId = null }) {
     const [selectedStay, setSelectedStay] = useState(null)
     const days = differenceInDays(toDate, fromDate)
 
@@ -45,19 +45,21 @@ export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), w
                         mapId="cce1a61f00cdb4a0a238fe28"
                         disableDefaultUI={true}>
                         <MapHandler stays={stays} selectedStay={selectedStay} />
-                        {stays.map((stay) => (
-                            <AdvancedMarker
-                                key={stay._id}
-                                position={fixLoc(stay.loc)}
-                                onClick={() => setSelectedStay(stay)}>
-                                <div
-                                    className={`map-marker ${
-                                        selectedStay?._id === stay._id ? 'selected-marker' : ''
-                                    }`}>
-                                    {wishlist ? <HouseIcon className={'house-marker'}/> : formatPrice(stay.price * days)}
-                                </div>
-                            </AdvancedMarker>
-                        ))}
+                        {stays.map((stay) => {
+                            const isHighlighted = selectedStay?._id === stay._id || hoveredStayId === stay._id
+                            return (
+                                <AdvancedMarker
+                                    key={stay._id}
+                                    position={fixLoc(stay.loc)}
+                                    onClick={() => setSelectedStay(stay)}
+                                    zIndex={isHighlighted ? 5 : 0}>
+                                    <div
+                                        className={`map-marker ${isHighlighted ? 'selected-marker' : ''}`}>
+                                        {wishlist ? <HouseIcon className={'house-marker'}/> : formatPrice(stay.price * days)}
+                                    </div>
+                                </AdvancedMarker>
+                            )
+                        })}
                         {selectedStay && (
                             <AdvancedMarker position={fixLoc(selectedStay.loc)}>
                                 <div className="map-stay-preview">

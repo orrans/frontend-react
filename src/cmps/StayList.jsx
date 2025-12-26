@@ -1,6 +1,6 @@
 import { StayPreview } from './StayPreview.jsx'
 
-export function StayList({ stays, fromDate, toDate, location, showPrice = true }) {
+export function StayList({ stays, fromDate, toDate, location, showPrice = true, onStayHover = () => {} }) {
     // const fromDate = new Date()
     // const toDate = new Date()
     // toDate.setDate(toDate.getDate() + 2)
@@ -12,7 +12,11 @@ export function StayList({ stays, fromDate, toDate, location, showPrice = true }
             <span className="stay-list-title">Over 1,000 homes in {city}</span>
             <ul className="stay-list">
                 {stays.map((stay) => (
-                    <li key={stay._id}>
+                    <li 
+                        key={stay._id}
+                        onMouseEnter={() => onStayHover(stay._id)}
+                        onMouseLeave={() => onStayHover(null)}
+                    >
                         <StayPreview
                             stay={stay}
                             fromDate={fromDate}

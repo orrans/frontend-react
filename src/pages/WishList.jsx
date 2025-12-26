@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 import { GoogleMap } from '../cmps/GoogleMaps'
 
 export function WishList({}) {
+    const [hoveredStayId, setHoveredStayId] = useState(null)
     const stays = useSelector((state) => state.stayModule.stays)
 
     useEffect(() => {
@@ -13,8 +14,8 @@ export function WishList({}) {
 
     return (
         <div className="wishlist-container">
-            <StayList stays={stays} showPrice={false} />
-            <GoogleMap stays={stays} wishlist={true} />
+            <StayList stays={stays} showPrice={false} onStayHover={setHoveredStayId} />
+            <GoogleMap stays={stays} wishlist={true} hoveredStayId={hoveredStayId} />
         </div>
     )
 }
