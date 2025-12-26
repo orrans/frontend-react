@@ -11,10 +11,12 @@ import { Login } from './pages/Login.jsx'
 import { OrderList } from './cmps/OrderList.jsx'
 import { ListingList } from './cmps/ListingList.jsx'
 import { ListingForm } from './pages/ListingForm.jsx'
+import ScrollToTop from './cmps/ScrollToTop.jsx'
 
 export function RootCmp() {
     return (
         <div className="main-container">
+            <ScrollToTop />
             <AppHeader />
             <UserMsg />
 

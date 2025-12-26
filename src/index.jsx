@@ -11,6 +11,12 @@ import { RootCmp } from './RootCmp'
 
 import './assets/styles/main.css'
 
+
+//to make the scroll to top work on route change
+if ('scrollRestoration' in window.history) {
+	window.history.scrollRestoration = 'manual'
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 	<Provider store={store}>
