@@ -1,7 +1,6 @@
 /* Scoped AppHeader Styles */
 .app-header {
     background: linear-gradient(180deg, #ffffff 39.9%, #f8f8f8 100%);
-    height: 170px;
     /* Expanded height for 2 rows */
     border-bottom: 1px solid var(--clr-border);
     position: sticky;
@@ -278,7 +277,7 @@
 .app-header .header-bottom {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 32px;
     /* Space from bottom */
     width: 100%;
 
