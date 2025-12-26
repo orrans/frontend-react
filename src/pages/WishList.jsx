@@ -14,7 +14,12 @@ export function WishList({}) {
 
     return (
         <div className="wishlist-container">
-            <StayList stays={stays} showPrice={false} onStayHover={setHoveredStayId} />
+            <StayList
+                stays={stays}
+                showPrice={false}
+                onStayHover={setHoveredStayId}
+                wishlist={true}
+            />
             <GoogleMap stays={stays} wishlist={true} hoveredStayId={hoveredStayId} />
         </div>
     )
