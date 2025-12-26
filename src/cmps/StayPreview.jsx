@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { differenceInDays, format } from 'date-fns'
 import { shortDateFmt } from '../services/stay/date.service'
 import { Fragment, useState } from 'react'
@@ -25,20 +25,30 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore' }) {
         'Chalet',
     ]
 
+const location = useLocation()
+const params = new URLSearchParams(location.search)
+
+const guests = {
+  adults: +params.get('adults') || 0,
+  kids: +params.get('children') || 0,
+  infants: +params.get('infants') || 0,
+  pets: +params.get('pets') || 0,
+}
+
     return (
         // <Link to={`/stay/${stay._id}`} target="_blank" className="stay-preview">
-    //    testing 
+        //    testing 
         <Link
-  to={`/stay/${stay._id}`}
-  className="stay-preview"
-  state={{
-    checkIn: fromDate,
-    checkOut: toDate,
-    guests: 1,
+            to={`/stay/${stay._id}`}
+            className="stay-preview"
+            state={{
+                checkIn: fromDate,
+                checkOut: toDate,
+                guests,
     nights: differenceInDays(toDate, fromDate),
-    pricePerNight: stay.price
-  }}
->
+                pricePerNight: stay.price
+            }}
+        >
 
             <div className="stay-inner-img">
                 <div className="img-overlay">

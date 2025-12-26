@@ -28,11 +28,12 @@ export function StayDetails() {
 
   const location = useLocation()
   const bookingState = location.state || {}
+  
 
   const {
     checkIn,
     checkOut,
-    guests = 1,
+    guests,
     nights,
     pricePerNight
   } = bookingState
@@ -110,6 +111,17 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
   }
 
   const amenities = stay.amenities || []
+
+  function getGuestsText({ adults = 0, kids = 0, infants = 0, pets = 0 }) {
+  const guests = adults + kids
+  const parts = []
+
+  if (guests) parts.push(`${guests} guest${guests > 1 ? 's' : ''}`)
+  if (infants) parts.push(`${infants} infant${infants > 1 ? 's' : ''}`)
+  if (pets) parts.push(`${pets} pet${pets > 1 ? 's' : ''}`)
+
+  return parts.join(', ')
+}
 
   return (
     <section className="stay-details">
@@ -224,8 +236,8 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                 <div className="booking-guests">
                   <label>GUESTS</label>
                   <span>
-                    {guests} guest{guests > 1 ? 's' : ''}
-                  </span>
+  {getGuestsText(guests)}
+</span>
                 </div>
               </div>
 
@@ -260,7 +272,7 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
         <h2>What this place offers</h2>
 
         <ul className="amenities-list">
-          {amenities.slice(0, 3).map((amenity) => (
+          {amenities.slice(0, 8).map((amenity) => (
             <li key={amenity}>
               <span>{getAmenityIcon(amenity)}</span>
               {amenity}

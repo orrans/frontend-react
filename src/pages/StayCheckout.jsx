@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import { stayService } from '../services/stay'
 import { ReserveBackIcon } from '../cmps/icons/ReserveBackIcon'
 import { orderService } from '../services/order'
+import { formatGuests } from '../services/util.service'
+import { PlatypusLoader } from '../cmps/PlatypusLoader'
 
 // import { userService } from '../services/user.service.js' 
 
@@ -65,7 +67,7 @@ async function onConfirmBooking() {
 }
 
 
-  if (!stay) return <div>Loading...</div>
+  if (!stay) return  <PlatypusLoader size={72} />
 
   return (
 <section className="stay-checkout main-container">
@@ -123,7 +125,7 @@ async function onConfirmBooking() {
 
               <div className="checkout-section">
                 <h3>Guests</h3>
-                <p>{guests ? `${guests} guest${guests > 1 ? 's' : ''}` : 'Add guests'}</p>
+                <p>{guests ? formatGuests(guests) : 'Add guests'}</p>
               </div>
 
               <div className="checkout-section">

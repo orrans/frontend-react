@@ -118,3 +118,14 @@ export function formatPrice(price) {
         maximumFractionDigits: 2,
     }).format(price)
 }
+
+export function formatGuests({ adults = 0, kids = 0, infants = 0, pets = 0 }) {
+  const total = adults + kids
+  const parts = []
+
+  if (total) parts.push(`${total} guest${total > 1 ? 's' : ''}`)
+  if (infants) parts.push(`${infants} infant${infants > 1 ? 's' : ''}`)
+  if (pets) parts.push(`${pets} pet${pets > 1 ? 's' : ''}`)
+
+  return parts.join(', ')
+}
