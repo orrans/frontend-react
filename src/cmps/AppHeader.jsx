@@ -150,7 +150,8 @@ export function AppHeader() {
 
                             <div className="user-menu-btn" ref={menuRef}>
                                 <div className="menu-toggle-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '16px', width: '16px', stroke: 'currentcolor', strokeWidth: '3', overflow: 'visible' }}><g fill="none"><path d="m2 16h28"></path><path d="m2 24h28"></path><path d="m2 8h28"></path></g></svg>
+                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false"
+                                        style={{ display: 'block', fill: 'none', height: '16px', width: '16px', stroke: 'currentcolor', strokeWidth: '3', overflow: 'visible' }}><g fill="none"><path d="m2 16h28"></path><path d="m2 24h28"></path><path d="m2 8h28"></path></g></svg>
                                 </div>
                                 {isMenuOpen && (
                                     <div className="user-nav-modal">
@@ -158,7 +159,7 @@ export function AppHeader() {
                                             <>
                                                 <Link to="#" className="nav-item">Wishlists</Link>
                                                 <Link to="#" className="nav-item">Trips</Link>
-                                                <Link to="#" className="nav-item">Profiles</Link>
+                                                <Link to="/user/profile" onClick={() => setIsMenuOpen(false)} className="nav-item">Profile</Link>
                                                 <div className="divider"></div>
                                                 <Link to="#" onClick={onLogout} className="nav-item">Log out</Link>
                                             </>
