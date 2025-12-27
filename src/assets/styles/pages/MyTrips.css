@@ -1,0 +1,96 @@
+.user-trips-page {
+    padding-top: 40px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.img-container {
+    width: 120px;
+    height: 90px;
+    flex-shrink: 0;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px; /* פינות מעוגלות */
+}
+
+.trip-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.info-main h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.info-main .dates {
+    margin: 4px 0 0;
+    color: #717171;
+}
+
+.row-divider {
+    border: none;
+    border-top: 1px solid #484848; 
+    margin: 0;
+}
+
+.status-label {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+.status-label.approved {
+    color: #1d8a01;
+}
+
+.status-label.pending {
+    color: #b08900;/
+}
+
+.status-label.rejected {
+    color: #FF385C; 
+}
+
+
+.airbnb-btn-pink {
+    background-color: #FF385C;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.airbnb-btn-pink:hover {
+    background-color: #E31C5F;
+}

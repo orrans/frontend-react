@@ -62,6 +62,8 @@ return navigate('/login', {
     order.stay.name = stay.name
     order.stay.price = pricePerNight
 
+    order.stay.imgUrl = stay.imgUrls[0]
+
     order.hostId = stay.host._id 
 
     order.guest._id = user._id

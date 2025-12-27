@@ -31,6 +31,7 @@ function getEmptyOrder() {
             _id: '',
             name: '',
             price: 0,
+            imgUrl: '',
         },
         msgs: [],
         status: 'pending',
