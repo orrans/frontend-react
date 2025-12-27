@@ -6,6 +6,7 @@ import { ReserveBackIcon } from '../cmps/icons/ReserveBackIcon'
 import { orderService } from '../services/order'
 import { formatGuests } from '../services/util.service'
 import { PlatypusLoader } from '../cmps/PlatypusLoader'
+import { LoginModal } from './LoginModal.jsx'
 
 // import { userService } from '../services/user.service.js' 
 
@@ -64,7 +65,11 @@ return navigate('/login', {
 
     order.stay.imgUrl = stay.imgUrls[0]
 
-    order.hostId = stay.host._id 
+    order.hostId = {
+    _id: stay.host._id,
+    fullname: stay.host.fullname || '',
+    imgUrl: stay.host.imgUrl || ''
+}
 
     order.guest._id = user._id
     order.guest.fullname = user.fullname
