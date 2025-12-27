@@ -5,6 +5,7 @@ import { loadStays } from '../store/actions/stay.actions'
 import { PlatypusLoader } from './PlatypusLoader'
 
 export function ListingList({}) {
+    const [isLoading, setIsLoading] = useState(true)
     const loggedInUser = useSelector((state) => state.userModule.user)
     const listings = useSelector(
         (state) =>
@@ -12,10 +13,20 @@ export function ListingList({}) {
     )
 
     useEffect(() => {
-        loadStays()
+        const loadData = async () => {
+            await loadStays()
+            setIsLoading(false)
+        }
+        loadData()
     }, [])
 
-    if (!listings.length) return <PlatypusLoader/>
+    useEffect(() => {
+        if (listings.length > 0 && isLoading) {
+            setIsLoading(false)
+        }
+    }, [listings.length])
+
+    if (isLoading) return <PlatypusLoader/>
     return (
         <div className="listing-table">
             <table>

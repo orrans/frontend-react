@@ -12,6 +12,8 @@ export const userService = {
     update,
     getLoggedinUser,
     saveLoggedinUser,
+    addToWishlist,
+    removeFromWishlist,
 }
 
 function getUsers() {
@@ -59,7 +61,36 @@ function getLoggedinUser() {
 }
 
 function saveLoggedinUser(user) {
-    user = { _id: user._id, fullname: user.fullname, imgUrl: user.imgUrl, score: user.score, isAdmin: user.isAdmin }
+    user = {
+        _id: user._id,
+        fullname: user.fullname,
+        imgUrl: user.imgUrl,
+        score: user.score,
+        isAdmin: user.isAdmin,
+        wishlist: user.wishlist || [],
+    }
     sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
     return user
+}
+
+async function addToWishlist(stayId) {
+    const user = getLoggedinUser()
+    if (!user) return Promise.reject('Not logged in')
+    if (!user.wishlist) user.wishlist = []
+    if (!user.wishlist.includes(stayId)) {
+        user.wishlist.push(stayId)
+    }
+    saveLoggedinUser(user)
+
+    return await httpService.post('user/wishlist', { stayId })
+}
+
+async function removeFromWishlist(stayId) {
+    const user = getLoggedinUser()
+    if (!user) return Promise.reject('Not logged in')
+    if (!user.wishlist) user.wishlist = []
+    user.wishlist = user.wishlist.filter((id) => id !== stayId)
+    saveLoggedinUser(user)
+
+    return await httpService.delete('user/wishlist', { stayId })
 }

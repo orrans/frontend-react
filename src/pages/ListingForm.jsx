@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 import { loadStay } from '../store/actions/stay.actions'
 import { getEmptyStay } from '../services/stay'
 import { PlatypusLoader } from '../cmps/PlatypusLoader'
+import { ImgUploader } from '../cmps/ImgUploader'
 
 export function ListingForm() {
     const { stayId } = useParams()
@@ -14,7 +15,7 @@ export function ListingForm() {
         else setStay(getEmptyStay())
     }, [])
 
-    if(!stay) return <PlatypusLoader/>
+    if (!stay) return <PlatypusLoader />
     return (
         <div>
             <label>
@@ -36,7 +37,7 @@ export function ListingForm() {
             </div>
 
             <div>
-                <label>Drop file here or click to upload</label>
+                <ImgUploader />
             </div>
 
             <label>

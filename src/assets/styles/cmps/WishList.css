@@ -1,9 +1,9 @@
-.stay-index {
+.wishlist-container {
     --header-height: 80px;
     display: flex;
     align-items: flex-start;
 }
 
-.main-container main.stay-index {
+.main-container main.wishlist-container {
     overflow: visible;
 }

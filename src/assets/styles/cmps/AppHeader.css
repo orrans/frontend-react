@@ -1,17 +1,34 @@
 /* Scoped AppHeader Styles */
 .app-header {
     background: linear-gradient(180deg, #ffffff 39.9%, #f8f8f8 100%);
-    height: 170px;
     /* Expanded height for 2 rows */
     border-bottom: 1px solid var(--clr-border);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 101;
     margin-bottom: 32px;
+    transition: height 0.25s cubic-bezier(0.35, 0, 0.65, 1), background-color 0.25s;
 }
+
+.main-layout-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.main-layout-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 .app-header.compact {
     height: 80px;
+    background: #ffffff;
 }
 
 .app-header.full {
@@ -38,6 +55,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 /* Logo */
@@ -59,16 +77,20 @@
     font-weight: 800;
     margin: 0;
     letter-spacing: -0.5px;
+    cursor: pointer;
 }
 
 /* Navigation (Centered) */
 .app-header .main-nav {
     flex: 0 1 auto;
     display: flex;
-    gap: 32px;
     justify-content: center;
     align-items: center;
     height: 100%;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .app-header .main-nav .nav-link {
@@ -207,14 +229,14 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: var(--clr-bg-light, #f1f1f1);
+    background: var(--clr-hamburgericon);
     border: none;
     cursor: pointer;
     color: var(--clr-text-main);
 }
 
 .app-header .menu-toggle-btn:hover {
-    background: rgba(0, 0, 0, 0.06);
+    background: var(--clr-icon-hover);
 }
 
 .app-header .user-nav-modal {
@@ -255,11 +277,30 @@
 .app-header .header-bottom {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 32px;
     /* Space from bottom */
     width: 100%;
+
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+    transform-origin: top;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    position: relative;
+    z-index: 102;
 }
 
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 /* Responsive padding for smaller screens */
 @media (max-width: 1200px) {

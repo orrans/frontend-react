@@ -1,35 +1,95 @@
 .order-row {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 70px;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #f7f7f7;
+    }
+
     .order-row-guest {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 12px;
 
-        img{
+        img {
             border-radius: 50%;
             object-fit: cover;
-            width: 48px;
-            height: auto;
+            width: 40px;
+            height: 40px;
         }
     }
 
-    td{
-        border-bottom: 1px solid rgba(150, 150, 150, 0.2);;
-        border-top: 1px solid rgba(150, 150, 150, 0.2);
-        padding: 12px;
+    td {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 16px 12px;
+        color: #484848;
+        font-size: 14px;
+        vertical-align: middle;
     }
 
     .order-row-actions {
         display: flex;
         align-items: center;
+        gap: 8px;
+
+        button {
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 1px solid;
+            background: white;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+
+            &.accept-btn {
+                color: #67c23a;
+                background-color: #f0f9eb;
+                border-color: #b3e19d;
+                &:hover:not(:disabled) {
+                    background: #67c23a;
+                    border-color: #67c23a;
+                    color: white;
+                }
+            }
+
+            &.reject-btn {
+                color: #f56c6c;
+                border-color: #ff5a5f;
+                background-color: #fef0f0;
+
+                &:hover:not(:disabled) {
+                    background: #ff5a5f;
+                    border-color: #ff5a5f;
+
+                    color: white;
+                }
+            }
+
+            &:disabled {
+                opacity: 0.4;
+                cursor: not-allowed;
+            }
+        }
     }
 
-    .approved {
-        color: rgb(141, 228, 10);
-    }
     .pending {
-        color: orange;
+        color: #ff9800;
+        font-weight: 500;
+        text-transform: capitalize;
     }
+
+    .approved,
+    .completed {
+        color: #67c23a;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
     .rejected {
-        color: red;
+        color: #ff5a5f;
+        font-weight: 500;
+        text-transform: capitalize;
     }
 }

@@ -36,6 +36,11 @@ async function query(filterBy = {}) {
         stays = stays.filter((stay) => stay.amenities.includes('Pets allowed'))
     }
 
+    if(filterBy.wishlist){
+       const user = userService.getLoggedinUser()
+       stays = stays.filter((stay) => user.wishlist.includes(stay._id))
+    }
+
     return stays
 }
 

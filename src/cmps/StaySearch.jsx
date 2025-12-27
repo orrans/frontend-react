@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import { useNavigate, createSearchParams, useLocation } from 'react-router-dom'
 import { DatePicker } from './DatePicker.jsx'
 import { GuestCounterRow } from './GuestCounterRow.jsx'
@@ -15,10 +16,20 @@ const POPULAR_DESTINATIONS = [
     'Barcelona, Spain',
 ]
 
-export function StaySearch() {
-    const [loc, setLoc] = useState('')
-    const [dateRange, setDateRange] = useState({ start: null, end: null })
-    const [guests, setGuests] = useState({ adults: 0, children: 0, infants: 0, pets: 0 })
+export function StaySearch({ onSearchFocus, onSearchCompleted }) {
+    const filterBy = useSelector(storeState => storeState.stayModule.filterBy)
+    const [loc, setLoc] = useState(filterBy.loc || '')
+    const [dateRange, setDateRange] = useState({
+        start: filterBy.checkIn ? new Date(filterBy.checkIn) : null,
+        end: filterBy.checkOut ? new Date(filterBy.checkOut) : null
+    })
+    const [guests, setGuests] = useState({
+        adults: filterBy.adults || filterBy.guests || 0,
+        children: filterBy.children || 0,
+        infants: filterBy.infants || 0,
+        pets: filterBy.pets || 0
+    })
+
     const [activeField, setActiveField] = useState(null) // 'loc', 'date', 'guests', or null
     const [filteredLocs, setFilteredLocs] = useState(POPULAR_DESTINATIONS)
     const [currentMonth, setCurrentMonth] = useState(new Date())
@@ -81,6 +92,12 @@ export function StaySearch() {
 
         prevPathnameRef.current = currentPathname
     }, [location.pathname])
+
+    useEffect(() => {
+        if (onSearchFocus) {
+            onSearchFocus(!!activeField)
+        }
+    }, [activeField, onSearchFocus])
 
     function resetSearchState() {
         setLoc('')
@@ -145,7 +162,10 @@ export function StaySearch() {
             checkIn: dateRange.start,
             checkOut: dateRange.end,
             guests: guests.adults + guests.children + guests.infants,
-            pets: guests.pets
+            pets: guests.pets,
+            adults: guests.adults,
+            children: guests.children,
+            infants: guests.infants
         }
         setFilterBy(filterBy)
 
@@ -163,6 +183,7 @@ export function StaySearch() {
             pathname: '/stay',
             search: `?${createSearchParams(params)}`,
         }, { replace: true })
+        if (onSearchCompleted) onSearchCompleted()
     }
 
     function formatDate(date) {

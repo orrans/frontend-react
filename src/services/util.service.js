@@ -129,3 +129,7 @@ export function formatGuests({ adults = 0, kids = 0, infants = 0, pets = 0 }) {
 
   return parts.join(', ')
 }
+
+export function formatDate(date) {
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+}

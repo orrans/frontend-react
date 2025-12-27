@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react'
 import { formatPrice } from '../services/util.service'
 import { StayPreview } from './StayPreview'
 import { ClearIcon } from './icons/ClearIcon.jsx'
+import { HouseIcon } from './icons/HouseIcon.jsx'
 const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
-export function GoogleMap({ stays, fromDate, toDate }) {
+export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), wishlist = false, hoveredStayId = null }) {
     const [selectedStay, setSelectedStay] = useState(null)
     const days = differenceInDays(toDate, fromDate)
 
@@ -19,8 +20,7 @@ export function GoogleMap({ stays, fromDate, toDate }) {
             const bounds = new google.maps.LatLngBounds()
             stays.forEach((stay) => bounds.extend(fixLoc(stay.loc)))
             map.fitBounds(bounds)
-
-        }, [map, stays]) 
+        }, [map, stays])
 
         useEffect(() => {
             if (selectedStay && map) {
@@ -45,23 +45,30 @@ export function GoogleMap({ stays, fromDate, toDate }) {
                         mapId="cce1a61f00cdb4a0a238fe28"
                         disableDefaultUI={true}>
                         <MapHandler stays={stays} selectedStay={selectedStay} />
-                        {stays.map((stay) => (
-                            <AdvancedMarker
-                                key={stay._id}
-                                position={fixLoc(stay.loc)}
-                                onClick={() => setSelectedStay(stay)}>
-                                <div
-                                    className={`map-marker ${
-                                        selectedStay?._id === stay._id ? 'selected-marker' : ''
-                                    }`}>
-                                    {formatPrice(stay.price * days)}
-                                </div>
-                            </AdvancedMarker>
-                        ))}
+                        {stays.map((stay) => {
+                            const isHighlighted = selectedStay?._id === stay._id || hoveredStayId === stay._id
+                            return (
+                                <AdvancedMarker
+                                    key={stay._id}
+                                    position={fixLoc(stay.loc)}
+                                    onClick={() => setSelectedStay(stay)}
+                                    zIndex={isHighlighted ? 5 : 0}>
+                                    <div
+                                        className={`map-marker ${isHighlighted ? 'selected-marker' : ''}`}>
+                                        {wishlist ? <HouseIcon className={'house-marker'}/> : formatPrice(stay.price * days)}
+                                    </div>
+                                </AdvancedMarker>
+                            )
+                        })}
                         {selectedStay && (
                             <AdvancedMarker position={fixLoc(selectedStay.loc)}>
                                 <div className="map-stay-preview">
-                                    <button className="close-marker">
+                                    <button
+                                        className="close-marker"
+                                        onClick={(event) => {
+                                            event.stopPropagation()
+                                            event.preventDefault()
+                                        }}>
                                         <ClearIcon onClick={() => setSelectedStay(null)} />
                                     </button>
                                     <StayPreview
@@ -69,6 +76,7 @@ export function GoogleMap({ stays, fromDate, toDate }) {
                                         fromDate={fromDate}
                                         toDate={toDate}
                                         variant="explore"
+                                        showPrice={!wishlist}
                                     />
                                 </div>
                             </AdvancedMarker>

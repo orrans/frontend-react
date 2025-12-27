@@ -1,0 +1,85 @@
+.stay-search-collapsed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Ensures it takes the full height of the parent container if needed */
+    cursor: pointer;
+    min-width: 0;
+    /* Flexbox fix for text truncation */
+}
+
+.collapsed-search-btn {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid var(--clr-border, #dddddd);
+    border-radius: 40px;
+    height: 48px;
+    padding: 0 8px 0 24px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s cubic-bezier(0.2, 0, 0, 1);
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.collapsed-search-btn:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.search-text-segment {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.search-text-segment.strong {
+    font-weight: 600;
+    color: var(--clr-text-main, #222222);
+}
+
+.search-text-segment.placeholder {
+    color: var(--clr-text-sub, #717171);
+    padding-right: 0;
+    /* Space is handled by the guest segment flex */
+}
+
+/* Vertical dividers */
+.collapsed-search-btn .divider {
+    height: 24px;
+    width: 1px;
+    background-color: var(--clr-divider, #dddddd);
+    flex: 0 0 1px;
+}
+
+/* The last segment (Guests + Icon) */
+.guest-segment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 16px;
+}
+
+.search-icon-wrapper {
+    background-color: var(--clr-brand, #ff385c);
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive tweaks for smaller screens if necessary */
+@media (max-width: 744px) {
+    .stay-search-collapsed {
+        display: none;
+        /* Usually hidden on mobile in favor of a different mobile search bar */
+    }
+}
