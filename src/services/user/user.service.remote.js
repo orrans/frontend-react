@@ -32,7 +32,6 @@ function remove(userId) {
 async function update(user) {
     const savedUser = await httpService.put(`user/${user._id}`, user)
 
-    // Handle local session update if the updated user is the current logged-in user
     const loggedinUser = getLoggedinUser()
     if (loggedinUser && loggedinUser._id === savedUser._id) {
         saveLoggedinUser(savedUser)
@@ -46,7 +45,6 @@ async function login(userCred) {
 }
 
 async function signup(userCred) {
-    // Defaults (like imgUrl, score) will be handled by the Backend
     const user = await httpService.post('auth/signup', userCred)
     return saveLoggedinUser(user)
 }
@@ -73,24 +71,25 @@ function saveLoggedinUser(user) {
     return user
 }
 
+
 async function addToWishlist(stayId) {
     const user = getLoggedinUser()
     if (!user) return Promise.reject('Not logged in')
     if (!user.wishlist) user.wishlist = []
+
     if (!user.wishlist.includes(stayId)) {
         user.wishlist.push(stayId)
     }
-    saveLoggedinUser(user)
 
-    return await httpService.post('user/wishlist', { stayId })
+    return await update(user)
 }
 
 async function removeFromWishlist(stayId) {
     const user = getLoggedinUser()
     if (!user) return Promise.reject('Not logged in')
     if (!user.wishlist) user.wishlist = []
-    user.wishlist = user.wishlist.filter((id) => id !== stayId)
-    saveLoggedinUser(user)
 
-    return await httpService.delete('user/wishlist', { stayId })
+    user.wishlist = user.wishlist.filter((id) => id !== stayId)
+
+    return await update(user)
 }
