@@ -7,19 +7,24 @@ import { ClearIcon } from './icons/ClearIcon.jsx'
 import { HouseIcon } from './icons/HouseIcon.jsx'
 const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 
-export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), wishlist = false, hoveredStayId = null }) {
+export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), wishlist = false, hoveredStayId = null, zoom }) {
     const [selectedStay, setSelectedStay] = useState(null)
     const days = differenceInDays(toDate, fromDate)
+    
+    const defaultZoom = zoom ?? (stays.length === 1 ? 13 : 12)
 
     function MapHandler({ stays, selectedStay }) {
         const map = useMap()
 
         useEffect(() => {
             if (!map || !stays.length || selectedStay) return
-
-            const bounds = new google.maps.LatLngBounds()
-            stays.forEach((stay) => bounds.extend(fixLoc(stay.loc)))
-            map.fitBounds(bounds)
+            
+            // Only fitBounds if there are multiple stays
+            if (stays.length > 1) {
+                const bounds = new google.maps.LatLngBounds()
+                stays.forEach((stay) => bounds.extend(fixLoc(stay.loc)))
+                map.fitBounds(bounds)
+            }
         }, [map, stays])
 
         useEffect(() => {
@@ -33,6 +38,9 @@ export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), w
 
         return null
     }
+    
+    // Center on the first stay's location
+    const mapCenter = stays.length > 0 ? fixLoc(stays[0].loc) : { lat: 32.0853, lng: 34.7818 }
 
     return (
         <section className="google-map-container">
@@ -40,8 +48,8 @@ export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), w
                 <div className="map-wrapper">
                     <Map
                         className="map"
-                        defaultZoom={12}
-                        defaultCenter={{ lat: 32.0853, lng: 34.7818 }}
+                        defaultZoom={defaultZoom}
+                        defaultCenter={mapCenter}
                         mapId="cce1a61f00cdb4a0a238fe28"
                         disableDefaultUI={true}>
                         <MapHandler stays={stays} selectedStay={selectedStay} />

@@ -233,4 +233,10 @@
     overflow: hidden;
     background: #eaeaea;
     width: 100%;
+    
+    .google-map-container {
+        height: 100%;
+        position: static;
+        padding: 0;
+    }
 }
