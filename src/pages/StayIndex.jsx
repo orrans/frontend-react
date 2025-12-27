@@ -6,6 +6,7 @@ import { StayExploreList } from '../cmps/StayExploreList.jsx'
 import { groupBy } from '../services/util.service.js'
 import { loadOrders } from '../store/actions/order.actions.js'
 import { PlatypusLoader } from '../cmps/PlatypusLoader.jsx'
+import { userService } from '../services/user'
 
 export function StayIndex() {
     const stays = useSelector((storeState) => storeState.stayModule.stays)
@@ -15,7 +16,9 @@ export function StayIndex() {
         setFilterBy(emptyFilter)
 
         loadStays()
-        loadOrders()
+        if (userService.getLoggedinUser()) {
+            loadOrders()
+        }
     }, [])
 
     const groups = groupBy(stays, 'loc.country')
