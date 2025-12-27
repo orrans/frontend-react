@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { loadOrders } from '../store/actions/order.actions'
 import { OrderPreview } from './OrderPreview'
 import { PlatypusLoader } from './PlatypusLoader'
+import { DashboardAnalytics } from './DashboardAnalytics'
 
-export function OrderList({}) {
+export function OrderList() {
     const [isLoading, setIsLoading] = useState(true)
     const loggedInUser = useSelector((state) => state.userModule.user)
     const orders = useSelector(
@@ -28,27 +29,34 @@ export function OrderList({}) {
 
     if (isLoading) return <PlatypusLoader />
     if (!orders.length) return <div>No orders found</div>
+    
     return (
-        <div className="orders-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Guest</th>
-                        <th>Check-In</th>
-                        <th>Check-Out</th>
-                        <th>Book date</th>
-                        <th>Listing</th>
-                        <th>Total price</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {orders.map((order) => (
-                        <OrderPreview key={order._id} order={order} />
-                    ))}
-                </tbody>
-            </table>
+        <div className="order-list-container">
+            <DashboardAnalytics />
+
+            <h3 className="order-count">{orders.length} reservations</h3>
+            
+            <div className="orders-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Guest</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
+                            <th>Booked</th>
+                            <th>Listing</th>
+                            <th>Total Payout</th>
+                            <th>Status</th>
+                            <th>To do</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {orders.map((order) => (
+                            <OrderPreview key={order._id} order={order} />
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }
