@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { useSelector } from 'react-redux'
 import { loadOrders } from '../store/actions/order.actions'
 import { Chart } from './Chart'
@@ -6,10 +6,11 @@ import { Chart } from './Chart'
 export function DashboardAnalytics() {
     const [chartData, setChartData] = useState(null)
     const loggedInUser = useSelector((state) => state.userModule.user)
-    const orders = useSelector(
-        (state) =>
-            state.orderModule.orders.filter((order) => order.hostId._id === loggedInUser?._id)
-    )
+    const allOrders = useSelector((state) => state.orderModule.orders)
+
+    const orders = useMemo(() => {
+        return allOrders.filter((order) => order.hostId._id === loggedInUser?._id)
+    }, [allOrders, loggedInUser])
 
     useEffect(() => {
         if (!orders.length) {
@@ -27,7 +28,7 @@ export function DashboardAnalytics() {
         const months = []
         const monthLabels = []
         const now = new Date()
-        
+
         for (let i = 4; i >= 0; i--) {
             const date = new Date(now.getFullYear(), now.getMonth() - i, 1)
             const monthKey = date.toLocaleDateString('en-US', { month: 'short' })
@@ -39,12 +40,14 @@ export function DashboardAnalytics() {
         const statusCount = { pending: 0, approved: 0, rejected: 0 }
         const listingReservations = {}
 
-        orders.forEach(order => {
-            const date = new Date(order.startDate)
+        orders.forEach((order) => {
+            const date = new Date(order.bookDate)
             const monthKey = date.toLocaleDateString('en-US', { month: 'short' })
-            
-            if (!monthlyRevenue[monthKey]) monthlyRevenue[monthKey] = 0
-            monthlyRevenue[monthKey] += order.totalPrice
+
+            if (order.status === 'approved') {
+                if (!monthlyRevenue[monthKey]) monthlyRevenue[monthKey] = 0
+                monthlyRevenue[monthKey] += order.totalPrice
+            }
 
             statusCount[order.status] = (statusCount[order.status] || 0) + 1
 
@@ -52,33 +55,26 @@ export function DashboardAnalytics() {
             listingReservations[listingName] = (listingReservations[listingName] || 0) + 1
         })
 
-        const revenueData = months.map(month => monthlyRevenue[month] || 0)
+        const revenueData = months.map((month) => monthlyRevenue[month] || 0)
 
         const revenueChartData = {
             labels: monthLabels,
-            datasets: [{
-                data: revenueData,
-                backgroundColor: [
-                    '#8b5cf6',
-                    '#3b82f6',
-                    '#60a5fa',
-                    '#22d3ee',
-                    '#2dd4bf'
-                ],
-            }]
+            datasets: [
+                {
+                    data: revenueData,
+                    backgroundColor: ['#8b5cf6', '#3b82f6', '#60a5fa', '#22d3ee', '#2dd4bf'],
+                },
+            ],
         }
 
         const listingChartData = {
             labels: Object.keys(listingReservations),
-            datasets: [{
-                data: Object.values(listingReservations),
-                backgroundColor: [
-                    '#8b5cf6',
-                    '#3b82f6',
-                    '#60a5fa',
-                    '#22d3ee'
-                ],
-            }]
+            datasets: [
+                {
+                    data: Object.values(listingReservations),
+                    backgroundColor: ['#8b5cf6', '#3b82f6', '#60a5fa', '#22d3ee'],
+                },
+            ],
         }
 
         return { revenueChartData, statusCount, listingChartData }
@@ -99,15 +95,21 @@ export function DashboardAnalytics() {
                     <div className="status-list">
                         <div className="status-item">
                             <span>Pending</span>
-                            <span className="status-count pending">{chartData.statusCount.pending}</span>
+                            <span className="status-count pending">
+                                {chartData.statusCount.pending}
+                            </span>
                         </div>
                         <div className="status-item">
                             <span>Approved</span>
-                            <span className="status-count approved">{chartData.statusCount.approved}</span>
+                            <span className="status-count approved">
+                                {chartData.statusCount.approved}
+                            </span>
                         </div>
                         <div className="status-item">
                             <span>Rejected</span>
-                            <span className="status-count rejected">{chartData.statusCount.rejected}</span>
+                            <span className="status-count rejected">
+                                {chartData.statusCount.rejected}
+                            </span>
                         </div>
                     </div>
                 </div>
