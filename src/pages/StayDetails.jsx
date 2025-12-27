@@ -225,6 +225,7 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
     pricePerNight={pricePerNight}
     getGuestsText={getGuestsText}
 />
+</div>
 
       <section className="stay-amenities">
         <h2>What this place offers</h2>
@@ -257,8 +258,7 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
         </div>
       </section>
 
-      {/* <div className="divider"></div> */}
-</div>
+{/* </div> */}
       <section className="stay-reviews">
         {stay.reviews && stay.reviews.slice(0, 6).map((review, idx) => (
           <article key={review.id || idx} className="review-card">
