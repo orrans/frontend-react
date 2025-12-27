@@ -21,7 +21,7 @@ export function DashboardAnalytics() {
         if (orders.length > 0) {
             setChartData(prepareChartData(orders))
         }
-    }, [orders.length])
+    }, [orders])
 
     function prepareChartData(orders) {
         const months = []
