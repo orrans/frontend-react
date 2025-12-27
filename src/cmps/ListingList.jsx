@@ -7,9 +7,8 @@ import { PlatypusLoader } from './PlatypusLoader'
 export function ListingList({}) {
     const [isLoading, setIsLoading] = useState(true)
     const loggedInUser = useSelector((state) => state.userModule.user)
-    const listings = useSelector(
-        (state) =>
-            state.stayModule.stays.filter((stay) => true || stay.host._id === loggedInUser?._id) // TODO: remove true to enable filtering after testing
+    const listings = useSelector((state) =>
+        state.stayModule.stays.filter((stay) => stay.host._id === loggedInUser?._id)
     )
 
     useEffect(() => {
@@ -26,7 +25,7 @@ export function ListingList({}) {
         }
     }, [listings.length])
 
-    if (isLoading) return <PlatypusLoader/>
+    if (isLoading) return <PlatypusLoader />
     return (
         <div className="listing-table">
             <table>
