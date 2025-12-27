@@ -42,7 +42,12 @@ export function StayCheckout() {
 async function onConfirmBooking() {
   try {
     if (!user) {
-return navigate('/login', { state: { from: location.pathname } })
+return navigate('/login', { 
+        state: { 
+          from: location.pathname, 
+          ...bookingState 
+        } 
+      })
     }
     
     const order = orderService.getEmptyOrder()
