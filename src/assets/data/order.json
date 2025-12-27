@@ -22,7 +22,9 @@
         "stay": {
             "_id": "622f337a75c7d36e498aaaf8",
             "name": "Westin Kaanapali KORVN 2BR",
-            "price": 595
+            "price": 595,
+            "imgUrl":
+      "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436975/hx9ravtjop3uqv4giupt.jpg"
         },
         "msgs": [],
         "status": "pending"
@@ -50,7 +52,9 @@
         "stay": {
             "_id": "622f337a75c7d36e498aaaf9",
             "name": "Belle chambre à côté Metro Papineau",
-            "price": 30
+            "price": 30,
+            "imgUrl":
+            "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437045/dmquvficldi8ssfdlrrx.jpg"
         },
         "msgs": [],
         "status": "approved"

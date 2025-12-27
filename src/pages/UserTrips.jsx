@@ -23,13 +23,24 @@ export function UserTrips() {
     }
 
     if (!orders.length) return (
-        <section className="trips-empty main-container">
-            <h1>No trips booked... yet!</h1>
-            <button className="airbnb-btn-pink" onClick={() => navigate('/')}>
-                Start searching
-            </button>
-        </section>
-    )
+    <section className="user-trips-page main-container">
+        <h1 className="page-title">Trips</h1>
+        
+        <div className="trips-empty">
+            <div className="empty-img-container">
+                <img src="/img/noTrips.png" alt="Build your trip" />
+            </div>
+
+            <div className="empty-state-content">
+                <h2>Build the perfect trip</h2>
+                <p>Explore homes, experiences, and services. When you book, your reservations will show up here.</p>
+                <button className="airbnb-btn-pink" onClick={() => navigate('/')}>
+                    Get started
+                </button>
+            </div>
+        </div>
+    </section>
+)
 
     return (
         <section className="user-trips-page main-container">

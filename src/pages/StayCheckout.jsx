@@ -161,7 +161,10 @@ return navigate('/login', {
     <div className="success-modal">
       <button
         className="close-btn"
-        onClick={() => setIsSuccessOpen(false)}
+        onClick={() => {
+          setIsSuccessOpen(false)
+          navigate('/trips')
+        }}
       >
         ✕
       </button>
