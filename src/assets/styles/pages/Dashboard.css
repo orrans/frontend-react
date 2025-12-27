@@ -12,27 +12,33 @@
   gap: 10px;
   margin: 32px 0;
   border-bottom: none;
+
+  a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    border-bottom: none;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #111827;
+    }
+
+    &.active {
+      color: #FF385C;
+    }
+  }
 }
 
-.dashboard-nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  border-radius: 10px;
-  border-bottom: none;
-  transition: all 0.3s;
+.dashboard-content {
+  padding: 0;
+  max-width: 100%;
 }
 
-.dashboard-nav a:hover {
-  color: #111827;
-}
-
-.dashboard-nav a.active {
-  color: #FF385C;
-}
-
-.order-list-container {
+.order-list-container,
+.listing-list-container {
   padding: 0;
 }
 
@@ -46,6 +52,107 @@
   grid-template-columns: 1fr;
   gap: 16px;
   font-size: 18px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+  max-height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+}
+
+.status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.status-count {
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  &.pending {
+    color: orange;
+  }
+
+  &.approved {
+    color: green;
+  }
+
+  &.rejected {
+    color: red;
+  }
+}
+
+.chart {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 180px;
+
+  canvas {
+    max-height: 180px;
+  }
+}
+
+.order-count,
+.listing-count {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  padding: 0 5px;
+}
+
+.orders-table,
+.listings-table {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 5px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    text-align: left;
+    padding: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+  }
+
+  td {
+    padding: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 0.875rem;
+  }
 }
 
 @media (min-width: 800px) {
@@ -79,108 +186,4 @@
   .dashboard {
     padding: 0 20px;
   }
-}
-
-.dashboard-content {
-  padding: 0;
-  max-width: 100%;
-}
-
-.dashboard-card {
-  background: white;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
-  max-height: 250px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.dashboard-card h2 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #111827;
-}
-
-.status-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.status-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1rem;
-}
-
-.status-count {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.status-count.pending {
-  color: orange;
-}
-
-.status-count.approved {
-  color: green;
-}
-
-.status-count.rejected {
-  color: red;
-}
-
-.chart {
-  padding: 10px;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 180px;
-}
-
-.chart canvas {
-  max-height: 180px;
-}
-
-.order-count {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
-  color: #111827;
-  padding: 0 5px;
-}
-
-.orders-table {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin: 0 5px;
-}
-
-.orders-table table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.orders-table th {
-  text-align: left;
-  padding: 1rem;
-  font-weight: 500;
-  color: #6b7280;
-  border-bottom: 1px solid #e5e7eb;
-  font-size: 0.875rem;
-}
-
-.orders-table td {
-  padding: 1rem;
-  border-bottom: 1px solid #f3f4f6;
-  font-size: 0.875rem;
 }
