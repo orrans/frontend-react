@@ -112,11 +112,14 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
 
   const amenities = stay.amenities || []
 
-  function getGuestsText({ adults = 0, kids = 0, infants = 0, pets = 0 }) {
-  const guests = adults + kids
+  function getGuestsText({ adults = 0, kids = 0, infants = 0, pets = 0 } = {}) {
+  
+  const totalGuests = adults + kids
+  
+  if (!totalGuests && !infants && !pets) return 'Add guests'
+  
   const parts = []
-
-  if (guests) parts.push(`${guests} guest${guests > 1 ? 's' : ''}`)
+  if (totalGuests) parts.push(`${totalGuests} guest${totalGuests > 1 ? 's' : ''}`)
   if (infants) parts.push(`${infants} infant${infants > 1 ? 's' : ''}`)
   if (pets) parts.push(`${pets} pet${pets > 1 ? 's' : ''}`)
 

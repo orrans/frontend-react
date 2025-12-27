@@ -29,7 +29,10 @@ export function Login() {
             const userCreds = { ...credentials, password: 'mySecretPassword' }
             await login(userCreds)
             const backToUrl = location.state?.from || '/'
-            navigate(backToUrl, { replace: true })
+            const dataToRestore = location.state || {}
+            navigate(backToUrl, { replace: true,
+                state: dataToRestore
+             })
 
         } catch (err) {
             console.log('Login failed', err)
