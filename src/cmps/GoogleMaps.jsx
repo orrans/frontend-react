@@ -19,8 +19,12 @@ export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), w
         useEffect(() => {
             if (!map || !stays.length || selectedStay) return
             
-            // Only fitBounds if there are multiple stays
-            if (stays.length > 1) {
+            if (stays.length === 1) {
+                const stayLocation = fixLoc(stays[0].loc)
+                map.setCenter(stayLocation)
+                map.setZoom(13)
+            }
+            else if (stays.length > 1) {
                 const bounds = new google.maps.LatLngBounds()
                 stays.forEach((stay) => bounds.extend(fixLoc(stay.loc)))
                 map.fitBounds(bounds)
@@ -39,7 +43,6 @@ export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), w
         return null
     }
     
-    // Center on the first stay's location
     const mapCenter = stays.length > 0 ? fixLoc(stays[0].loc) : { lat: 32.0853, lng: 34.7818 }
 
     return (
