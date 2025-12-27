@@ -2,7 +2,10 @@
 import { useParams, useNavigate, useLocation, useSearchParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { stayService } from '../services/stay/stay.service.local'
+
 import { StayHighlights } from '../cmps/StayHighlights'
+import { StayBooking } from '../cmps/StayBooking'
+
 import { StarIcon } from '../cmps/icons/StarIcon'
 
 import { PlatypusLoader } from '../cmps/PlatypusLoader'
@@ -212,78 +215,16 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
 
         </div>
 
-        <aside className="stay-booking">
-          <div className="booking-sticky">
-            <div className="booking-card">
-
-              <div className="booking-price">
-                {!nights ? (
-                  <span className="price-placeholder">
-                    Add dates for prices
-                  </span>
-                ) : (
-                  <>
-                    <span>${totalPrice.toLocaleString()}</span>
-                    <span> for {nights} nights</span>
-                  </>
-                )}
-              </div>
-
-              <div className="booking-box">
-                <div className="booking-dates">
-                  <div>
-                    <label>CHECK-IN</label>
-                    <span>
-                      {checkIn
-                        ? new Date(checkIn).toLocaleDateString('en-GB')
-                        : 'Add date'}
-                    </span>
-                  </div>
-
-                  <div>
-                    <label>CHECKOUT</label>
-                    <span>
-                      {checkOut
-                        ? new Date(checkOut).toLocaleDateString('en-GB')
-                        : 'Add date'}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="booking-guests">
-                  <label>GUESTS</label>
-                  <span>
-                    {getGuestsText(guests)}
-                  </span>
-                </div>
-              </div>
-
-              <button
-                className="reserve-btn"
-                onClick={() =>
-                  navigate(`/stay/${stayId}/checkout`, {
-                    state: {
-                      checkIn,
-                      checkOut,
-                      guests,
-                      nights,
-                      pricePerNight,
-                      totalPrice
-                    }
-                  })
-                }
-              >
-                Reserve
-              </button>
-
-
-              <p className="booking-note">
-                You won’t be charged yet
-              </p>
-            </div>
-          </div>
-        </aside>
-      </div>
+        <StayBooking 
+    stay={stay}
+    checkIn={checkIn}
+    checkOut={checkOut}
+    guests={guests}
+    nights={nights}
+    totalPrice={totalPrice}
+    pricePerNight={pricePerNight}
+    getGuestsText={getGuestsText}
+/>
 
       <section className="stay-amenities">
         <h2>What this place offers</h2>
@@ -317,7 +258,7 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
       </section>
 
       {/* <div className="divider"></div> */}
-
+</div>
       <section className="stay-reviews">
         {stay.reviews && stay.reviews.slice(0, 6).map((review, idx) => (
           <article key={review.id || idx} className="review-card">
