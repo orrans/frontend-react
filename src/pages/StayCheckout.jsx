@@ -8,6 +8,7 @@ import { formatGuests } from '../services/util.service'
 import { PlatypusLoader } from '../cmps/PlatypusLoader'
 import { LoginModal } from '../cmps/LoginModal.jsx'
 import { ReservationSuccessModal } from '../cmps/ReservationSuccessModal'
+import { StarIcon } from '../cmps/icons/StarIcon'
 
 // import { userService } from '../services/user.service.js' 
 
@@ -97,8 +98,9 @@ async function onConfirmBooking() {
           
           <section className="payment-container">
             <div className="checkout-card checkout-payment">
-              <h2 className="payment-title">1. Add payment method</h2>
+              
               <div className="payment-option">
+                <h2 className="payment-title">Add payment method</h2>
                 <div className="payment-header">
                   <span>💳 Credit or debit card</span>
                 </div>
@@ -123,7 +125,7 @@ async function onConfirmBooking() {
                 <img src={stay.imgUrls[0]} alt={stay.name} />
                 <div className="checkout-summary">
                   <h2>{stay.name}</h2>
-                  <p>⭐ 4.94 · Superhost</p>
+                  <p><StarIcon/> 4.94 · Superhost</p>
                 </div>
               </div>
 
