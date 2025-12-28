@@ -57,12 +57,28 @@ export function DashboardAnalytics() {
 
         const revenueData = months.map((month) => monthlyRevenue[month] || 0)
 
+        const createGradient = (ctx, chartArea) => {
+            if (!chartArea) return null
+            const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top)
+            gradient.addColorStop(0, 'rgb(189, 30, 89)')
+            gradient.addColorStop(0.25, 'rgb(215, 4, 102)')
+            gradient.addColorStop(0.5, 'rgb(227, 28, 95)')
+            gradient.addColorStop(0.75, 'rgb(230, 30, 77)')
+            gradient.addColorStop(1, 'rgb(255, 56, 92)')
+            return gradient
+        }
+
         const revenueChartData = {
             labels: monthLabels,
             datasets: [
                 {
                     data: revenueData,
-                    backgroundColor: ['#8b5cf6', '#3b82f6', '#60a5fa', '#22d3ee', '#2dd4bf'],
+                    backgroundColor: (context) => {
+                        const chart = context.chart
+                        const { ctx, chartArea } = chart
+                        if (!chartArea) return null
+                        return createGradient(ctx, chartArea)
+                    },
                 },
             ],
         }
@@ -72,7 +88,13 @@ export function DashboardAnalytics() {
             datasets: [
                 {
                     data: Object.values(listingReservations),
-                    backgroundColor: ['#8b5cf6', '#3b82f6', '#60a5fa', '#22d3ee'],
+                    backgroundColor: [
+                        'rgb(255, 56, 92)',
+                        'rgb(236, 72, 153)',
+                        'rgb(219, 39, 119)',
+                        'rgb(190, 18, 60)',
+                        'rgb(157, 23, 77)'
+                    ],
                 },
             ],
         }
