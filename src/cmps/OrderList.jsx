@@ -46,7 +46,7 @@ export function OrderList() {
                             <th>Listing</th>
                             <th>Total Payout</th>
                             <th>Status</th>
-                            <th>To do</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
