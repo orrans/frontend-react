@@ -131,8 +131,7 @@
             border: 1px solid #dddddd;
             border-radius: 12px;
             padding: 24px;
-            box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px; /* הצללה עדינה */
-
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
             .checkout-top {
                 display: flex;
                 gap: 12px;
