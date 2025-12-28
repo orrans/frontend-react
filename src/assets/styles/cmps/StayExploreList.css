@@ -72,12 +72,20 @@
 
     &::scroll-button(right) {
         right: var(--padding);
-        content: '>';
+        content: '';
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path></svg>');
+        background-size: 0.75rem;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     &::scroll-button(left) {
         right: calc(var(--scroll-btn-size) + var(--scroll-btn-spacing) + var(--padding));
-        content: '<';
+        content: '';
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path></svg>');
+        background-size: 0.75rem;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     &::scroll-button(right),
@@ -92,6 +100,21 @@
         width: var(--scroll-btn-size);
         border-radius: 50%;
         cursor: pointer;
+        background-color: #F2F2F2;
+        transition: 0.25s transform, 0.2s background-color;
+
+    }
+
+    &::scroll-button(right):disabled,
+    &::scroll-button(left):disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+    }
+
+    &::scroll-button(right):hover,
+    &::scroll-button(left):hover {
+        transform: scale(1.1);
+        background-color: #EBEBEB;
     }
 }
 
