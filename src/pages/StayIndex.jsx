@@ -7,6 +7,7 @@ import { groupBy } from '../services/util.service.js'
 import { loadOrders } from '../store/actions/order.actions.js'
 import { PlatypusLoader } from '../cmps/PlatypusLoader.jsx'
 import { userService } from '../services/user'
+import { SpecialBtn } from '../cmps/SpecialBtn.jsx'
 
 export function StayIndex() {
     const stays = useSelector((storeState) => storeState.stayModule.stays)
@@ -27,6 +28,7 @@ export function StayIndex() {
 
     return (
         <main className="stay-index">
+            <SpecialBtn txt={'BUTTONNN'}/>
             <section className="stay-explore-list-container">
                 {Object.entries(groups).map(([key, value]) => {
                     return <StayExploreList key={key} stays={value} title={key} />
