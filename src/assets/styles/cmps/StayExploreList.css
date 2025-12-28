@@ -13,6 +13,10 @@
     list-style: none;
 }
 
+.loc-chev-link {
+    margin-left: 2px;
+}
+
 @media (max-width: 1440px) {
     .stay-explore-list {
         --visible-cards: 6;
