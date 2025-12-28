@@ -164,7 +164,7 @@
 
   th {
     text-align: left;
-    padding: 1rem;
+    padding: 16px 12px;
     font-weight: 500;
     color: #6b7280;
     border-bottom: 1px solid #e5e7eb;
@@ -172,7 +172,7 @@
   }
 
   td {
-    padding: 1rem;
+    padding: 16px 12px;
     border-bottom: 1px solid #f3f4f6;
     font-size: 0.875rem;
   }

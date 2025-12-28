@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import { format } from 'date-fns'
 import { formatPrice } from '../services/util.service'
+import { SpecialBtn } from './SpecialBtn'
 
 export function ListingPreview({ listing }) {
     const dateFormat = 'dd/MM/yyyy'
@@ -16,7 +17,7 @@ export function ListingPreview({ listing }) {
             </td>
             <td>
                 <div className="listing-row-actions">
-                    <button onClick={handleUpdate}>Update</button>
+                    <SpecialBtn txt={'Edit'} onClick={handleUpdate} />
                 </div>
             </td>
             <td>{listing.capacity}</td>
