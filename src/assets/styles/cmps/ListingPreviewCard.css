@@ -1,0 +1,76 @@
+.listing-card {
+    margin-bottom: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    .card-listing-header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 12px;
+
+        img {
+            width: 72px;
+            height: 72px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .listing-title-data {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .listing-name {
+                font-weight: 500;
+                font-size: 1rem;
+                color: #222;
+            }
+
+            .listing-location {
+                font-size: 0.875rem;
+                color: #717171;
+            }
+        }
+    }
+
+    .card-data {
+        margin-bottom: 8px;
+
+        b {
+            margin-right: 0.5ch;
+        }
+    }
+
+    .listing-card-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+
+        .special-btn {
+            padding: 5px 10px;
+            margin: 5px;
+            font-size: 0.825rem;
+            width: 100%;
+        }
+    }
+}
+
+.listing-count-card {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .listing-card {
+        padding: 16px;
+        max-width: 100%;
+    }
+}
