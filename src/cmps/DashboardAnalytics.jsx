@@ -149,6 +149,8 @@ export function DashboardAnalytics() {
 
     if (!chartData) return null
 
+    const currentMonthName = new Date().toLocaleDateString('en-US', { month: 'long' })
+
     return (
         <div className="dashboard-analytics">
             <div className="dashboard-grid">
@@ -189,9 +191,9 @@ export function DashboardAnalytics() {
 
             <div className="dashboard-card full-width">
                 <div className="card-header">
-                    <h2>Orders per day - Current month</h2>
+                    <h2>{currentMonthName} orders</h2>
                     <div className="month-income">
-                        <span className="income-label">Current Month Income:</span>
+                        <span className="income-label">Monthly Income:</span>
                         <span className="income-value">${chartData.currentMonthIncome.toLocaleString()}</span>
                     </div>
                 </div>
