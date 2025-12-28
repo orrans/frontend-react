@@ -37,7 +37,7 @@
 }
 
 .explore-list-container {
-    --padding: 46px;
+    --padding: 26px;
 
     position: relative;
     padding: 0px var(--padding);
