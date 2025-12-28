@@ -197,6 +197,7 @@
     height: 30px;
     color: #717171;
     /* Generic gray avatar */
+    flex-shrink: 0;
 }
 
 .app-header .avatar-btn {
@@ -309,14 +310,12 @@
 
 @media (max-width: 768px) {
     .app-header {
-        overflow-x: hidden;
         max-width: 100%;
     }
 
     .app-header .header-container {
         padding: 0 10px;
         max-width: 100%;
-        overflow-x: hidden;
 
         .logo {
             flex: 0;

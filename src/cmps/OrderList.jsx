@@ -11,7 +11,9 @@ export function OrderList() {
     const [isLoading, setIsLoading] = useState(true)
     const loggedInUser = useSelector((state) => state.userModule.user)
     const orders = useSelector((state) =>
-        state.orderModule.orders.filter((order) => order.hostId._id === loggedInUser?._id)
+        state.orderModule.orders
+            .filter((order) => order.hostId._id === loggedInUser?._id)
+            .sort((a, b) => new Date(b.bookDate) - new Date(a.bookDate))
     )
     const isMobile = useIsMobile()
 
