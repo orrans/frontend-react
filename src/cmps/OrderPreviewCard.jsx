@@ -10,18 +10,24 @@ export function OrderPreviewCard({ order }) {
     const isPending = order.status.toLowerCase() === 'pending'
     const [isOpen, setIsOpen] = useState(false)
 
-    function handleAccept() {
+    function handleAccept(ev) {
+        ev.stopPropagation()
         updateOrderStatus(order._id, 'approved')
     }
 
-    function handleReject() {
+    function handleReject(ev) {
+        ev.stopPropagation()
         updateOrderStatus(order._id, 'rejected')
     }
 
     return (
         <div className="order-card" onClick={() => setIsOpen((prev) => !prev)}>
             <div className="card-guest">
-                <img src={order.guest.imgUrl} /> {order.guest.fullname}
+                <img src={order.guest.imgUrl} />
+                <div className="guest-title-data">
+                    <span>{order.guest.fullname}</span>
+                    {!isOpen && <span className={order.status.toLowerCase()}>{order.status}</span>}
+                </div>
             </div>
             <div className="card-data">
                 <b>Listing:</b>
@@ -41,9 +47,9 @@ export function OrderPreviewCard({ order }) {
                         <b>Booked at:</b>
                         {order.bookDate ? format(new Date(order.bookDate), dateFormat) : '-'}
                     </div>
-                    <div className={`${order.status.toLowerCase()} card-data`}>
+                    <div className="card-data">
                         <b>Status:</b>
-                        {order.status}
+                        <span className={order.status.toLowerCase()}>{order.status}</span>
                     </div>
                     <div className="card-data">
                         <b>Total price:</b>

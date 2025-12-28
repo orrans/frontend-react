@@ -18,6 +18,11 @@
             border-radius: 50%;
             object-fit: cover;
         }
+
+        .guest-title-data {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .card-data {
@@ -70,6 +75,25 @@
                 }
             }
         }
+    }
+
+    .pending {
+        color: #ff9800;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    .approved,
+    .completed {
+        color: #22c55e;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    .rejected {
+        color: #ff5a5f;
+        font-weight: 500;
+        text-transform: capitalize;
     }
 }
 
