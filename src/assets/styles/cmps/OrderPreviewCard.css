@@ -110,4 +110,7 @@
         padding: 16px;
         max-width: 100%;
     }
+    .order-list-container {
+        margin-bottom: 24px;
+    }
 }
