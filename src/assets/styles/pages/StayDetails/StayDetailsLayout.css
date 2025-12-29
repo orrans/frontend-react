@@ -92,6 +92,7 @@
   margin-bottom: 48px;
 }
 
+
 .review-text {
   font-size: 16px;
   line-height: 1.5;
@@ -108,17 +109,19 @@
   break-inside: avoid;
 }
 
+.review-card .show-more {
+  display: block;
+  margin-left: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .review-header {
   display: flex;
   gap: 12px;
   align-items: center;
   margin-bottom: 12px;
 }
-
-/* .review-author-info h4 {
-  margin: 0;
-  font-size: 16px;
-} */
 
 .review-author-info h4,
 .review-author-info h3 {
@@ -131,11 +134,6 @@
   color: #222222;
   margin: 0;
 }
-
-/* .review-date {
-  font-size: 14px;
-  color: #717171;
-} */
 
 .review-author-info .review-date,
 .review-author-info span {

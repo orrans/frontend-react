@@ -26,3 +26,11 @@
     object-fit: cover;
     display: block;
 }
+
+.stay-sleep {
+    &.divider {
+        /* width: 90%; */
+
+    }
+    margin-bottom: 32px;
+}
