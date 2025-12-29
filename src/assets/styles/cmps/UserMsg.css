@@ -1,39 +1,70 @@
 .user-msg {
     position: fixed;
-    top: 60px;
-    right: .2em;
-
+    bottom: 40px;
+    left: 50%;
+    z-index: 5000;
     display: flex;
     align-items: center;
-
-    padding: .2em;
-    padding-inline-end: 20px;
-    background-color: grey;
-
-    color:white;
-    font-size: .9em;
-
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 320px;
+    max-width: 480px;
+    padding: 14px 24px;
+    background-color: var(--clr-text-main);
+    color: var(--clr-bg);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.4;
     opacity: 0;
-    translate: 150%;
-    transition: 600ms;
+    translate: -50% 150%;
+    transition: translate 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .user-msg.visible {
     opacity: 1;
-    translate: 0;
-}
-
-.user-msg button {
-    background-color: var(--gray1);
-    padding: 1px 6px;
-    border:0;
-    border-radius: 50%;
-    color: var(--gray4);
+    translate: -50% 0;
+    pointer-events: auto;
 }
 
 .user-msg.success {
-    background-color: rgb(41, 189, 73);
+    background-color: var(--clr-success);
 }
+
 .user-msg.error {
-    background-color: rgb(216, 59, 59);
+    background-color: var(--clr-brand);
+}
+
+.user-msg button {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+    margin-inline-start: 8px;
+    border-radius: 50%;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-msg button:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 600px) {
+    .user-msg {
+        min-width: auto;
+        width: 90%;
+        bottom: 20px;
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
 }

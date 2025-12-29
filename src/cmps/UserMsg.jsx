@@ -1,6 +1,7 @@
 import { eventBus, showSuccessMsg } from '../services/event-bus.service'
 import { useState, useEffect, useRef } from 'react'
 import { socketService, SOCKET_EVENT_REVIEW_ABOUT_YOU } from '../services/socket.service'
+import { addOrderFromSocket } from '../store/actions/order.actions'
 
 export function UserMsg() {
     const [msg, setMsg] = useState(null)
@@ -22,6 +23,7 @@ export function UserMsg() {
 
         socketService.on('order-added', (order) => {
             showSuccessMsg(`New Order! 🔔 ${order.guest.fullname} booked ${order.stay.name}`)
+            addOrderFromSocket(order)
         })
 
         return () => {
