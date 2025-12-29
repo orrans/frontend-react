@@ -3,14 +3,13 @@ import { differenceInDays, format } from 'date-fns'
 import { shortDateFmt } from '../services/stay/date.service'
 import { Fragment, useState } from 'react'
 import { StarIcon } from './icons/StarIcon'
-import { Heart } from 'lucide-react'
 import { HeartIcon } from './icons/HeartIcon'
 import { Carousel } from './Carousel'
 import { formatPrice, getRandomIntInclusive } from '../services/util.service'
 import { useSelector } from 'react-redux'
 import { addToWishlist, removeFromWishlist } from '../store/actions/user.actions'
 
-export function StayPreview({ stay, fromDate, toDate, variant = 'explore', showPrice = true }) {
+export function StayPreview({ stay, fromDate, toDate, variant = 'explore', showPrice = true ,isMapPreview=false}) {
     const wishlist = useSelector((state) => state.userModule.user?.wishlist) || []
     const days = differenceInDays(toDate, fromDate)
     const isFavorite = wishlist.includes(stay._id)
@@ -76,7 +75,10 @@ const guests = {
                                 ev.stopPropagation()
                                 setIsFavorite()
                             }}
-                            fill={isFavorite ? `var(--clr-brand)` : undefined}
+                            size={isMapPreview ? 16 : 24}
+                            fill={isFavorite ? `var(--clr-brand)` : isMapPreview ? 'transparent' : undefined}
+                            strokeColor={isFavorite && isMapPreview ? `var(--clr-brand)` : isMapPreview ? 'rgba(0, 0, 0, 0.7)' : undefined}
+                            strokeWidth={isMapPreview ? 3 : 2}
                         />
                     </div>
                 </div>
