@@ -1,59 +1,52 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { orderService } from '../services/order'
+import { loadUserOrders } from '../store/actions/order.actions'
 
 export function UserTrips() {
-    const [orders, setOrders] = useState([])
+    const orders = useSelector(storeState => storeState.orderModule.userOrders)
     const user = useSelector(storeState => storeState.userModule.user)
     const navigate = useNavigate()
 
     useEffect(() => {
-        if (user) loadOrders()
+        if (user) {
+            loadUserOrders(user._id)
+        }
     }, [user])
 
 
-async function loadOrders() {
-        try {
-            const allOrders = await orderService.query()
-            const userOrders = allOrders.filter(order => order.guest._id === user._id)
+    const sortedOrders = orders?.slice().sort((a, b) => {
+        const dateA = new Date(a.bookDate || a.createdAt).getTime()
+        const dateB = new Date(b.bookDate || b.createdAt).getTime()
+        return dateB - dateA
+    }) || []
 
-            const sortedOrders = userOrders.sort((a, b) => {
-                const dateA = new Date(a.bookDate).getTime()
-                const dateB = new Date(b.bookDate).getTime()
-                return dateB - dateA
-            })
 
-            setOrders(sortedOrders)
-        } catch (err) {
-            console.error('Cannot load orders', err)
-        }
-    }
 
-    if (!orders.length) return (
-    <section className="user-trips-page main-container">
-        <h1 className="page-title">Trips</h1>
-        
-        <div className="trips-empty">
-            <div className="empty-img-container">
-                <img src="/img/noTrips.png" alt="Build your trip" />
+    if (!sortedOrders.length) return (
+        <section className="user-trips-page main-container">
+            <h1 className="page-title">Trips</h1>
+
+            <div className="trips-empty">
+                <div className="empty-img-container">
+                    <img src="/img/noTrips.png" alt="Build your trip" />
+                </div>
+
+                <div className="empty-state-content">
+                    <h2>Build the perfect trip</h2>
+                    <p>Explore homes, experiences, and services. When you book, your reservations will show up here.</p>
+                    <button className="airbnb-btn-pink" onClick={() => navigate('/')}>
+                        Get started
+                    </button>
+                </div>
             </div>
-
-            <div className="empty-state-content">
-                <h2>Build the perfect trip</h2>
-                <p>Explore homes, experiences, and services. When you book, your reservations will show up here.</p>
-                <button className="airbnb-btn-pink" onClick={() => navigate('/')}>
-                    Get started
-                </button>
-            </div>
-        </div>
-    </section>
-)
+        </section>
+    )
 
     return (
         <section className="user-trips-page main-container">
             <h1 className="page-title">My Trips</h1>
-            
+
             <div className="orders-list">
                 {orders.map(order => (
                     <div key={order._id} className="trip-row-wrapper">
@@ -61,7 +54,7 @@ async function loadOrders() {
                             <div className="img-container">
                                 <img src={order.stay.imgUrl} alt={order.stay.name} />
                             </div>
-                            
+
                             <div className="trip-details">
                                 <div className="info-main">
                                     <h3>{order.stay.name}</h3>
@@ -69,7 +62,7 @@ async function loadOrders() {
                                         {new Date(order.startDate).toLocaleDateString('en-GB')} – {new Date(order.endDate).toLocaleDateString('en-GB')}
                                     </p>
                                 </div>
-                                
+
                                 <div className="status-indicator">
                                     <span className={`status-label ${order.status.toLowerCase()}`}>
                                         {order.status}

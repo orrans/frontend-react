@@ -1,7 +1,7 @@
 import { eventBus, showSuccessMsg } from '../services/event-bus.service'
 import { useState, useEffect, useRef } from 'react'
 import { socketService, SOCKET_EVENT_REVIEW_ABOUT_YOU } from '../services/socket.service'
-import { addOrderFromSocket } from '../store/actions/order.actions'
+import { addOrderFromSocket, updateOrderFromSocket } from '../store/actions/order.actions'
 
 export function UserMsg() {
     const [msg, setMsg] = useState(null)
@@ -21,32 +21,55 @@ export function UserMsg() {
             showSuccessMsg(`New review about me ${review.txt}`)
         })
 
+        // New Order Listener (Host Side)
         socketService.on('order-added', (order) => {
             addOrderFromSocket(order)
-
             const newMsg = {
                 type: 'success',
                 title: 'New booking confirmed!',
                 txt: `${order.guest.fullname} booked ${order.stay.name}.`,
                 imgUrl: order.stay.imgUrl
             }
-
             setMsg(newMsg)
+            resetTimeout()
+        })
 
-            if (timeoutIdRef.current) {
-                clearTimeout(timeoutIdRef.current)
-                timeoutIdRef.current = null
+        // --- Order Status Listener (Guest Side) ---
+        socketService.on('order-status-updated', (order) => {
+            updateOrderFromSocket(order)
+
+            const isApproved = order.status === 'approved'
+            const title = isApproved ? 'Reservation Approved!' : 'Reservation Declined'
+            const txt = isApproved
+                ? `Pack your bags! Your stay at ${order.stay.name} is confirmed.`
+                : `Your reservation at ${order.stay.name} was declined.`
+
+            const newMsg = {
+                type: isApproved ? 'success' : 'error',
+                title: title,
+                txt: txt,
+                imgUrl: order.stay.imgUrl
             }
-            timeoutIdRef.current = setTimeout(closeMsg, 5000)
+            setMsg(newMsg)
+            resetTimeout()
         })
 
         return () => {
             unsubscribe()
             socketService.off(SOCKET_EVENT_REVIEW_ABOUT_YOU)
             socketService.off('order-added')
+            socketService.off('order-status-updated')
         }
     }, [])
 
+
+    function resetTimeout() {
+        if (timeoutIdRef.current) {
+            clearTimeout(timeoutIdRef.current)
+            timeoutIdRef.current = null
+        }
+        timeoutIdRef.current = setTimeout(closeMsg, 5000)
+    }
 
     function closeMsg() {
         setMsg(null)
