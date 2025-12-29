@@ -62,7 +62,10 @@ async function onConfirmBooking() {
     order.stay.imgUrl = stay.imgUrls[0]
 
     order.hostId = {
-      _id: stay.host._id,
+      // for demo
+      // _id: stay.host._id,
+      _id: "u102",
+
       fullname: stay.host.fullname || '',
       imgUrl: stay.host.imgUrl || ''
     }

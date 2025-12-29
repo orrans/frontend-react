@@ -148,16 +148,16 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
             </header>
 
             <div className="stay-gallery">
-                <div className="gallery-main">
-                    <img src={stay.imgUrls[0]} alt={stay.name} />
-                </div>
+    <div className="gallery-main">
+        <img src={stay.imgUrls[0]} alt={stay.name} />
+    </div>
 
-                <div className="gallery-side">
-                    {stay.imgUrls.slice(1, 5).map((img, idx) => (
-                        <img key={idx} src={img} alt={stay.name} />
-                    ))}
-                </div>
-            </div>
+    <div className="gallery-side">
+        {stay.imgUrls.slice(1, 5).map((img, idx) => (
+            <img key={idx} src={img} alt={stay.name} />
+        ))}
+    </div>
+</div>
 
             <div className="stay-details-layout">
                 <div className="stay-details-main">
@@ -172,14 +172,18 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                             {stay.bathrooms !== 1 ? 's' : ''}
                         </p>
 
-                        <div className="stay-rating-row">
-                            <span className="rating">
-                                <StarIcon size={8} />
-                                <span>4.73</span>
-                            </span>
-                            &nbsp;·&nbsp;
-                            <span className="reviews">{stay.reviews?.length || 0} reviews</span>
-                        </div>
+                        
+<div className="stay-rating-row">
+  <span className="rating">
+    <StarIcon size={8} />
+    <span>4.73</span>
+  </span>
+
+  <span className="dot">·</span>
+
+  <span className="reviews">{stay.reviews?.length || 0} reviews</span>
+</div>
+
                     </div>
 
                     <section className="stay-host">
