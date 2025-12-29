@@ -175,7 +175,7 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                         <div className="stay-rating-row">
                             <span className="rating">
                                 <StarIcon size={8} />
-                                &nbsp;4.73&nbsp;·&nbsp;
+                                &nbsp;<span className="rating-details">4.73</span>&nbsp;·&nbsp;
                                 <span className="reviews">{stay.reviews?.length || 0} reviews</span>
                             </span>
                         </div>
