@@ -75,6 +75,10 @@
             flex-wrap: wrap;
         }
 
+        .footer-left{
+            margin-top: 20px;
+        }
+
         .footer-content {
             height: unset;
             flex-direction: column;

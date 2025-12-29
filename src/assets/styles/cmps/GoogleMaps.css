@@ -4,7 +4,8 @@
     position: sticky;
     top: calc(var(--header-height) + 32px  );
     height: calc(100vh - var(--header-height));
-    padding: 0 28px 20px 0;
+    padding: 0 28px 54px 0;
+    margin-bottom: 24px;
 
     .map-wrapper {
         height: 100%;
