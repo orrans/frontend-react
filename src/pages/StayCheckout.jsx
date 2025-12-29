@@ -74,16 +74,15 @@ export function StayCheckout() {
                 imgUrl: 'https://xsgames.co/randomusers/assets/avatars/female/2.jpg'
             }
 
-
             order.guest._id = user._id
             order.guest.fullname = user.fullname
+            order.guest.imgUrl = 'https://randomuser.me/api/portraits/men/32.jpg'
 
             await orderService.save(order)
             setIsSuccessOpen(true)
 
         } catch (err) {
             console.error('Had issues booking:', err)
-            alert('Could not complete booking')
         }
     }
 
