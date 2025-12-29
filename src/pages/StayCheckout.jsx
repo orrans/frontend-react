@@ -10,7 +10,6 @@ import { LoginModal } from '../cmps/LoginModal.jsx'
 import { ReservationSuccessModal } from '../cmps/ReservationSuccessModal'
 import { StarIcon } from '../cmps/icons/StarIcon'
 
-// import { userService } from '../services/user.service.js' 
 
 export function StayCheckout() {
     const { stayId } = useParams()

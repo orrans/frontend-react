@@ -314,6 +314,13 @@ body {
     letter-spacing: 0.5px;
 }
 
+
+.stay-description .show-more-btn {
+    align-self: flex-start;
+    margin-left: 0;
+}
+
+
 .status-label.approved { color: #1d8a01; }
 .status-label.pending { color: #b08900; }
 .status-label.rejected { color: #FF385C; }
