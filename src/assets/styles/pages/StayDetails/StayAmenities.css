@@ -3,6 +3,9 @@
   border-top: 1px solid var(--clr-border);
   padding-top: 32px;
   margin-top: 32px;
+  grid-column: 1 / 2;
+  overflow: hidden;
+  justify-self: start;
 }
 
 .stay-amenities h2 {
@@ -27,6 +30,7 @@
   font-size: 16px;
   color: #222;
   line-height: 1.4;
+  padding-inline-end: 64px;
 }
 
 
@@ -36,7 +40,6 @@
   justify-content: center;
   min-width: 24px;
 }
-
 
 
 .amenities-modal-list {
@@ -66,6 +69,16 @@
   justify-self: start;
   margin-left: 0;
 }
+
+.stay-amenities::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #ddd;
+  /* margin-top: 32px; */
+  align-self: stretch;
+}
+
 
 @media (max-width: 600px) {
   .amenities-list {
