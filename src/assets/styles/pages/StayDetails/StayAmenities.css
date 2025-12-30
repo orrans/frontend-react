@@ -3,7 +3,6 @@
   border-top: 1px solid var(--clr-border);
   padding-top: 32px;
   margin-top: 32px;
-  /* grid-column: 1; */
   grid-column: 1 / 2;
   overflow: hidden;
   justify-self: start;
@@ -43,7 +42,6 @@
 }
 
 
-
 .amenities-modal-list {
   list-style: none;
   padding: 0;
@@ -71,6 +69,16 @@
   justify-self: start;
   margin-left: 0;
 }
+
+.stay-amenities::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #ddd;
+  /* margin-top: 32px; */
+  align-self: stretch;
+}
+
 
 @media (max-width: 600px) {
   .amenities-list {
