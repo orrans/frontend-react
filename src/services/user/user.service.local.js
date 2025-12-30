@@ -107,10 +107,10 @@ async function _createUsers() {
 
     const usersToSave = [
         {
-            _id: 'u101',
-            fullname: 'John Traveler',
-            imgUrl: 'https://randomuser.me/api/portraits/men/32.jpg',
-            username: 'John Traveler',
+            _id: 'YIvSm',
+            fullname: 'Hodaya Traveler',
+            imgUrl: 'https://i.ibb.co/20H9S68G/hodaya.jpg',
+            username: 'Hodaya Traveler',
             password: 'secret',
             wishlist: [],
             reviews: [
@@ -120,17 +120,17 @@ async function _createUsers() {
                     rate: 4,
                     by: {
                         _id: 'u102',
-                        fullname: 'Maria Host',
-                        imgUrl: 'https://randomuser.me/api/portraits/women/44.jpg',
+                        fullname: 'Aviad Host',
+                        imgUrl: 'https://i.ibb.co/QF359h8M/aviad.jpg',
                     },
                 },
             ],
         },
         {
-            _id: 'u102',
-            fullname: 'Maria Host',
-            imgUrl: 'https://randomuser.me/api/portraits/women/44.jpg',
-            username: 'Maria Host',
+            _id: 'LdZtJ',
+            fullname: 'Aviad Host',
+            imgUrl: 'https://i.ibb.co/QF359h8M/aviad.jpg',
+            username: 'Aviad Host',
             password: 'secret',
             wishlist: [],
         },

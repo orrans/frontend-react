@@ -59,13 +59,13 @@ export function StayCheckout() {
 
             order.hostId = {
                 _id: 'LdZtJ',
-                fullname: 'Maria Host',
-                imgUrl: 'https://xsgames.co/randomusers/assets/avatars/female/2.jpg',
+                fullname: 'Aviad Host',
+                imgUrl: 'https://i.ibb.co/QF359h8M/aviad.jpg',
             }
 
             order.guest._id = user._id
             order.guest.fullname = user.fullname
-            order.guest.imgUrl = 'https://randomuser.me/api/portraits/men/32.jpg'
+            order.guest.imgUrl = 'https://i.ibb.co/20H9S68G/hodaya.jpg' // For now, hardcoded
 
             await orderService.save(order)
             setIsSuccessOpen(true)
@@ -128,8 +128,8 @@ export function StayCheckout() {
                                 <p>
                                     {checkIn && checkOut
                                         ? `${new Date(checkIn).toLocaleDateString(
-                                              'en-GB'
-                                          )} – ${new Date(checkOut).toLocaleDateString('en-GB')}`
+                                            'en-GB'
+                                        )} – ${new Date(checkOut).toLocaleDateString('en-GB')}`
                                         : 'Add dates'}
                                 </p>
                             </div>
