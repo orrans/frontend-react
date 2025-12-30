@@ -17,19 +17,6 @@ export function StayPreview({ stay, fromDate, toDate, variant = 'explore', showP
         if (isFavorite) removeFromWishlist(stay._id)
         else addToWishlist(stay._id)
     }
-    const stayType = [
-        'Apartment',
-        'House',
-        'Villa',
-        'Cottage',
-        'Cabin',
-        'Bungalow',
-        'Condo',
-        'Loft',
-        'Townhouse',
-        'Chalet',
-    ]
-    const [randomStayType] = useState(stayType[getRandomIntInclusive(0, stayType.length - 1)])
     const [randomRating] = useState(() => {
         const integerPart = getRandomIntInclusive(4, 5)
         if (integerPart === 5) {
@@ -91,7 +78,7 @@ const guests = {
                 {variant === 'filtered' && (
                     <>
                         <h4 className="filtered-title">
-                            {randomStayType} in {stay.loc.city}
+                            {stay.type} in {stay.loc.city}
                             <span className="filtered-rating">
                                 <StarIcon size={12} />
                                 &nbsp;{randomRating}&nbsp;({randomReviewCount})
@@ -117,7 +104,7 @@ const guests = {
                 {variant === 'explore' && (
                     <>
                         <h4 className="explore-title">
-                            {randomStayType} in {stay.loc.city}
+                            {stay.type} in {stay.loc.city}
                         </h4>
                         <div className="explore-details">
                             <span>

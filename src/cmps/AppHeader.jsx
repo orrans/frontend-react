@@ -91,7 +91,6 @@ export function AppHeader() {
     async function onLogout() {
         try {
             await logout()
-            showSuccessMsg('Bye now')
             setIsMenuOpen(false)
             navigate('/')
         } catch (err) {

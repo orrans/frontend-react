@@ -2,7 +2,7 @@
   {
     "_id": "622f337a75c7d36e498aaaf8",
     "name": "Westin Kaanapali KORVN 2BR",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436975/hx9ravtjop3uqv4giupt.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436294/mvhb3iazpiar6duvy9we.jpg",
@@ -191,7 +191,7 @@
   {
     "_id": "622f337a75c7d36e498aaaf9",
     "name": "Belle chambre à côté Metro Papineau",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437045/dmquvficldi8ssfdlrrx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437033/rhw6gycttaimzocc1poz.jpg",
@@ -288,7 +288,7 @@
   {
     "_id": "622f337a75c7d36e498aaafa",
     "name": "M&M Space MM2  Apartamento no centro da cidade",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436861/xrxhgsif3ekhxgn8irlm.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437017/gjyzgdjngyrhfrj2loxz.jpg",
@@ -564,7 +564,7 @@
   {
     "_id": "622f337a75c7d36e498aaafb",
     "name": "Fresh and modern 1BR in Bed-Stuy",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436912/xle8ueqxjeazbs4bp09p.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436460/qi3vkpts37b4k0dedosc.jpg",
@@ -826,7 +826,7 @@
   {
     "_id": "622f337a75c7d36e498aaafc",
     "name": "Habitación centro de Barcelona",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436983/pivldxmrxssnhyzixhes.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436394/kscsvxyn0uro9tjhefeb.jpg",
@@ -899,7 +899,7 @@
   {
     "_id": "622f337a75c7d36e498aaafd",
     "name": "DOUBLE ROOM IN THE HEART OF BCN",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436793/httqod38otalkzp9kynq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
@@ -1159,7 +1159,7 @@
   {
     "_id": "622f337a75c7d36e498aaafe",
     "name": "Home, Sweet, Harlem. Welcome!",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436390/om97cgufeacwlric2r5w.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436827/znh7gqzbwb4wm6bdziy7.jpg",
@@ -1428,7 +1428,7 @@
   {
     "_id": "622f337a75c7d36e498aaaff",
     "name": "Heroísmo IV",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436823/af6elioxovkhvp6cg1un.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437327/epcnh2tzpafwmvi3srcp.jpg",
@@ -1701,7 +1701,7 @@
   {
     "_id": "622f337a75c7d36e498aab00",
     "name": "Monte dos Burgos - Cosy Room",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436993/yzxnnw83e9qyas022au4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436329/cvylwkta0uannbxm3zns.jpg",
@@ -1812,7 +1812,7 @@
   {
     "_id": "622f337a75c7d36e498aab01",
     "name": "Nice Cosy Room In Taksim",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437241/wt0seud4ot4cmdrztdzz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436867/yocip4igdbruuh2grzpf.jpg",
@@ -2065,7 +2065,7 @@
   {
     "_id": "622f337a75c7d36e498aab02",
     "name": "Penthouse Sands of Kahana Sandy Swimmable Beach",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436917/mqkfjmfpmyqpqmzmqgau.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436204/wzbrvr4mcsuub6gvwbry.jpg",
@@ -2336,7 +2336,7 @@
   {
     "_id": "622f337a75c7d36e498aab03",
     "name": "+Spacious Studio&Kitchenette near Blue Mosque+",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436321/g2cs1w7tkxsx58penq9j.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436542/e96nrbkjz8mecvsbzukk.jpg",
@@ -2596,7 +2596,7 @@
   {
     "_id": "622f337a75c7d36e498aab04",
     "name": "Grand apartment Sagrada Familia",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436772/nplkpwclhrdvvspkpmbg.jpg",
@@ -2858,7 +2858,7 @@
   {
     "_id": "622f337a75c7d36e498aab05",
     "name": "Spacious and quiet duplex apartment in Poble Sec",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436397/nde7l2hrwezdfzbvhczj.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436539/jy85me6y4bcsgfjvytwv.jpg",
@@ -3152,7 +3152,7 @@
   {
     "_id": "622f337a75c7d36e498aab06",
     "name": "*CoZy Private Williamsburg Home*",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436394/kscsvxyn0uro9tjhefeb.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437269/u6wxkpazgvqdxiceky9l.jpg",
@@ -3418,7 +3418,7 @@
   {
     "_id": "622f337a75c7d36e498aab07",
     "name": "Newly and comfortable apt",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436867/yocip4igdbruuh2grzpf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437017/gjyzgdjngyrhfrj2loxz.jpg",
@@ -3675,7 +3675,7 @@
   {
     "_id": "622f337a75c7d36e498aab08",
     "name": "302 Kanai A Nalu Ocean front/view",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437013/gz1hfzv47xzfwcmosadc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437168/vbmfmdmwrxt7xfwbsw7c.jpg",
@@ -3839,7 +3839,7 @@
   {
     "_id": "622f337a75c7d36e498aab09",
     "name": "Spacious, Sunny Room in Park Slope",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436380/ez5caladc00mgsssl6ws.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436597/l90ukcpzpv6yvv6vhsnd.jpg",
@@ -3905,7 +3905,7 @@
   {
     "_id": "622f337a75c7d36e498aab0a",
     "name": "Apartamento en casco antiguo",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436509/rii32aibnhkoeejsohie.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437006/kcsenznwf3pnka6hjwoh.jpg",
@@ -4064,7 +4064,7 @@
   {
     "_id": "622f337a75c7d36e498aab0b",
     "name": "Elegant Flat in the Center",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437330/mmhkmfvg8o3freucyekc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436453/ndl8odasqgnyquvsbalp.jpg",
@@ -4162,7 +4162,7 @@
   {
     "_id": "622f337a75c7d36e498aab0c",
     "name": "Westin Kaanapali KORVS 2BR OCEAN VIEW",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437349/thl7eoxar7dc7kpbahhj.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
@@ -4322,7 +4322,7 @@
   {
     "_id": "622f337a75c7d36e498aab0d",
     "name": "Burgazada da çarşıya yakın daire",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436886/cvc2yfmhfg9dabfkyiqw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436368/noebywqae4x0u42srsv3.jpg",
@@ -4583,7 +4583,7 @@
   {
     "_id": "622f337a75c7d36e498aab0e",
     "name": "Artsy 4BR in Plateau by Sonder",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436509/rii32aibnhkoeejsohie.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437025/haliwehueqfkmxo1tv7j.jpg",
@@ -4857,7 +4857,7 @@
   {
     "_id": "622f337a75c7d36e498aab0f",
     "name": "2 bedroom Upper east side",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436844/vowx18k0arro8jyekcap.jpg",
@@ -5005,7 +5005,7 @@
   {
     "_id": "622f337a75c7d36e498aab10",
     "name": "1 Stop fr. Manhattan! Private Suite,Landmark Block",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436456/aazeb5pemja3ddxauatd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437282/qy0p7yyaukasripzwc7w.jpg",
@@ -5270,7 +5270,7 @@
   {
     "_id": "622f337a75c7d36e498aab11",
     "name": "Two bedroom apartment",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437025/haliwehueqfkmxo1tv7j.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436886/cvc2yfmhfg9dabfkyiqw.jpg",
@@ -5536,7 +5536,7 @@
   {
     "_id": "622f337a75c7d36e498aab12",
     "name": "Sunny and quiet room with private shower room",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436385/sorbz7rdtxacu1ds9vel.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436329/cvylwkta0uannbxm3zns.jpg",
@@ -5803,7 +5803,7 @@
   {
     "_id": "622f337a75c7d36e498aab13",
     "name": "Inner City Terrace - 2 rooms 2 beds - 4 ppl.",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
@@ -5900,7 +5900,7 @@
   {
     "_id": "622f337a75c7d36e498aab14",
     "name": "Nice room with queen sized bed",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436864/ww1gixcmzwryfe1amps1.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437053/cg3bpdujvsd9lswwpfgy.jpg",
@@ -6157,7 +6157,7 @@
   {
     "_id": "622f337a75c7d36e498aab15",
     "name": "Cozy and modern Lapa-studio",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436582/vv0y7twjl7zcj9g71sjf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436359/abuiyexl2xyemq8uon4s.jpg",
@@ -6442,7 +6442,7 @@
   {
     "_id": "622f337a75c7d36e498aab16",
     "name": "Double room with private bathroom",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436310/acidri8oahpcoxa0idns.jpg",
@@ -6626,7 +6626,7 @@
   {
     "_id": "622f337a75c7d36e498aab17",
     "name": "Quarto Taquara - Jacarepaguá",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436872/i3jblqgpdttpwvshbffo.jpg",
@@ -6693,7 +6693,7 @@
   {
     "_id": "622f337a75c7d36e498aab18",
     "name": "18C.  NICE AND COZY 2 BEDROOMS. PERFECT LOCATION!",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437349/thl7eoxar7dc7kpbahhj.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436578/y1fshh0nppk5nxbfzqoz.jpg",
@@ -6959,7 +6959,7 @@
   {
     "_id": "622f337a75c7d36e498aab19",
     "name": "Ipanema: moderno apê 2BR + garagem",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436406/id1oo8krwgxvdf9s02qp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436961/rj6eo6v6npy65bckaxvr.jpg",
@@ -7227,7 +7227,7 @@
   {
     "_id": "622f337a75c7d36e498aab1a",
     "name": "Oceanfront & Breath Taking Views.",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436886/cvc2yfmhfg9dabfkyiqw.jpg",
@@ -7531,7 +7531,7 @@
   {
     "_id": "622f337a75c7d36e498aab1b",
     "name": "East Village Sanctuary",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436578/y1fshh0nppk5nxbfzqoz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437262/ifklqhihs1qinbmap5hd.jpg",
@@ -7782,7 +7782,7 @@
   {
     "_id": "622f337a75c7d36e498aab1c",
     "name": "2017 , férias no Rio",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436281/doubvhbpwjfx81yfzpxq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437045/dmquvficldi8ssfdlrrx.jpg",
@@ -7849,7 +7849,7 @@
   {
     "_id": "622f337a75c7d36e498aab1d",
     "name": "One bdrm apt in Central/Sheung Wan next to Soho",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436287/my8eunlgiiflc2ohslgx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437287/mns2lapesdourab6dn7u.jpg",
@@ -8042,7 +8042,7 @@
   {
     "_id": "622f337a75c7d36e498aab1e",
     "name": "Center of Istanbul, comfortable for family house",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436978/mhqf1tttzqr33ecrrwb2.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437344/r4w6s3af55tdt5y1lrcc.jpg",
@@ -8118,7 +8118,7 @@
   {
     "_id": "622f337a75c7d36e498aab1f",
     "name": "Spacious 3bdrm. Artsy and Perfect Location!",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436306/be2v9wssznxs4hebudb4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436582/vv0y7twjl7zcj9g71sjf.jpg",
@@ -8373,7 +8373,7 @@
   {
     "_id": "622f337a75c7d36e498aab20",
     "name": "Ocean View Hawaiian Bungalow on a private ranch",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437221/wczn7rdpbtjbcvgspakp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436281/doubvhbpwjfx81yfzpxq.jpg",
@@ -8473,7 +8473,7 @@
   {
     "_id": "622f337a75c7d36e498aab21",
     "name": "Nuevo espacioso apartamento en BCN",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437045/dmquvficldi8ssfdlrrx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436902/cidqzea6jlj827teokyg.jpg",
@@ -8586,7 +8586,7 @@
   {
     "_id": "622f337a75c7d36e498aab22",
     "name": "Modern Beachside Apartment with Balcony",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436385/sorbz7rdtxacu1ds9vel.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436556/mb70fifvvpvde8jub5cg.jpg",
@@ -8871,7 +8871,7 @@
   {
     "_id": "622f337a75c7d36e498aab23",
     "name": "Clean, comfortable and convenient",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436204/wzbrvr4mcsuub6gvwbry.jpg",
@@ -8972,7 +8972,7 @@
   {
     "_id": "622f337a75c7d36e498aab24",
     "name": "Beautiful 1 Bedroom Apartment",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436219/yida7pxwpup9rtgnguhv.jpg",
@@ -9122,7 +9122,7 @@
   {
     "_id": "622f337a75c7d36e498aab25",
     "name": "PORTO DOWNTOWN FLATS-RIBEIRA STUDIO",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437002/rfon5llzyvk94eilgk5r.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436562/aflmntpgocp5l2zxikhl.jpg",
@@ -9404,7 +9404,7 @@
   {
     "_id": "622f337a75c7d36e498aab26",
     "name": "Large well-lit & quiet room in the Plateau",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436481/tqwkxtbalipudzhivoag.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436301/etz0n0umubahfkgmmwt8.jpg",
@@ -9554,7 +9554,7 @@
   {
     "_id": "622f337a75c7d36e498aab27",
     "name": "Luxury 1-Bdrm in Downtown Brooklyn",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436827/znh7gqzbwb4wm6bdziy7.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436550/mqmwpqdel4nxrmogeawh.jpg",
@@ -9632,7 +9632,7 @@
   {
     "_id": "622f337a75c7d36e498aab28",
     "name": "Modern West Kowloon Based Apartment",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436787/gcz7mgmxb6dcl4vz6h0a.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436266/num9wnb6uzdsvqr6nyuu.jpg",
@@ -9742,7 +9742,7 @@
   {
     "_id": "622f337a75c7d36e498aab29",
     "name": "Vista magnifica mar,lagoa,montanha.",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436359/abuiyexl2xyemq8uon4s.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437040/oarfkdxx7gyyvcynvwko.jpg",
@@ -9853,7 +9853,7 @@
   {
     "_id": "622f337a75c7d36e498aab2a",
     "name": "Elegance and Peace in Potts Point",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436496/ihozxprafjzuhil9qhh4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436559/sbtoepvxxobkogznuiw4.jpg",
@@ -10123,7 +10123,7 @@
   {
     "_id": "622f337a75c7d36e498aab2b",
     "name": "Unit 414 Luxurious Top Floor Condo Great Views",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436912/xle8ueqxjeazbs4bp09p.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436872/i3jblqgpdttpwvshbffo.jpg",
@@ -10325,7 +10325,7 @@
   {
     "_id": "622f337a75c7d36e498aab2c",
     "name": "1 sunny bedroom in large St-Henri appartment",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436562/aflmntpgocp5l2zxikhl.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437168/vbmfmdmwrxt7xfwbsw7c.jpg",
@@ -10403,7 +10403,7 @@
   {
     "_id": "622f337a75c7d36e498aab2d",
     "name": "Downtown Exposed Brick Studio",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436942/cfa0wa2uwfyunrhgp4mt.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436975/hx9ravtjop3uqv4giupt.jpg",
@@ -10674,7 +10674,7 @@
   {
     "_id": "622f337a75c7d36e498aab2e",
     "name": "BEACH ESCAPE",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436271/mqf7uxzlufmjc77jpl5k.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436481/tqwkxtbalipudzhivoag.jpg",
@@ -10948,7 +10948,7 @@
   {
     "_id": "622f337a75c7d36e498aab2f",
     "name": "LUXURY! 3BR ,Bathtub, 1min MTR 4-9ppl",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436975/hx9ravtjop3uqv4giupt.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436804/m7h5fpqvy5ctvkysvg6o.jpg",
@@ -11218,7 +11218,7 @@
   {
     "_id": "622f337a75c7d36e498aab30",
     "name": "Cozy place in Hong Kong Island",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436481/tqwkxtbalipudzhivoag.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
@@ -11381,7 +11381,7 @@
   {
     "_id": "622f337a75c7d36e498aab31",
     "name": "Vacances de reve à Espinho (Porto)",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437017/gjyzgdjngyrhfrj2loxz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436353/wqah1dfim6hcosaq0ve3.jpg",
@@ -11663,7 +11663,7 @@
   {
     "_id": "622f337a75c7d36e498aab32",
     "name": "The Porto Concierge - Beach Manor",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436787/gcz7mgmxb6dcl4vz6h0a.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437327/epcnh2tzpafwmvi3srcp.jpg",
@@ -11922,7 +11922,7 @@
   {
     "_id": "622f337a75c7d36e498aab33",
     "name": "Peaceful Apartment near Casa da Música",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436801/mcuu1w2188ndpd6hezzt.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436310/acidri8oahpcoxa0idns.jpg",
@@ -12145,7 +12145,7 @@
   {
     "_id": "622f337a75c7d36e498aab34",
     "name": "SUPERHOST-LARGE&CLEAN-Near Pierloti",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436835/pose0fy4kkms4qkln2hg.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437241/wt0seud4ot4cmdrztdzz.jpg",
@@ -12416,7 +12416,7 @@
   {
     "_id": "622f337a75c7d36e498aab35",
     "name": "Charming and cozy condo Plateau Mt-Royal/ McGill",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436578/y1fshh0nppk5nxbfzqoz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437336/u9ttr09gqo3hmfumwdww.jpg",
@@ -12635,7 +12635,7 @@
   {
     "_id": "622f337a75c7d36e498aab36",
     "name": "Appartement lumineux , Terrasse privée sur le toît",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437021/cw6mtrxza5fzmmgxen4j.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436942/cfa0wa2uwfyunrhgp4mt.jpg",
@@ -12898,7 +12898,7 @@
   {
     "_id": "622f337a75c7d36e498aab37",
     "name": "Trendy Bright Loft in The Plateau",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436952/aef9ajipinpjhkley1e3.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437339/qgs3hrnx0accbjkzuh9s.jpg",
@@ -12971,7 +12971,7 @@
   {
     "_id": "622f337a75c7d36e498aab38",
     "name": "Bright, sunny quite room Bushwick",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437330/mmhkmfvg8o3freucyekc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436837/fyczvvyuelceouxja8yy.jpg",
@@ -13045,7 +13045,7 @@
   {
     "_id": "622f337a75c7d36e498aab39",
     "name": "SUİTE ROOM 2 or 3 people WİTH TERRACE",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437333/iycoq0rywibijlncdqxh.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436556/mb70fifvvpvde8jub5cg.jpg",
@@ -13189,7 +13189,7 @@
   {
     "_id": "622f337a75c7d36e498aab3a",
     "name": "COMFORTABLE & COZY! MAUI BY DAY...RELAX AT NIGHT!!",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437241/wt0seud4ot4cmdrztdzz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436823/af6elioxovkhvp6cg1un.jpg",
@@ -13464,7 +13464,7 @@
   {
     "_id": "622f337a75c7d36e498aab3b",
     "name": "Quaint Polynesian Style Cabin on a Working Farm",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436922/ytr7znhbuqnxnotutplv.jpg",
@@ -13721,7 +13721,7 @@
   {
     "_id": "622f337a75c7d36e498aab3c",
     "name": "Feel at home.. in a cosy and warm",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436359/abuiyexl2xyemq8uon4s.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436542/e96nrbkjz8mecvsbzukk.jpg",
@@ -13883,7 +13883,7 @@
   {
     "_id": "622f337a75c7d36e498aab3d",
     "name": "SOOTHING WAVES WITH A 180* OCEAN VIEW",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436957/ehhcyscwtvxw55mptkok.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437361/h7fdhfrwoo9jtcgwqzn7.jpg",
@@ -14158,7 +14158,7 @@
   {
     "_id": "622f337a75c7d36e498aab3e",
     "name": "Habitación indiv con cama extra",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437013/gz1hfzv47xzfwcmosadc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436528/xfryowvexdic3k1gjush.jpg",
@@ -14422,7 +14422,7 @@
   {
     "_id": "622f337a75c7d36e498aab3f",
     "name": "Sydney Hyde Park City Apartment (checkin from 6am)",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436793/httqod38otalkzp9kynq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436922/ytr7znhbuqnxnotutplv.jpg",
@@ -14707,7 +14707,7 @@
   {
     "_id": "622f337a75c7d36e498aab40",
     "name": "205 Punahoa 2 Bed Condo- Oceanfront",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437049/gpanmdffbwd9crhnzswa.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436376/phpltehcr6uq9lh5jlax.jpg",
@@ -14778,7 +14778,7 @@
   {
     "_id": "622f337a75c7d36e498aab41",
     "name": "Very special island bed and brunch",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436607/w0q3sn89rqfwyrxtsear.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436456/aazeb5pemja3ddxauatd.jpg",
@@ -15043,7 +15043,7 @@
   {
     "_id": "622f337a75c7d36e498aab42",
     "name": "Old Montreal.  ( Rent for at least 12 months)",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436539/jy85me6y4bcsgfjvytwv.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436334/nqgdwv3ljfkrbvynoetv.jpg",
@@ -15302,7 +15302,7 @@
   {
     "_id": "622f337a75c7d36e498aab43",
     "name": "Chic 2BR in Festival Quarter by Sonder",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436511/ru9vwmfqgv3yvdvny3tw.jpg",
@@ -15569,7 +15569,7 @@
   {
     "_id": "622f337a75c7d36e498aab44",
     "name": "ROOM + ENSUITE INNER CITY MOD HOUSE",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436481/tqwkxtbalipudzhivoag.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
@@ -15746,7 +15746,7 @@
   {
     "_id": "622f337a75c7d36e498aab45",
     "name": "Sunny, private room on St. Denis",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437045/dmquvficldi8ssfdlrrx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436566/dsqwjeelwr1bwjxfkdxv.jpg",
@@ -15873,7 +15873,7 @@
   {
     "_id": "622f337a75c7d36e498aab46",
     "name": "Allotja't en un elegant i lluminós pis modernista al costat de Passeig de Gràcia",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437352/wejdxpvadcm8d7svkxqq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436385/sorbz7rdtxacu1ds9vel.jpg",
@@ -16184,7 +16184,7 @@
   {
     "_id": "622f337a75c7d36e498aab47",
     "name": "Museum Mile 1 BR - Madison Ave",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437355/fy46xsk3yd7xujzcs2uz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436897/iz1ik9nibj3sobzrqomf.jpg",
@@ -16317,7 +16317,7 @@
   {
     "_id": "622f337a75c7d36e498aab48",
     "name": "Wellyet Guest House@Room 2",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437262/ifklqhihs1qinbmap5hd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436390/om97cgufeacwlric2r5w.jpg",
@@ -16581,7 +16581,7 @@
   {
     "_id": "622f337a75c7d36e498aab49",
     "name": "☼☼ Lovely Colorful Studio ☼☼ Tsim Sha Tsui",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437287/mns2lapesdourab6dn7u.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
@@ -16859,7 +16859,7 @@
   {
     "_id": "622f337a75c7d36e498aab4a",
     "name": "Big Private BR Steps to Barnard Columbia & Subways",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436410/shdfxkcohvm8beh5rkar.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436546/ooe1vhteuu02af7ny3ex.jpg",
@@ -17131,7 +17131,7 @@
   {
     "_id": "622f337a75c7d36e498aab4b",
     "name": "L'IDÉAL, ( à 2 min du métro Pie-IX ).",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436907/abikktroqknzhch6b9ly.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437321/lb1j83rv5xox1ovn5pgz.jpg",
@@ -17415,7 +17415,7 @@
   {
     "_id": "622f337a75c7d36e498aab4c",
     "name": "Cheerful new renovated central apt",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436470/jrzh7wvpvulqxo42xocc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436844/vowx18k0arro8jyekcap.jpg",
@@ -17685,7 +17685,7 @@
   {
     "_id": "622f337a75c7d36e498aab4d",
     "name": "Sunny Room (for One) Minutes from Coogee Beach!",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436204/wzbrvr4mcsuub6gvwbry.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436893/pkhxv5j90ubdzbpgdbdb.jpg",
@@ -17957,7 +17957,7 @@
   {
     "_id": "622f337a75c7d36e498aab4e",
     "name": "Mike's House- Hina Room",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436823/af6elioxovkhvp6cg1un.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436876/bskkmribzul6cjzbprvi.jpg",
@@ -18220,7 +18220,7 @@
   {
     "_id": "622f337a75c7d36e498aab4f",
     "name": "Park Guell apartment with terrace",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437025/haliwehueqfkmxo1tv7j.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437256/d1wl601knflcsohxsqhk.jpg",
@@ -18482,7 +18482,7 @@
   {
     "_id": "622f337a75c7d36e498aab50",
     "name": "Lachine room+Free parking+Airport",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437025/haliwehueqfkmxo1tv7j.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436835/pose0fy4kkms4qkln2hg.jpg",
@@ -18557,7 +18557,7 @@
   {
     "_id": "622f337a75c7d36e498aab51",
     "name": "Bright room in Spacious house close to Airport",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437301/af9yuihshv3wh24bu07u.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
@@ -18831,7 +18831,7 @@
   {
     "_id": "622f337a75c7d36e498aab52",
     "name": "Deniz, orman ve şehir manzaralı.",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436385/sorbz7rdtxacu1ds9vel.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437282/qy0p7yyaukasripzwc7w.jpg",
@@ -18904,7 +18904,7 @@
   {
     "_id": "622f337a75c7d36e498aab53",
     "name": "Amazing NEW Food Lover Balcony, close to FIRA, MWC",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436607/w0q3sn89rqfwyrxtsear.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437339/qgs3hrnx0accbjkzuh9s.jpg",
@@ -19181,7 +19181,7 @@
   {
     "_id": "622f337a75c7d36e498aab54",
     "name": "Stylish, spacious, central, shared rooftop terrace",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436553/hbkx9lwxjd0wabqk0bmo.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436419/jg5q36rc5mpn23kavp6b.jpg",
@@ -19453,7 +19453,7 @@
   {
     "_id": "622f337a75c7d36e498aab55",
     "name": "Private Cozy Bedroom in Brooklyn",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437211/czj7vbzslcfajxonvbe0.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436922/ytr7znhbuqnxnotutplv.jpg",
@@ -19736,7 +19736,7 @@
   {
     "_id": "622f337a75c7d36e498aab56",
     "name": "cozy house and garden in the heart of Montréal",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437017/gjyzgdjngyrhfrj2loxz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437355/fy46xsk3yd7xujzcs2uz.jpg",
@@ -19849,7 +19849,7 @@
   {
     "_id": "622f337a75c7d36e498aab57",
     "name": "Sunny appartment on the Plateau",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436359/abuiyexl2xyemq8uon4s.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437352/wejdxpvadcm8d7svkxqq.jpg",
@@ -20109,7 +20109,7 @@
   {
     "_id": "622f337a75c7d36e498aab58",
     "name": "Mike's House- Uilani Room",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436837/fyczvvyuelceouxja8yy.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437269/u6wxkpazgvqdxiceky9l.jpg",
@@ -20373,7 +20373,7 @@
   {
     "_id": "622f337a75c7d36e498aab59",
     "name": "Large railroad style 3 bedroom apt in Manhattan!",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436937/mkbcjfockxezgrvimska.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436957/ehhcyscwtvxw55mptkok.jpg",
@@ -20643,7 +20643,7 @@
   {
     "_id": "622f337a75c7d36e498aab5a",
     "name": "Sydney Olympic Park High Level Stunning View Apt",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437036/a4pijdxx1kiebg7r6dxg.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436509/rii32aibnhkoeejsohie.jpg",
@@ -20911,7 +20911,7 @@
   {
     "_id": "622f337a75c7d36e498aab5b",
     "name": "Hibiscus Hideaway in Kihei",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436353/wqah1dfim6hcosaq0ve3.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436597/l90ukcpzpv6yvv6vhsnd.jpg",
@@ -21072,7 +21072,7 @@
   {
     "_id": "622f337b75c7d36e498aab5c",
     "name": "Stunning Oceanfront. Amazing Views. 2 Bed 2 Baths",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436315/nyglbkkyaednuygn6eik.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437352/wejdxpvadcm8d7svkxqq.jpg",
@@ -21356,7 +21356,7 @@
   {
     "_id": "622f337b75c7d36e498aab5d",
     "name": "Mouzinho 244 Ap4 by RUA Apartments",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436536/zavqkvmzf6j6efydruzd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436460/qi3vkpts37b4k0dedosc.jpg",
@@ -21622,7 +21622,7 @@
   {
     "_id": "622f337b75c7d36e498aab5e",
     "name": "Wander to the Beach from a Cozy Wailea Condo",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436394/kscsvxyn0uro9tjhefeb.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436410/shdfxkcohvm8beh5rkar.jpg",
@@ -21787,7 +21787,7 @@
   {
     "_id": "622f337b75c7d36e498aab5f",
     "name": "Nice condo close to the subway",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436823/af6elioxovkhvp6cg1un.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436948/vgfxpvmcpd2q40qxtuv3.jpg",
@@ -22052,7 +22052,7 @@
   {
     "_id": "622f337b75c7d36e498aab60",
     "name": "Cozy Hell's Kitchen Apt",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436942/cfa0wa2uwfyunrhgp4mt.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436559/sbtoepvxxobkogznuiw4.jpg",
@@ -22325,7 +22325,7 @@
   {
     "_id": "622f337b75c7d36e498aab61",
     "name": "Spacious, bright, central. AC. Rambla Catalunya",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436961/rj6eo6v6npy65bckaxvr.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436559/sbtoepvxxobkogznuiw4.jpg",
@@ -22437,7 +22437,7 @@
   {
     "_id": "622f337b75c7d36e498aab62",
     "name": "Small Room w Bathroom Flamengo Rio de Janeiro",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436942/cfa0wa2uwfyunrhgp4mt.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437336/u9ttr09gqo3hmfumwdww.jpg",
@@ -22501,7 +22501,7 @@
   {
     "_id": "622f337b75c7d36e498aab63",
     "name": "Great studio opp. Narrabeen Lake",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437272/e2id7kpaglrrdug3i6if.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436961/rj6eo6v6npy65bckaxvr.jpg",
@@ -22765,7 +22765,7 @@
   {
     "_id": "622f337b75c7d36e498aab64",
     "name": "Cruisy apartment by the sea",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436509/rii32aibnhkoeejsohie.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436419/jg5q36rc5mpn23kavp6b.jpg",
@@ -22847,7 +22847,7 @@
   {
     "_id": "622f337b75c7d36e498aab65",
     "name": "Little New York on Riley - 1BR Darlinghurst",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436546/ooe1vhteuu02af7ny3ex.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437009/zuu2udtrkcs6sxjiym40.jpg",
@@ -23044,7 +23044,7 @@
   {
     "_id": "622f337b75c7d36e498aab66",
     "name": "Feel like home",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437033/rhw6gycttaimzocc1poz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436509/rii32aibnhkoeejsohie.jpg",
@@ -23318,7 +23318,7 @@
   {
     "_id": "622f337b75c7d36e498aab67",
     "name": "East Village Living",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436219/yida7pxwpup9rtgnguhv.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436329/cvylwkta0uannbxm3zns.jpg",
@@ -23589,7 +23589,7 @@
   {
     "_id": "622f337b75c7d36e498aab68",
     "name": "Privately Gated Oceanfront Estate",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436978/mhqf1tttzqr33ecrrwb2.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436402/jtsg0m0t0x0ciyuzvbun.jpg",
@@ -23882,7 +23882,7 @@
   {
     "_id": "622f337b75c7d36e498aab69",
     "name": "Clarence House Apartment 1",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437061/xwqh3jtahjqxod0p1a0c.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436957/ehhcyscwtvxw55mptkok.jpg",
@@ -24164,7 +24164,7 @@
   {
     "_id": "622f337b75c7d36e498aab6a",
     "name": "❤️SUPERHOST-Single Ensuite Room@ 1min MTR",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437221/wczn7rdpbtjbcvgspakp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436933/ysvap4wzv8ziwtpbznf8.jpg",
@@ -24291,7 +24291,7 @@
   {
     "_id": "622f337b75c7d36e498aab6b",
     "name": "INSTAGRAM HOME *MTR*ELEMENT MALL*NEW TRAIN KOWLOON",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436897/iz1ik9nibj3sobzrqomf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436533/lw91nt07jhq6khiacu2d.jpg",
@@ -24586,7 +24586,7 @@
   {
     "_id": "622f337b75c7d36e498aab6c",
     "name": "1+1 (4 PERSON) Flat in Central İstanbul",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436334/nqgdwv3ljfkrbvynoetv.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437330/mmhkmfvg8o3freucyekc.jpg",
@@ -24688,7 +24688,7 @@
   {
     "_id": "622f337b75c7d36e498aab6d",
     "name": "Triple room Barcelona Guell park",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436204/wzbrvr4mcsuub6gvwbry.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437330/mmhkmfvg8o3freucyekc.jpg",
@@ -24944,7 +24944,7 @@
   {
     "_id": "622f337b75c7d36e498aab6e",
     "name": "➳ Logement  4 1/2 Rosemont ❤️",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437017/gjyzgdjngyrhfrj2loxz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436907/abikktroqknzhch6b9ly.jpg",
@@ -25015,7 +25015,7 @@
   {
     "_id": "622f337b75c7d36e498aab6f",
     "name": "Colourful apt in Plateau/Mile End",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436897/iz1ik9nibj3sobzrqomf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436937/mkbcjfockxezgrvimska.jpg",
@@ -25292,7 +25292,7 @@
   {
     "_id": "622f337b75c7d36e498aab70",
     "name": "Cosy penthouse close to Barra beach",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436456/aazeb5pemja3ddxauatd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436933/ysvap4wzv8ziwtpbznf8.jpg",
@@ -25369,7 +25369,7 @@
   {
     "_id": "622f337b75c7d36e498aab71",
     "name": "Large Studio with Harbour glimpses, City Fringe",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437339/qgs3hrnx0accbjkzuh9s.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436897/iz1ik9nibj3sobzrqomf.jpg",
@@ -25475,7 +25475,7 @@
   {
     "_id": "622f337b75c7d36e498aab72",
     "name": "sunny 2 bedroom close to Bosphorus",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437040/oarfkdxx7gyyvcynvwko.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436261/hwqt72njlhf9hkqou9ka.jpg",
@@ -25567,7 +25567,7 @@
   {
     "_id": "622f337b75c7d36e498aab73",
     "name": "Mezzos Studio in Sydney CBD",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436523/ptcgbydjsamgf67a0npw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436562/aflmntpgocp5l2zxikhl.jpg",
@@ -25850,7 +25850,7 @@
   {
     "_id": "622f337b75c7d36e498aab74",
     "name": "26/3 rd Casa da Música",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437233/q5ilz1oo9v4x8njmtjhl.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
@@ -26133,7 +26133,7 @@
   {
     "_id": "622f337b75c7d36e498aab75",
     "name": "Renovated Classic Design Studio with Sun Room",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436907/abikktroqknzhch6b9ly.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436861/xrxhgsif3ekhxgn8irlm.jpg",
@@ -26422,7 +26422,7 @@
   {
     "_id": "622f337b75c7d36e498aab76",
     "name": "NEW FLAT + PRIVATE ROOFTOP IN SAY YING PUN",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436219/yida7pxwpup9rtgnguhv.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
@@ -26516,7 +26516,7 @@
   {
     "_id": "622f337b75c7d36e498aab77",
     "name": "B. Arts IV",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436414/trl4n8noogyun10qmds8.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436410/shdfxkcohvm8beh5rkar.jpg",
@@ -26603,7 +26603,7 @@
   {
     "_id": "622f337b75c7d36e498aab78",
     "name": "Conveniently Located, Sunny Brooklyn Heights!",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436883/bcqxaecnu4e9kyzbwb4p.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436553/hbkx9lwxjd0wabqk0bmo.jpg",
@@ -26861,7 +26861,7 @@
   {
     "_id": "622f337b75c7d36e498aab79",
     "name": "Cute studio with Sydney Harbour Bridge views!",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436402/jtsg0m0t0x0ciyuzvbun.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436359/abuiyexl2xyemq8uon4s.jpg",
@@ -27125,7 +27125,7 @@
   {
     "_id": "622f337b75c7d36e498aab7a",
     "name": "Breathtaking Ocean Beach Condo Kaanapali , Maui!",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436993/yzxnnw83e9qyas022au4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436394/kscsvxyn0uro9tjhefeb.jpg",
@@ -27404,7 +27404,7 @@
   {
     "_id": "622f337b75c7d36e498aab7b",
     "name": "Quarto inteiro na Tijuca",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436827/znh7gqzbwb4wm6bdziy7.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436353/wqah1dfim6hcosaq0ve3.jpg",
@@ -27462,7 +27462,7 @@
   {
     "_id": "622f337b75c7d36e498aab7c",
     "name": "Casa da Porta Amarela",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436867/yocip4igdbruuh2grzpf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436496/ihozxprafjzuhil9qhh4.jpg",
@@ -27734,7 +27734,7 @@
   {
     "_id": "622f337b75c7d36e498aab7d",
     "name": "Penthouse. Terrace.",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
@@ -28017,7 +28017,7 @@
   {
     "_id": "622f337b75c7d36e498aab7e",
     "name": "Minimalist Rooms in BCN, live it.",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436511/ru9vwmfqgv3yvdvny3tw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436578/y1fshh0nppk5nxbfzqoz.jpg",
@@ -28114,7 +28114,7 @@
   {
     "_id": "622f337b75c7d36e498aab7f",
     "name": "AMAZING VIEWS PENTHOUSE PARK GUELL",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436523/ptcgbydjsamgf67a0npw.jpg",
@@ -28370,7 +28370,7 @@
   {
     "_id": "622f337b75c7d36e498aab80",
     "name": "Casa \"Voltaria\", o desejo de voltar",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437036/a4pijdxx1kiebg7r6dxg.jpg",
@@ -28530,7 +28530,7 @@
   {
     "_id": "622f337b75c7d36e498aab81",
     "name": "Charming Private Brooklyn Bedroom",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436815/ou3m2jicqonj8yhxdshq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436376/phpltehcr6uq9lh5jlax.jpg",
@@ -28786,7 +28786,7 @@
   {
     "_id": "622f337b75c7d36e498aab82",
     "name": "Tamarama Penthouse apartment",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436294/mvhb3iazpiar6duvy9we.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437025/haliwehueqfkmxo1tv7j.jpg",
@@ -29051,7 +29051,7 @@
   {
     "_id": "622f337b75c7d36e498aab83",
     "name": "IPANEMA LUXURY PENTHOUSE with MAID",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436301/etz0n0umubahfkgmmwt8.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436922/ytr7znhbuqnxnotutplv.jpg",
@@ -29319,7 +29319,7 @@
   {
     "_id": "622f337b75c7d36e498aab84",
     "name": "Charmante chambre - Berri Uqam",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436961/rj6eo6v6npy65bckaxvr.jpg",
@@ -29416,7 +29416,7 @@
   {
     "_id": "622f337b75c7d36e498aab85",
     "name": "3 Quartos Ipanema c/Piscina",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436536/zavqkvmzf6j6efydruzd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436301/etz0n0umubahfkgmmwt8.jpg",
@@ -29534,7 +29534,7 @@
   {
     "_id": "622f337b75c7d36e498aab86",
     "name": "great Terrace&lift city center",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436460/qi3vkpts37b4k0dedosc.jpg",
@@ -29831,7 +29831,7 @@
   {
     "_id": "622f337b75c7d36e498aab87",
     "name": "CHARMING PRACTICAL RELAXING IPANEMA",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437279/vgq4tkkecvdo2nzxdudx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436821/b4ejulqdhsvyseyfnfr0.jpg",
@@ -30033,7 +30033,7 @@
   {
     "_id": "622f337b75c7d36e498aab88",
     "name": "The Porto Concierge - White Martin",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437310/tus71yfpnvgulenrli6a.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436261/hwqt72njlhf9hkqou9ka.jpg",
@@ -30291,7 +30291,7 @@
   {
     "_id": "622f337b75c7d36e498aab89",
     "name": "ECONOMIC APARTMENT",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436872/i3jblqgpdttpwvshbffo.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436390/om97cgufeacwlric2r5w.jpg",
@@ -30360,7 +30360,7 @@
   {
     "_id": "622f337b75c7d36e498aab8a",
     "name": "Bondi Beach Dreaming 3-Bed House",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436907/abikktroqknzhch6b9ly.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436523/ptcgbydjsamgf67a0npw.jpg",
@@ -30648,7 +30648,7 @@
   {
     "_id": "622f337b75c7d36e498aab8b",
     "name": "Private apartment, small and comfortable.",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436533/lw91nt07jhq6khiacu2d.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436414/trl4n8noogyun10qmds8.jpg",
@@ -30926,7 +30926,7 @@
   {
     "_id": "622f337b75c7d36e498aab8c",
     "name": "Green House in  Barra da Tijuca",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436582/vv0y7twjl7zcj9g71sjf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436397/nde7l2hrwezdfzbvhczj.jpg",
@@ -31006,7 +31006,7 @@
   {
     "_id": "622f337b75c7d36e498aab8d",
     "name": "Cosy rooms close to the metro and the River",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436542/e96nrbkjz8mecvsbzukk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
@@ -31285,7 +31285,7 @@
   {
     "_id": "622f337b75c7d36e498aab8e",
     "name": "City center private room with bed",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436470/jrzh7wvpvulqxo42xocc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437290/ll70bfq1cxslz2x2snoa.jpg",
@@ -31545,7 +31545,7 @@
   {
     "_id": "622f337b75c7d36e498aab8f",
     "name": "Newly renovated + Explore like local",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436204/wzbrvr4mcsuub6gvwbry.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437344/r4w6s3af55tdt5y1lrcc.jpg",
@@ -31684,7 +31684,7 @@
   {
     "_id": "622f337b75c7d36e498aab90",
     "name": "Near Airport private room, 2 bedroom granny flat**",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437290/ll70bfq1cxslz2x2snoa.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437025/haliwehueqfkmxo1tv7j.jpg",
@@ -31957,7 +31957,7 @@
   {
     "_id": "622f337b75c7d36e498aab91",
     "name": "1Great location, calm cozy room w/ backyard-garden",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436957/ehhcyscwtvxw55mptkok.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437355/fy46xsk3yd7xujzcs2uz.jpg",
@@ -32081,7 +32081,7 @@
   {
     "_id": "622f337b75c7d36e498aab92",
     "name": "Cute apt in artist's home",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436287/my8eunlgiiflc2ohslgx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436385/sorbz7rdtxacu1ds9vel.jpg",
@@ -32329,7 +32329,7 @@
   {
     "_id": "622f337b75c7d36e498aab93",
     "name": "Central apartment in Almada street",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437349/thl7eoxar7dc7kpbahhj.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436933/ysvap4wzv8ziwtpbznf8.jpg",
@@ -32583,7 +32583,7 @@
   {
     "_id": "622f337b75c7d36e498aab94",
     "name": "Roof Top Terrace",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436902/cidqzea6jlj827teokyg.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436937/mkbcjfockxezgrvimska.jpg",
@@ -32847,7 +32847,7 @@
   {
     "_id": "622f337b75c7d36e498aab95",
     "name": "Copacabana Apartment Posto 6",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436414/trl4n8noogyun10qmds8.jpg",
@@ -33121,7 +33121,7 @@
   {
     "_id": "622f337b75c7d36e498aab96",
     "name": "Charming apartment in Santa Teresa",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437358/cy8kzj8jeofwkev6tlq9.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437013/gz1hfzv47xzfwcmosadc.jpg",
@@ -33263,7 +33263,7 @@
   {
     "_id": "622f337b75c7d36e498aab97",
     "name": "Room in apartment with beautiful view, in Botafogo",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436261/hwqt72njlhf9hkqou9ka.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437344/r4w6s3af55tdt5y1lrcc.jpg",
@@ -33533,7 +33533,7 @@
   {
     "_id": "622f337b75c7d36e498aab98",
     "name": "2 BR Oceanview - Great Location!",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436886/cvc2yfmhfg9dabfkyiqw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437006/kcsenznwf3pnka6hjwoh.jpg",
@@ -33767,7 +33767,7 @@
   {
     "_id": "622f337b75c7d36e498aab99",
     "name": "UWS Brownstone Near Central Park",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436815/ou3m2jicqonj8yhxdshq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436893/pkhxv5j90ubdzbpgdbdb.jpg",
@@ -34033,7 +34033,7 @@
   {
     "_id": "622f337b75c7d36e498aab9a",
     "name": "Renovated Modern Apartment with Cathedral Views",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436414/trl4n8noogyun10qmds8.jpg",
@@ -34324,7 +34324,7 @@
   {
     "_id": "622f337b75c7d36e498aab9b",
     "name": "Vela Luxury Apartment HUTB-001280",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436922/ytr7znhbuqnxnotutplv.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436872/i3jblqgpdttpwvshbffo.jpg",
@@ -34590,7 +34590,7 @@
   {
     "_id": "622f337b75c7d36e498aab9c",
     "name": "Jardim Botânico Gourmet 2 bdroom",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437049/gpanmdffbwd9crhnzswa.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436942/cfa0wa2uwfyunrhgp4mt.jpg",
@@ -34773,7 +34773,7 @@
   {
     "_id": "622f337b75c7d36e498aab9d",
     "name": "Cozy bedroom Sagrada Familia",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436481/tqwkxtbalipudzhivoag.jpg",
@@ -34835,7 +34835,7 @@
   {
     "_id": "622f337b75c7d36e498aab9e",
     "name": "Single private room(Gray)",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437287/mns2lapesdourab6dn7u.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436329/cvylwkta0uannbxm3zns.jpg",
@@ -35112,7 +35112,7 @@
   {
     "_id": "622f337b75c7d36e498aab9f",
     "name": "Cozy Nest, heart of the Plateau",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436837/fyczvvyuelceouxja8yy.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436266/num9wnb6uzdsvqr6nyuu.jpg",
@@ -35389,7 +35389,7 @@
   {
     "_id": "622f337b75c7d36e498aaba0",
     "name": "Fabulous occasion orange",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437040/oarfkdxx7gyyvcynvwko.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436867/yocip4igdbruuh2grzpf.jpg",
@@ -35652,7 +35652,7 @@
   {
     "_id": "622f337b75c7d36e498aaba1",
     "name": "Apart-hotel w/ Wonderful Ocean View - 2 bedrooms!!",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436804/m7h5fpqvy5ctvkysvg6o.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436917/mqkfjmfpmyqpqmzmqgau.jpg",
@@ -35930,7 +35930,7 @@
   {
     "_id": "622f337b75c7d36e498aaba2",
     "name": "listing_id: (Phone number hidden by Airbnb) THE BEST LOCATION IN LEBLON",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437241/wt0seud4ot4cmdrztdzz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436456/aazeb5pemja3ddxauatd.jpg",
@@ -36101,7 +36101,7 @@
   {
     "_id": "622f337b75c7d36e498aaba3",
     "name": "Chic 2BR in The Village by Sonder",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437352/wejdxpvadcm8d7svkxqq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436897/iz1ik9nibj3sobzrqomf.jpg",
@@ -36375,7 +36375,7 @@
   {
     "_id": "622f337b75c7d36e498aaba4",
     "name": "Friendly Apartment, 10m from Manly",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436793/httqod38otalkzp9kynq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436523/ptcgbydjsamgf67a0npw.jpg",
@@ -36467,7 +36467,7 @@
   {
     "_id": "622f337b75c7d36e498aaba5",
     "name": "Oceanfront Paradise Condo in Lahaina Towne",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436310/acidri8oahpcoxa0idns.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437021/cw6mtrxza5fzmmgxen4j.jpg",
@@ -36650,7 +36650,7 @@
   {
     "_id": "622f337b75c7d36e498aaba6",
     "name": "Big, glamorous, 4BR, 3-story house",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436406/id1oo8krwgxvdf9s02qp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436852/y3scgbn8d6evumdpwdp4.jpg",
@@ -36929,7 +36929,7 @@
   {
     "_id": "622f337b75c7d36e498aaba7",
     "name": "Peaceful hometown with perfect sea and forest view",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436928/ouvft4oeavr7ceeha4gk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436310/acidri8oahpcoxa0idns.jpg",
@@ -37144,7 +37144,7 @@
   {
     "_id": "622f337b75c7d36e498aaba8",
     "name": "Thriving city location, dining hub",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437279/vgq4tkkecvdo2nzxdudx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436907/abikktroqknzhch6b9ly.jpg",
@@ -37419,7 +37419,7 @@
   {
     "_id": "622f337b75c7d36e498aaba9",
     "name": "2 confortables habitaciones en el centro de BCN!",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436533/lw91nt07jhq6khiacu2d.jpg",
@@ -37685,7 +37685,7 @@
   {
     "_id": "622f337b75c7d36e498aabaa",
     "name": "Executive Luxury design Apartment",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436975/hx9ravtjop3uqv4giupt.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436933/ysvap4wzv8ziwtpbznf8.jpg",
@@ -37943,7 +37943,7 @@
   {
     "_id": "622f337b75c7d36e498aabab",
     "name": "Newly Renovated Studio Midtown East",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436266/num9wnb6uzdsvqr6nyuu.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436917/mqkfjmfpmyqpqmzmqgau.jpg",
@@ -38205,7 +38205,7 @@
   {
     "_id": "622f337b75c7d36e498aabac",
     "name": "Ultra Comfy Flat & Perfect Location",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436804/m7h5fpqvy5ctvkysvg6o.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436338/oifgxuovghbgnabppike.jpg",
@@ -38395,7 +38395,7 @@
   {
     "_id": "622f337b75c7d36e498aabad",
     "name": "Studio on main entertainment street",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437323/wcnoxi3mwy1a5dmxaccl.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437259/pw5sosryaebjynvwppcy.jpg",
@@ -38630,7 +38630,7 @@
   {
     "_id": "622f337b75c7d36e498aabae",
     "name": "Rustic Gaudí - Sagrada Família",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436414/trl4n8noogyun10qmds8.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436902/cidqzea6jlj827teokyg.jpg",
@@ -38910,7 +38910,7 @@
   {
     "_id": "622f337b75c7d36e498aabaf",
     "name": "Cottage in Haiku",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436855/khyvb5q3yzcqaoscuppz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436983/pivldxmrxssnhyzixhes.jpg",
@@ -39199,7 +39199,7 @@
   {
     "_id": "622f337b75c7d36e498aabb0",
     "name": "Lovely twin room in central flat",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436496/ihozxprafjzuhil9qhh4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436922/ytr7znhbuqnxnotutplv.jpg",
@@ -39449,7 +39449,7 @@
   {
     "_id": "622f337b75c7d36e498aabb1",
     "name": "SM71 - 1 minute from beach - 2-bedroom - balcony",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436844/vowx18k0arro8jyekcap.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437308/p80ndulkcghpcfsnvjdo.jpg",
@@ -39523,7 +39523,7 @@
   {
     "_id": "622f337b75c7d36e498aabb2",
     "name": "City Center Rooftop",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437327/epcnh2tzpafwmvi3srcp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437349/thl7eoxar7dc7kpbahhj.jpg",
@@ -39779,7 +39779,7 @@
   {
     "_id": "622f337b75c7d36e498aabb3",
     "name": "Artist Home by the Sea - a 4 minute walk to Beach!",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437308/p80ndulkcghpcfsnvjdo.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436511/ru9vwmfqgv3yvdvny3tw.jpg",
@@ -40042,7 +40042,7 @@
   {
     "_id": "622f337b75c7d36e498aabb4",
     "name": "Ribeira Smart Flat",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437053/cg3bpdujvsd9lswwpfgy.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436523/ptcgbydjsamgf67a0npw.jpg",
@@ -40310,7 +40310,7 @@
   {
     "_id": "622f337b75c7d36e498aabb5",
     "name": "Westin Kaanapali KORVN Studio  v3",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436410/shdfxkcohvm8beh5rkar.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437013/gz1hfzv47xzfwcmosadc.jpg",
@@ -40431,7 +40431,7 @@
   {
     "_id": "622f337b75c7d36e498aabb6",
     "name": "Great location in Barcelona",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436952/aef9ajipinpjhkley1e3.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436359/abuiyexl2xyemq8uon4s.jpg",
@@ -40503,7 +40503,7 @@
   {
     "_id": "622f337b75c7d36e498aabb7",
     "name": "causeway bay MTR+Tidy Quad room&YT",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436456/aazeb5pemja3ddxauatd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436402/jtsg0m0t0x0ciyuzvbun.jpg",
@@ -40712,7 +40712,7 @@
   {
     "_id": "622f337b75c7d36e498aabb8",
     "name": "Twin Room With Window",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437253/m8imgenrgbozeveyahh7.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436470/jrzh7wvpvulqxo42xocc.jpg",
@@ -40981,7 +40981,7 @@
   {
     "_id": "622f337b75c7d36e498aabb9",
     "name": "Wan Chai Fully Furnished Studio",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436315/nyglbkkyaednuygn6eik.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436380/ez5caladc00mgsssl6ws.jpg",
@@ -41256,7 +41256,7 @@
   {
     "_id": "622f337b75c7d36e498aabba",
     "name": "The Garden Studio",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437330/mmhkmfvg8o3freucyekc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436804/m7h5fpqvy5ctvkysvg6o.jpg",
@@ -41521,7 +41521,7 @@
   {
     "_id": "622f337b75c7d36e498aabbb",
     "name": "Cosy Private Room best for long stay",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436948/vgfxpvmcpd2q40qxtuv3.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436453/ndl8odasqgnyquvsbalp.jpg",
@@ -41685,7 +41685,7 @@
   {
     "_id": "622f337b75c7d36e498aabbc",
     "name": "Private Entrance - Backyard Summer Dining - Enjoy",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436456/aazeb5pemja3ddxauatd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436281/doubvhbpwjfx81yfzpxq.jpg",
@@ -41950,7 +41950,7 @@
   {
     "_id": "622f337b75c7d36e498aabbd",
     "name": "The Porto Concierge - White Dove",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436315/nyglbkkyaednuygn6eik.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437352/wejdxpvadcm8d7svkxqq.jpg",
@@ -42210,7 +42210,7 @@
   {
     "_id": "622f337b75c7d36e498aabbe",
     "name": "Quiet Stylish Mosman Apartment",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436542/e96nrbkjz8mecvsbzukk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436827/znh7gqzbwb4wm6bdziy7.jpg",
@@ -42490,7 +42490,7 @@
   {
     "_id": "622f337b75c7d36e498aabbf",
     "name": "Catete's Colonial Big Hause Room B",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437241/wt0seud4ot4cmdrztdzz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436380/ez5caladc00mgsssl6ws.jpg",
@@ -42554,7 +42554,7 @@
   {
     "_id": "622f337c75c7d36e498aabc0",
     "name": "Large 3 bedrooms apartment",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436456/aazeb5pemja3ddxauatd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436804/m7h5fpqvy5ctvkysvg6o.jpg",
@@ -42673,7 +42673,7 @@
   {
     "_id": "622f337c75c7d36e498aabc1",
     "name": "Twin Bed room+MTR Mongkok shopping&My",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437221/wczn7rdpbtjbcvgspakp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436582/vv0y7twjl7zcj9g71sjf.jpg",
@@ -42927,7 +42927,7 @@
   {
     "_id": "622f337c75c7d36e498aabc2",
     "name": "montreal monalisa",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437361/h7fdhfrwoo9jtcgwqzn7.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437287/mns2lapesdourab6dn7u.jpg",
@@ -43202,7 +43202,7 @@
   {
     "_id": "622f337c75c7d36e498aabc3",
     "name": "O charme de estar em frente à praia",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436566/dsqwjeelwr1bwjxfkdxv.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436883/bcqxaecnu4e9kyzbwb4p.jpg",
@@ -43329,7 +43329,7 @@
   {
     "_id": "622f337c75c7d36e498aabc4",
     "name": "DOUBLE ROOM (1 or 2 people)",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436975/hx9ravtjop3uqv4giupt.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437333/iycoq0rywibijlncdqxh.jpg",
@@ -43593,7 +43593,7 @@
   {
     "_id": "622f337c75c7d36e498aabc5",
     "name": "Private Room (2)  in Guest House at Coogee Beach",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436883/bcqxaecnu4e9kyzbwb4p.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436855/khyvb5q3yzcqaoscuppz.jpg",
@@ -43739,7 +43739,7 @@
   {
     "_id": "622f337c75c7d36e498aabc6",
     "name": "Lulapartment II",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436397/nde7l2hrwezdfzbvhczj.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437256/d1wl601knflcsohxsqhk.jpg",
@@ -44000,7 +44000,7 @@
   {
     "_id": "622f337c75c7d36e498aabc7",
     "name": "Luxury Style Space: ideal for short or longterm!",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437017/gjyzgdjngyrhfrj2loxz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436546/ooe1vhteuu02af7ny3ex.jpg",
@@ -44268,7 +44268,7 @@
   {
     "_id": "622f337c75c7d36e498aabc8",
     "name": "New Furnishings! Very Private! Great Deal! GC 137",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436897/iz1ik9nibj3sobzrqomf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436948/vgfxpvmcpd2q40qxtuv3.jpg",
@@ -44452,7 +44452,7 @@
   {
     "_id": "622f337c75c7d36e498aabc9",
     "name": "Contemporary Remodeled Ocean View Villa in Kapalua",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437049/gpanmdffbwd9crhnzswa.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437033/rhw6gycttaimzocc1poz.jpg",
@@ -44717,7 +44717,7 @@
   {
     "_id": "622f337c75c7d36e498aabca",
     "name": "Puamana Ocean Breeze Bungalow",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437040/oarfkdxx7gyyvcynvwko.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436998/atpmgujjvdqnlfwfrntf.jpg",
@@ -44986,7 +44986,7 @@
   {
     "_id": "622f337c75c7d36e498aabcb",
     "name": "Appartment 5 minutes walk from the beach",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436550/mqmwpqdel4nxrmogeawh.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
@@ -45248,7 +45248,7 @@
   {
     "_id": "622f337c75c7d36e498aabcc",
     "name": "Affordable and close to the city!",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437013/gz1hfzv47xzfwcmosadc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436338/oifgxuovghbgnabppike.jpg",
@@ -45515,7 +45515,7 @@
   {
     "_id": "622f337c75c7d36e498aabcd",
     "name": "Beautiful condo next to downtown/ Condo bien situé",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437308/p80ndulkcghpcfsnvjdo.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
@@ -45786,7 +45786,7 @@
   {
     "_id": "622f337c75c7d36e498aabce",
     "name": "Beautiful Barra da Tijuca beachfront apart-hotel !",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436846/mwlexovwp7ekqlb6witg.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437006/kcsenznwf3pnka6hjwoh.jpg",
@@ -45872,7 +45872,7 @@
   {
     "_id": "622f337c75c7d36e498aabcf",
     "name": "A lovely cozy apartment near HKU",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436855/khyvb5q3yzcqaoscuppz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436359/abuiyexl2xyemq8uon4s.jpg",
@@ -45949,7 +45949,7 @@
   {
     "_id": "622f337c75c7d36e498aabd0",
     "name": "Most laid back-quiet place in HK",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436481/tqwkxtbalipudzhivoag.jpg",
@@ -46143,7 +46143,7 @@
   {
     "_id": "622f337c75c7d36e498aabd1",
     "name": "Beautiful Apt, Tropical Resort, Steps to the Beach",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436306/be2v9wssznxs4hebudb4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436419/jg5q36rc5mpn23kavp6b.jpg",
@@ -46421,7 +46421,7 @@
   {
     "_id": "622f337c75c7d36e498aabd2",
     "name": "Double Suite, with private bathroom.",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436556/mb70fifvvpvde8jub5cg.jpg",
@@ -46536,7 +46536,7 @@
   {
     "_id": "622f337c75c7d36e498aabd3",
     "name": "Bundeena Garden Studio near beaches",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436542/e96nrbkjz8mecvsbzukk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436861/xrxhgsif3ekhxgn8irlm.jpg",
@@ -46806,7 +46806,7 @@
   {
     "_id": "622f337c75c7d36e498aabd4",
     "name": "João´s beach house",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437006/kcsenznwf3pnka6hjwoh.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437045/dmquvficldi8ssfdlrrx.jpg",
@@ -47098,7 +47098,7 @@
   {
     "_id": "622f337c75c7d36e498aabd5",
     "name": "Beautiful Ensuite Room -Easy access to city",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437355/fy46xsk3yd7xujzcs2uz.jpg",
@@ -47177,7 +47177,7 @@
   {
     "_id": "622f337c75c7d36e498aabd6",
     "name": "Midillis 202 (Double Room)",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436886/cvc2yfmhfg9dabfkyiqw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437361/h7fdhfrwoo9jtcgwqzn7.jpg",
@@ -47445,7 +47445,7 @@
   {
     "_id": "622f337c75c7d36e498aabd7",
     "name": "Your spot in Copacabana",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436917/mqkfjmfpmyqpqmzmqgau.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437009/zuu2udtrkcs6sxjiym40.jpg",
@@ -47599,7 +47599,7 @@
   {
     "_id": "622f337c75c7d36e498aabd8",
     "name": "Stylish Flat in Center of Fashion",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436804/m7h5fpqvy5ctvkysvg6o.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436394/kscsvxyn0uro9tjhefeb.jpg",
@@ -47855,7 +47855,7 @@
   {
     "_id": "622f337c75c7d36e498aabd9",
     "name": "Merkez'de Ferah BAHÇELİ DAİRE ! Sporsalonu/ 1+1",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436511/ru9vwmfqgv3yvdvny3tw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436556/mb70fifvvpvde8jub5cg.jpg",
@@ -47968,7 +47968,7 @@
   {
     "_id": "622f337c75c7d36e498aabda",
     "name": "20% off - Cozy Studio Near Subway with Wifi LT4",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436556/mb70fifvvpvde8jub5cg.jpg",
@@ -48117,7 +48117,7 @@
   {
     "_id": "622f337c75c7d36e498aabdb",
     "name": "Family Matters | Historic Centre",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436978/mhqf1tttzqr33ecrrwb2.jpg",
@@ -48390,7 +48390,7 @@
   {
     "_id": "622f337c75c7d36e498aabdc",
     "name": "OportoBatalha  (by The HOST)",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436883/bcqxaecnu4e9kyzbwb4p.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437259/pw5sosryaebjynvwppcy.jpg",
@@ -48670,7 +48670,7 @@
   {
     "_id": "622f337c75c7d36e498aabdd",
     "name": "SUPERHOST- Wifi- METRO-Near Pierloti-",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436772/nplkpwclhrdvvspkpmbg.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436562/aflmntpgocp5l2zxikhl.jpg",
@@ -48950,7 +48950,7 @@
   {
     "_id": "622f337c75c7d36e498aabde",
     "name": "Whole Apt. in East Williamsburg",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436306/be2v9wssznxs4hebudb4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437290/ll70bfq1cxslz2x2snoa.jpg",
@@ -49210,7 +49210,7 @@
   {
     "_id": "622f337c75c7d36e498aabdf",
     "name": "2BR, Walk to the Beach, 2 Lanais, Stunning Views!",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436867/yocip4igdbruuh2grzpf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436394/kscsvxyn0uro9tjhefeb.jpg",
@@ -49438,7 +49438,7 @@
   {
     "_id": "622f337c75c7d36e498aabe0",
     "name": "West Maui/Napili. Entire Condo. QUIET! BEACHES!",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436907/abikktroqknzhch6b9ly.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437017/gjyzgdjngyrhfrj2loxz.jpg",
@@ -49719,7 +49719,7 @@
   {
     "_id": "622f337c75c7d36e498aabe1",
     "name": "STUDIO APARTMENT + WIFI!!!!",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437349/thl7eoxar7dc7kpbahhj.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436846/mwlexovwp7ekqlb6witg.jpg",
@@ -49997,7 +49997,7 @@
   {
     "_id": "622f337c75c7d36e498aabe2",
     "name": "Hip 2BR in Downtown Montréal by Sonder",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437358/cy8kzj8jeofwkev6tlq9.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436566/dsqwjeelwr1bwjxfkdxv.jpg",
@@ -50273,7 +50273,7 @@
   {
     "_id": "622f337c75c7d36e498aabe3",
     "name": "★Cozy doble bedroom ★Nearby Christ the Redeemer★",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436419/jg5q36rc5mpn23kavp6b.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436546/ooe1vhteuu02af7ny3ex.jpg",
@@ -50551,7 +50551,7 @@
   {
     "_id": "622f337c75c7d36e498aabe4",
     "name": "Cozy house at Beyoğlu",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436533/lw91nt07jhq6khiacu2d.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437061/xwqh3jtahjqxod0p1a0c.jpg",
@@ -50820,7 +50820,7 @@
   {
     "_id": "622f337c75c7d36e498aabe5",
     "name": "Napili Ridge, Maui ~ J1 ~ Garden View",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436993/yzxnnw83e9qyas022au4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436397/nde7l2hrwezdfzbvhczj.jpg",
@@ -51086,7 +51086,7 @@
   {
     "_id": "622f337c75c7d36e498aabe6",
     "name": "Charming urban 1 Bedroom apartment",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436562/aflmntpgocp5l2zxikhl.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436402/jtsg0m0t0x0ciyuzvbun.jpg",
@@ -51156,7 +51156,7 @@
   {
     "_id": "622f337c75c7d36e498aabe7",
     "name": "1 or 2 rooms with private terrace in shared flat",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436872/i3jblqgpdttpwvshbffo.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436855/khyvb5q3yzcqaoscuppz.jpg",
@@ -51446,7 +51446,7 @@
   {
     "_id": "622f337c75c7d36e498aabe8",
     "name": "Cozy & in the heart of Kowloon",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436410/shdfxkcohvm8beh5rkar.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436385/sorbz7rdtxacu1ds9vel.jpg",
@@ -51533,7 +51533,7 @@
   {
     "_id": "622f337c75c7d36e498aabe9",
     "name": "IDEAL APARTMENT SAGRADA FAMILIA",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437221/wczn7rdpbtjbcvgspakp.jpg",
@@ -51810,7 +51810,7 @@
   {
     "_id": "622f337c75c7d36e498aabea",
     "name": "Beautiful Area Single Room",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436546/ooe1vhteuu02af7ny3ex.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436793/httqod38otalkzp9kynq.jpg",
@@ -52040,7 +52040,7 @@
   {
     "_id": "622f337c75c7d36e498aabeb",
     "name": "Bondi-Tamarama BEACHFRONT Apartment",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437269/u6wxkpazgvqdxiceky9l.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436983/pivldxmrxssnhyzixhes.jpg",
@@ -52306,7 +52306,7 @@
   {
     "_id": "622f337c75c7d36e498aabec",
     "name": "Cozy Room w/ Office | The Plateau Mont-Royal",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437310/tus71yfpnvgulenrli6a.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437250/o8uutj3t2bvfafvxkr9j.jpg",
@@ -52465,7 +52465,7 @@
   {
     "_id": "622f337c75c7d36e498aabed",
     "name": "Cozy Art Top Floor Apt in PRIME Williamsburg!",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436329/cvylwkta0uannbxm3zns.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436359/abuiyexl2xyemq8uon4s.jpg",
@@ -52740,7 +52740,7 @@
   {
     "_id": "622f337c75c7d36e498aabee",
     "name": "Au cœur de la Petite Patrie",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436533/lw91nt07jhq6khiacu2d.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436876/bskkmribzul6cjzbprvi.jpg",
@@ -52914,7 +52914,7 @@
   {
     "_id": "622f337c75c7d36e498aabef",
     "name": "Charming Spacious Park Slope Studio",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436329/cvylwkta0uannbxm3zns.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
@@ -53192,7 +53192,7 @@
   {
     "_id": "622f337c75c7d36e498aabf0",
     "name": "Artist Garden Duplex Ft. Greene - 2.5 Bedroom",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436550/mqmwpqdel4nxrmogeawh.jpg",
@@ -53477,7 +53477,7 @@
   {
     "_id": "622f337c75c7d36e498aabf1",
     "name": "A Casa Alegre é um apartamento T1.",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437323/wcnoxi3mwy1a5dmxaccl.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437253/m8imgenrgbozeveyahh7.jpg",
@@ -53658,7 +53658,7 @@
   {
     "_id": "622f337c75c7d36e498aabf2",
     "name": "Copacabana Studio -  5* Reviews, 5 mins to Beach",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437279/vgq4tkkecvdo2nzxdudx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436329/cvylwkta0uannbxm3zns.jpg",
@@ -53926,7 +53926,7 @@
   {
     "_id": "622f337c75c7d36e498aabf3",
     "name": "2 Bedroom Ocean Front Condo in Honokowai - Sleeps 6 - Hale Mahina #B404",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436978/mhqf1tttzqr33ecrrwb2.jpg",
@@ -54012,7 +54012,7 @@
   {
     "_id": "622f337c75c7d36e498aabf4",
     "name": "MODERN CONDO WITH VIEW - GRIFFIN",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437259/pw5sosryaebjynvwppcy.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436948/vgfxpvmcpd2q40qxtuv3.jpg",
@@ -54083,7 +54083,7 @@
   {
     "_id": "622f337c75c7d36e498aabf5",
     "name": "Charming StanleyBeachFlat w/rooftop",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436385/sorbz7rdtxacu1ds9vel.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436380/ez5caladc00mgsssl6ws.jpg",
@@ -54338,7 +54338,7 @@
   {
     "_id": "622f337c75c7d36e498aabf6",
     "name": "Barra da Tijuca: cobertura ESPETACULAR",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436204/wzbrvr4mcsuub6gvwbry.jpg",
@@ -54434,7 +54434,7 @@
   {
     "_id": "622f337c75c7d36e498aabf7",
     "name": "New apartment - 1 room",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436978/mhqf1tttzqr33ecrrwb2.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436772/nplkpwclhrdvvspkpmbg.jpg",
@@ -54507,7 +54507,7 @@
   {
     "_id": "622f337c75c7d36e498aabf8",
     "name": "Porto.arte downtown apartment 3PAX",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436546/ooe1vhteuu02af7ny3ex.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436287/my8eunlgiiflc2ohslgx.jpg",
@@ -54757,7 +54757,7 @@
   {
     "_id": "622f337c75c7d36e498aabf9",
     "name": "Gorgeous Boutique Hotel Room in Taksim #8",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436804/m7h5fpqvy5ctvkysvg6o.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436306/be2v9wssznxs4hebudb4.jpg",
@@ -54831,7 +54831,7 @@
   {
     "_id": "622f337c75c7d36e498aabfa",
     "name": "Cozy Apartment near Charley Young Beach in Kihei",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436550/mqmwpqdel4nxrmogeawh.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437279/vgq4tkkecvdo2nzxdudx.jpg",
@@ -55113,7 +55113,7 @@
   {
     "_id": "622f337c75c7d36e498aabfb",
     "name": "Condo tout équipé, 2 ch., paisible, près du métro",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436907/abikktroqknzhch6b9ly.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437323/wcnoxi3mwy1a5dmxaccl.jpg",
@@ -55236,7 +55236,7 @@
   {
     "_id": "622f337c75c7d36e498aabfc",
     "name": "Kowloon Mongkok 1812 Twin Room A, near station",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436546/ooe1vhteuu02af7ny3ex.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436550/mqmwpqdel4nxrmogeawh.jpg",
@@ -55499,7 +55499,7 @@
   {
     "_id": "622f337c75c7d36e498aabfd",
     "name": "Penthouse with stunning 600 sq ft roof terrace",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436883/bcqxaecnu4e9kyzbwb4p.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436204/wzbrvr4mcsuub6gvwbry.jpg",
@@ -55778,7 +55778,7 @@
   {
     "_id": "622f337c75c7d36e498aabfe",
     "name": "Ranch Abode Loft in Bushwick",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437330/mmhkmfvg8o3freucyekc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437049/gpanmdffbwd9crhnzswa.jpg",
@@ -56055,7 +56055,7 @@
   {
     "_id": "622f337c75c7d36e498aabff",
     "name": "A bedroom far away from home",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436539/jy85me6y4bcsgfjvytwv.jpg",
@@ -56316,7 +56316,7 @@
   {
     "_id": "622f337c75c7d36e498aac00",
     "name": "Suíte TOP frente Mar Barra posto 4 + Café da Manhã",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436933/ysvap4wzv8ziwtpbznf8.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437017/gjyzgdjngyrhfrj2loxz.jpg",
@@ -56610,7 +56610,7 @@
   {
     "_id": "622f337c75c7d36e498aac01",
     "name": "* Room Taste of Real İstanbul",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436600/rt3ldgx1xfqct3961yjz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436553/hbkx9lwxjd0wabqk0bmo.jpg",
@@ -56858,7 +56858,7 @@
   {
     "_id": "622f337c75c7d36e498aac02",
     "name": "Cozy Apartment in Bed-Stuy",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437241/wt0seud4ot4cmdrztdzz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436419/jg5q36rc5mpn23kavp6b.jpg",
@@ -56985,7 +56985,7 @@
   {
     "_id": "622f337c75c7d36e498aac03",
     "name": "enjoy nature in Istanbul",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437330/mmhkmfvg8o3freucyekc.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436456/aazeb5pemja3ddxauatd.jpg",
@@ -57189,7 +57189,7 @@
   {
     "_id": "622f337c75c7d36e498aac04",
     "name": "Maui Beach House Chic Style with Tropical Views",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437009/zuu2udtrkcs6sxjiym40.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
@@ -57348,7 +57348,7 @@
   {
     "_id": "622f337c75c7d36e498aac05",
     "name": "The Executive  Posh Room",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436266/num9wnb6uzdsvqr6nyuu.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437330/mmhkmfvg8o3freucyekc.jpg",
@@ -57602,7 +57602,7 @@
   {
     "_id": "622f337c75c7d36e498aac06",
     "name": "SPACIOUS RAMBLA CATALUÑA",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436897/iz1ik9nibj3sobzrqomf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
@@ -57679,7 +57679,7 @@
   {
     "_id": "622f337c75c7d36e498aac07",
     "name": "Cozy Comfy Suite of Rockaway Beach",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436410/shdfxkcohvm8beh5rkar.jpg",
@@ -57941,7 +57941,7 @@
   {
     "_id": "622f337c75c7d36e498aac08",
     "name": "Triple Room  - Ocean's 7 Hotel",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437282/qy0p7yyaukasripzwc7w.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436893/pkhxv5j90ubdzbpgdbdb.jpg",
@@ -58025,7 +58025,7 @@
   {
     "_id": "622f337c75c7d36e498aac09",
     "name": "Chic City Pad with Leafy Outlook",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437033/rhw6gycttaimzocc1poz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436855/khyvb5q3yzcqaoscuppz.jpg",
@@ -58307,7 +58307,7 @@
   {
     "_id": "622f337c75c7d36e498aac0a",
     "name": "A GEM IN THE HEART  OF BYZANTINE  ISTANBUL",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436204/wzbrvr4mcsuub6gvwbry.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436837/fyczvvyuelceouxja8yy.jpg",
@@ -58563,7 +58563,7 @@
   {
     "_id": "622f337c75c7d36e498aac0b",
     "name": "Be Happy in Porto",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436368/noebywqae4x0u42srsv3.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436872/i3jblqgpdttpwvshbffo.jpg",
@@ -58838,7 +58838,7 @@
   {
     "_id": "622f337c75c7d36e498aac0c",
     "name": "Amazing Ocean View Condo in Wailea!",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436597/l90ukcpzpv6yvv6vhsnd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436928/ouvft4oeavr7ceeha4gk.jpg",
@@ -59111,7 +59111,7 @@
   {
     "_id": "622f337c75c7d36e498aac0d",
     "name": "Eliseos Luxury Apartment HUTB-001281",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436902/cidqzea6jlj827teokyg.jpg",
@@ -59380,7 +59380,7 @@
   {
     "_id": "622f337c75c7d36e498aac0e",
     "name": "Brooklyn Artist Loft / Fun Location",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437259/pw5sosryaebjynvwppcy.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436922/ytr7znhbuqnxnotutplv.jpg",
@@ -59584,7 +59584,7 @@
   {
     "_id": "622f337c75c7d36e498aac0f",
     "name": "MONTJUIC FOUNTAINS APARTMENT",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437017/gjyzgdjngyrhfrj2loxz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
@@ -59842,7 +59842,7 @@
   {
     "_id": "622f337c75c7d36e498aac10",
     "name": "Nişantaşı, safe, quality area.Very close to metro.",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437339/qgs3hrnx0accbjkzuh9s.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436456/aazeb5pemja3ddxauatd.jpg",
@@ -59974,7 +59974,7 @@
   {
     "_id": "622f337c75c7d36e498aac11",
     "name": "BEST HOME in the BlueMosq area!",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436321/g2cs1w7tkxsx58penq9j.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437025/haliwehueqfkmxo1tv7j.jpg",
@@ -60221,7 +60221,7 @@
   {
     "_id": "622f337c75c7d36e498aac12",
     "name": "ORM - Chã 02 Apartment",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436876/bskkmribzul6cjzbprvi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437269/u6wxkpazgvqdxiceky9l.jpg",
@@ -60503,7 +60503,7 @@
   {
     "_id": "622f337c75c7d36e498aac13",
     "name": "Studio convenient to CBD, beaches, street parking.",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436917/mqkfjmfpmyqpqmzmqgau.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436872/i3jblqgpdttpwvshbffo.jpg",
@@ -60795,7 +60795,7 @@
   {
     "_id": "622f337c75c7d36e498aac14",
     "name": "Cozy Chinatown studio apartment",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436562/aflmntpgocp5l2zxikhl.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437262/ifklqhihs1qinbmap5hd.jpg",
@@ -61055,7 +61055,7 @@
   {
     "_id": "622f337c75c7d36e498aac15",
     "name": "Room Close to LGA and 35 mins to Times Square",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436410/shdfxkcohvm8beh5rkar.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437233/q5ilz1oo9v4x8njmtjhl.jpg",
@@ -61317,7 +61317,7 @@
   {
     "_id": "622f337c75c7d36e498aac16",
     "name": "Bright, Modern, Spacious Duplex Apt",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436886/cvc2yfmhfg9dabfkyiqw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
@@ -61590,7 +61590,7 @@
   {
     "_id": "622f337c75c7d36e498aac17",
     "name": "VERY LARGE 5 Bedroom Home, free onsite parking",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437049/gpanmdffbwd9crhnzswa.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437333/iycoq0rywibijlncdqxh.jpg",
@@ -61864,7 +61864,7 @@
   {
     "_id": "622f337c75c7d36e498aac18",
     "name": "Sunny Bedroom in Downtown Montreal",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436978/mhqf1tttzqr33ecrrwb2.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436837/fyczvvyuelceouxja8yy.jpg",
@@ -61929,7 +61929,7 @@
   {
     "_id": "622f337c75c7d36e498aac19",
     "name": "Ribeira Charming Duplex",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436533/lw91nt07jhq6khiacu2d.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436523/ptcgbydjsamgf67a0npw.jpg",
@@ -62204,7 +62204,7 @@
   {
     "_id": "622f337c75c7d36e498aac1a",
     "name": "King Size Private Bedroom in Surry Hills",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436376/phpltehcr6uq9lh5jlax.jpg",
@@ -62461,7 +62461,7 @@
   {
     "_id": "622f337c75c7d36e498aac1b",
     "name": "FloresRooms 3T",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437036/a4pijdxx1kiebg7r6dxg.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436893/pkhxv5j90ubdzbpgdbdb.jpg",
@@ -62723,7 +62723,7 @@
   {
     "_id": "622f337c75c7d36e498aac1c",
     "name": "Tai Hang (Causeway Bay) Sunny Aprt'",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436550/mqmwpqdel4nxrmogeawh.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437290/ll70bfq1cxslz2x2snoa.jpg",
@@ -62887,7 +62887,7 @@
   {
     "_id": "622f337c75c7d36e498aac1d",
     "name": "Renovated 2 Bedroom/2 Bathroom Apartment P0305",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436334/nqgdwv3ljfkrbvynoetv.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436827/znh7gqzbwb4wm6bdziy7.jpg",
@@ -62984,7 +62984,7 @@
   {
     "_id": "622f337c75c7d36e498aac1e",
     "name": "In Sisli. Walking distance to Taksim,Nişantaşı.",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437256/d1wl601knflcsohxsqhk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
@@ -63051,7 +63051,7 @@
   {
     "_id": "622f337c75c7d36e498aac1f",
     "name": "Brick House: Unique Garden Apartment! King Bed!",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436380/ez5caladc00mgsssl6ws.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436578/y1fshh0nppk5nxbfzqoz.jpg",
@@ -63329,7 +63329,7 @@
   {
     "_id": "622f337c75c7d36e498aac20",
     "name": "YÜZME HAVUZLU VE DENİZ MANZARALI",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436852/y3scgbn8d6evumdpwdp4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
@@ -63428,7 +63428,7 @@
   {
     "_id": "622f337c75c7d36e498aac21",
     "name": "MODERN DESIGNED STUDIO APARTMENT IN TAKSIM PLACE",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437339/qgs3hrnx0accbjkzuh9s.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437344/r4w6s3af55tdt5y1lrcc.jpg",
@@ -63693,7 +63693,7 @@
   {
     "_id": "622f337c75c7d36e498aac22",
     "name": "Ideal para famílias!Muita segurança",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437323/wcnoxi3mwy1a5dmxaccl.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437233/q5ilz1oo9v4x8njmtjhl.jpg",
@@ -63980,7 +63980,7 @@
   {
     "_id": "622f337c75c7d36e498aac23",
     "name": "Adorable Garden Gingerbread House",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436886/cvc2yfmhfg9dabfkyiqw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436334/nqgdwv3ljfkrbvynoetv.jpg",
@@ -64258,7 +64258,7 @@
   {
     "_id": "622f337d75c7d36e498aac24",
     "name": "Greystone Apartment 2",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437053/cg3bpdujvsd9lswwpfgy.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437358/cy8kzj8jeofwkev6tlq9.jpg",
@@ -64533,7 +64533,7 @@
   {
     "_id": "622f337d75c7d36e498aac25",
     "name": "Private Room with perfect location in Bostanci",
-    "type": "Amazing views",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436876/bskkmribzul6cjzbprvi.jpg",
@@ -64644,7 +64644,7 @@
   {
     "_id": "622f337d75c7d36e498aac26",
     "name": "Inner City Spacious Loft- City View",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436306/be2v9wssznxs4hebudb4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436287/my8eunlgiiflc2ohslgx.jpg",
@@ -64928,7 +64928,7 @@
   {
     "_id": "622f337d75c7d36e498aac27",
     "name": "MySweetHomePT",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436907/abikktroqknzhch6b9ly.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436372/d32ktdsaqfoiogz5dpvf.jpg",
@@ -65221,7 +65221,7 @@
   {
     "_id": "622f337d75c7d36e498aac28",
     "name": "Spacious bedroom with a trundle bed in Botafogo",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436588/cxkvvaext8m0kjuaxcrk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436528/xfryowvexdic3k1gjush.jpg",
@@ -65341,7 +65341,7 @@
   {
     "_id": "622f337d75c7d36e498aac29",
     "name": "Rent All Apartament (100m²) netx to BRT station",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436511/ru9vwmfqgv3yvdvny3tw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
@@ -65407,7 +65407,7 @@
   {
     "_id": "622f337d75c7d36e498aac2a",
     "name": "1BR COZY, SPACIOUS, NEXT TO METRO FLAMENGO, RIO",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436961/rj6eo6v6npy65bckaxvr.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437269/u6wxkpazgvqdxiceky9l.jpg",
@@ -65708,7 +65708,7 @@
   {
     "_id": "622f337d75c7d36e498aac2b",
     "name": "Oporto Central Flat",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436219/yida7pxwpup9rtgnguhv.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436952/aef9ajipinpjhkley1e3.jpg",
@@ -65935,7 +65935,7 @@
   {
     "_id": "622f337d75c7d36e498aac2c",
     "name": "Charming apartment in Plateau Mont Royal",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436597/l90ukcpzpv6yvv6vhsnd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436453/ndl8odasqgnyquvsbalp.jpg",
@@ -66114,7 +66114,7 @@
   {
     "_id": "622f337d75c7d36e498aac2d",
     "name": "Premium Exclusive house & garden Rua Almada",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436533/lw91nt07jhq6khiacu2d.jpg",
@@ -66375,7 +66375,7 @@
   {
     "_id": "622f337d75c7d36e498aac2e",
     "name": "Casa S. Miguel 6 - The Yellow House",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437262/ifklqhihs1qinbmap5hd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437009/zuu2udtrkcs6sxjiym40.jpg",
@@ -66665,7 +66665,7 @@
   {
     "_id": "622f337d75c7d36e498aac2f",
     "name": "Apartment in Ipanema with Balcony",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436236/ctnbnqazpqhotjcauqwp.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437253/m8imgenrgbozeveyahh7.jpg",
@@ -66880,7 +66880,7 @@
   {
     "_id": "622f337d75c7d36e498aac30",
     "name": "Artsy 3BR in Plateau by Sonder",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436801/mcuu1w2188ndpd6hezzt.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436852/y3scgbn8d6evumdpwdp4.jpg",
@@ -67134,7 +67134,7 @@
   {
     "_id": "622f337d75c7d36e498aac31",
     "name": "Homely Room in 5-Star New Condo@MTR",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437045/dmquvficldi8ssfdlrrx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436536/zavqkvmzf6j6efydruzd.jpg",
@@ -67418,7 +67418,7 @@
   {
     "_id": "622f337d75c7d36e498aac32",
     "name": "Harbourside Apartment - Water Views",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436287/my8eunlgiiflc2ohslgx.jpg",
@@ -67691,7 +67691,7 @@
   {
     "_id": "622f337d75c7d36e498aac33",
     "name": "Cozy Room at TKL MTR",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436893/pkhxv5j90ubdzbpgdbdb.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436804/m7h5fpqvy5ctvkysvg6o.jpg",
@@ -67813,7 +67813,7 @@
   {
     "_id": "622f337d75c7d36e498aac34",
     "name": "The Porto Concierge - Bouganvillea Oporto Flat",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436261/hwqt72njlhf9hkqou9ka.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437290/ll70bfq1cxslz2x2snoa.jpg",
@@ -68073,7 +68073,7 @@
   {
     "_id": "622f337d75c7d36e498aac35",
     "name": "Chic Queen Bed in 5 Star Location!",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436957/ehhcyscwtvxw55mptkok.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437310/tus71yfpnvgulenrli6a.jpg",
@@ -68358,7 +68358,7 @@
   {
     "_id": "622f337d75c7d36e498aac36",
     "name": "São João",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437310/tus71yfpnvgulenrli6a.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
@@ -68616,7 +68616,7 @@
   {
     "_id": "622f337d75c7d36e498aac37",
     "name": "Shiny BALCONY:)) room CENTRAL ISTANBUL ŞİŞLİ",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436597/l90ukcpzpv6yvv6vhsnd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436397/nde7l2hrwezdfzbvhczj.jpg",
@@ -68703,7 +68703,7 @@
   {
     "_id": "622f337d75c7d36e498aac38",
     "name": "Westin Kaanapali KORVS 2BR",
-    "type": "Castles",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437333/iycoq0rywibijlncdqxh.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436864/ww1gixcmzwryfe1amps1.jpg",
@@ -68842,7 +68842,7 @@
   {
     "_id": "622f337d75c7d36e498aac39",
     "name": "Quarto de Casal em Ipanema",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436315/nyglbkkyaednuygn6eik.jpg",
@@ -68928,7 +68928,7 @@
   {
     "_id": "622f337d75c7d36e498aac3a",
     "name": "Sunny 1 or 2 BR apt in Boerum Hill",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436821/b4ejulqdhsvyseyfnfr0.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436844/vowx18k0arro8jyekcap.jpg",
@@ -69206,7 +69206,7 @@
   {
     "_id": "622f337d75c7d36e498aac3b",
     "name": "Designer's Historical Apartment",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436597/l90ukcpzpv6yvv6vhsnd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436414/trl4n8noogyun10qmds8.jpg",
@@ -69429,7 +69429,7 @@
   {
     "_id": "622f337d75c7d36e498aac3c",
     "name": "Apartamento/Flat T2 com vista mar",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437061/xwqh3jtahjqxod0p1a0c.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437349/thl7eoxar7dc7kpbahhj.jpg",
@@ -69623,7 +69623,7 @@
   {
     "_id": "622f337d75c7d36e498aac3d",
     "name": "Oba Hotel istanbul Quadruple Room",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437033/rhw6gycttaimzocc1poz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436496/ihozxprafjzuhil9qhh4.jpg",
@@ -69697,7 +69697,7 @@
   {
     "_id": "622f337d75c7d36e498aac3e",
     "name": "SPECTACULAR OCEAN VIEW  IN THE HEART OF KIHEI TOWN",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436321/g2cs1w7tkxsx58penq9j.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437021/cw6mtrxza5fzmmgxen4j.jpg",
@@ -70001,7 +70001,7 @@
   {
     "_id": "622f337d75c7d36e498aac3f",
     "name": "Downtown Montreal Fully furnished apartment WIFI",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436993/yzxnnw83e9qyas022au4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436525/wdod0zfzsipkigajueda.jpg",
@@ -70168,7 +70168,7 @@
   {
     "_id": "622f337d75c7d36e498aac40",
     "name": "**YOUR ROOM IN OPORTO**",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436546/ooe1vhteuu02af7ny3ex.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436988/rnk62shhgqcwvi45ao43.jpg",
@@ -70371,7 +70371,7 @@
   {
     "_id": "622f337d75c7d36e498aac41",
     "name": "Where Castles and Art meet the Sea",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436893/pkhxv5j90ubdzbpgdbdb.jpg",
@@ -70570,7 +70570,7 @@
   {
     "_id": "622f337d75c7d36e498aac42",
     "name": "Charming Apartment,perfect Location",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437002/rfon5llzyvk94eilgk5r.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436481/tqwkxtbalipudzhivoag.jpg",
@@ -70847,7 +70847,7 @@
   {
     "_id": "622f337d75c7d36e498aac43",
     "name": "Large Duplex in Midtown East with backyard!",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436376/phpltehcr6uq9lh5jlax.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436546/ooe1vhteuu02af7ny3ex.jpg",
@@ -71125,7 +71125,7 @@
   {
     "_id": "622f337d75c7d36e498aac44",
     "name": "GREAT Apartment at Barra da Tijuca",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436255/nmccht42mpd6erdeqjhi.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436266/num9wnb6uzdsvqr6nyuu.jpg",
@@ -71340,7 +71340,7 @@
   {
     "_id": "622f337d75c7d36e498aac45",
     "name": "Double/single room, bathroom & garage in Poblenou",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437045/dmquvficldi8ssfdlrrx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436942/cfa0wa2uwfyunrhgp4mt.jpg",
@@ -71605,7 +71605,7 @@
   {
     "_id": "622f337d75c7d36e498aac46",
     "name": "Lovely ap at Leblon beach",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436793/httqod38otalkzp9kynq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436397/nde7l2hrwezdfzbvhczj.jpg",
@@ -71667,7 +71667,7 @@
   {
     "_id": "622f337d75c7d36e498aac47",
     "name": "Cozy Queen Guest Room&My",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437355/fy46xsk3yd7xujzcs2uz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436394/kscsvxyn0uro9tjhefeb.jpg",
@@ -71811,7 +71811,7 @@
   {
     "_id": "622f337d75c7d36e498aac48",
     "name": "Room on the waterfront",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436523/ptcgbydjsamgf67a0npw.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436804/m7h5fpqvy5ctvkysvg6o.jpg",
@@ -72073,7 +72073,7 @@
   {
     "_id": "622f337d75c7d36e498aac49",
     "name": "B4.Walk to MTR 1 min/Economy room/Twin single bed",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437321/lb1j83rv5xox1ovn5pgz.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436948/vgfxpvmcpd2q40qxtuv3.jpg",
@@ -72330,7 +72330,7 @@
   {
     "_id": "622f337d75c7d36e498aac4a",
     "name": "Direct Beach/Ocean front, 20 Steps to the Water!",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436571/fvqbazrysqpymjlhhdqu.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437272/e2id7kpaglrrdug3i6if.jpg",
@@ -72607,7 +72607,7 @@
   {
     "_id": "622f337d75c7d36e498aac4b",
     "name": "linda casa com piscina em condomínio e arrumadeira",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437279/vgq4tkkecvdo2nzxdudx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436855/khyvb5q3yzcqaoscuppz.jpg",
@@ -72679,7 +72679,7 @@
   {
     "_id": "622f337d75c7d36e498aac4c",
     "name": "BEST REVIEWS*BEST MALLS*SAFE STAY*DIMSUM*CWB*MTR",
-    "type": "Design",
+    "type": "Apartment",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437361/h7fdhfrwoo9jtcgwqzn7.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436528/xfryowvexdic3k1gjush.jpg",
@@ -72976,7 +72976,7 @@
   {
     "_id": "622f337d75c7d36e498aac4d",
     "name": "Luxurious, bright, spacious Plaza Catalunya",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436988/rnk62shhgqcwvi45ao43.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437221/wczn7rdpbtjbcvgspakp.jpg",
@@ -73250,7 +73250,7 @@
   {
     "_id": "622f337d75c7d36e498aac4e",
     "name": "B5.Walk to MTR 1 min/Economy room/Twin single bed",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437262/ifklqhihs1qinbmap5hd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436811/ym5nh1anownexsyzgbqq.jpg",
@@ -73448,7 +73448,7 @@
   {
     "_id": "622f337d75c7d36e498aac4f",
     "name": "Nice appartement in central",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436553/hbkx9lwxjd0wabqk0bmo.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436600/rt3ldgx1xfqct3961yjz.jpg",
@@ -73588,7 +73588,7 @@
   {
     "_id": "622f337d75c7d36e498aac50",
     "name": "Best location 1BR Apt in HK - Shops & Sights",
-    "type": "Lakefront",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436481/tqwkxtbalipudzhivoag.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436861/xrxhgsif3ekhxgn8irlm.jpg",
@@ -73855,7 +73855,7 @@
   {
     "_id": "622f337d75c7d36e498aac51",
     "name": "Mongkok Luxury Studio, New Reno *4A",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436271/mqf7uxzlufmjc77jpl5k.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436864/ww1gixcmzwryfe1amps1.jpg",
@@ -73919,7 +73919,7 @@
   {
     "_id": "622f337d75c7d36e498aac52",
     "name": "Cute Attic room Beyoğlu, Istanbul",
-    "type": "Campers",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437272/e2id7kpaglrrdug3i6if.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436902/cidqzea6jlj827teokyg.jpg",
@@ -74173,7 +74173,7 @@
   {
     "_id": "622f337d75c7d36e498aac53",
     "name": "Surry Hills Studio - Your Perfect Base in Sydney",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437262/ifklqhihs1qinbmap5hd.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436281/doubvhbpwjfx81yfzpxq.jpg",
@@ -74433,7 +74433,7 @@
   {
     "_id": "622f337d75c7d36e498aac54",
     "name": "Aloha, Kihei Bay Surf, New Pool and BBQ",
-    "type": "Caves",
+    "type": "Cottage",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436852/y3scgbn8d6evumdpwdp4.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436978/mhqf1tttzqr33ecrrwb2.jpg",
@@ -74716,7 +74716,7 @@
   {
     "_id": "622f337d75c7d36e498aac55",
     "name": "Loft styled apartment /Terrace at Copacabana Beach",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437021/cw6mtrxza5fzmmgxen4j.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436334/nqgdwv3ljfkrbvynoetv.jpg",
@@ -74830,7 +74830,7 @@
   {
     "_id": "622f337d75c7d36e498aac56",
     "name": "Spacious 2 Bedroom: Soho/Escalator",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436410/shdfxkcohvm8beh5rkar.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437033/rhw6gycttaimzocc1poz.jpg",
@@ -75104,7 +75104,7 @@
   {
     "_id": "622f337d75c7d36e498aac57",
     "name": "Room w private toilet 3 min to MTR!",
-    "type": "Beach",
+    "type": "House",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436957/ehhcyscwtvxw55mptkok.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436306/be2v9wssznxs4hebudb4.jpg",
@@ -75369,7 +75369,7 @@
   {
     "_id": "622f337d75c7d36e498aac58",
     "name": "Spacious and well located apartment",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436582/vv0y7twjl7zcj9g71sjf.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436496/ihozxprafjzuhil9qhh4.jpg",
@@ -75629,7 +75629,7 @@
   {
     "_id": "622f337d75c7d36e498aac59",
     "name": "Big, Bright & Convenient Sheung Wan",
-    "type": "Islands",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436917/mqkfjmfpmyqpqmzmqgau.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436797/hzfu8ihyoecadrermn14.jpg",
@@ -75694,7 +75694,7 @@
   {
     "_id": "622f337d75c7d36e498aac5a",
     "name": "Cozy&clean room in Sisli next to subway",
-    "type": "Beachfront",
+    "type": "Condo",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437045/dmquvficldi8ssfdlrrx.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436523/ptcgbydjsamgf67a0npw.jpg",
@@ -75766,7 +75766,7 @@
   {
     "_id": "622f337d75c7d36e498aac5b",
     "name": "Luxury Apartment Diagonal (very sunny)",
-    "type": "Amazing pools",
+    "type": "Villa",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437361/h7fdhfrwoo9jtcgwqzn7.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437259/pw5sosryaebjynvwppcy.jpg",
@@ -75902,7 +75902,7 @@
   {
     "_id": "622f337d75c7d36e498aac5c",
     "name": "B & B  Room Yoga Garden's Place",
-    "type": "National parks",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437308/p80ndulkcghpcfsnvjdo.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436993/yzxnnw83e9qyas022au4.jpg",
@@ -76175,7 +76175,7 @@
   {
     "_id": "622f337d75c7d36e498aac5d",
     "name": "Easy 1 Bedroom in Chelsea",
-    "type": "Cabins",
+    "type": "Cabin",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437352/wejdxpvadcm8d7svkxqq.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436893/pkhxv5j90ubdzbpgdbdb.jpg",
@@ -76236,7 +76236,7 @@
   {
     "_id": "622f337d75c7d36e498aac5e",
     "name": "Artsy Downtown Studio!",
-    "type": "Shared homes",
+    "type": "Townhouse",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437040/oarfkdxx7gyyvcynvwko.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437336/u9ttr09gqo3hmfumwdww.jpg",
@@ -76314,7 +76314,7 @@
   {
     "_id": "622f337d75c7d36e498aac5f",
     "name": "New 1BD Condo in Napili Ridge, Walk to Beach",
-    "type": "OMG!",
+    "type": "Loft",
     "imgUrls": [
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663437256/d1wl601knflcsohxsqhk.jpg",
       "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436372/d32ktdsaqfoiogz5dpvf.jpg",

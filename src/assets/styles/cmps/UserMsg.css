@@ -1,7 +1,7 @@
 .user-msg {
     position: fixed;
     bottom: 40px;
-    left: 50%;
+    left: 24px;
     z-index: 5000;
     display: flex;
     align-items: center;
@@ -23,15 +23,14 @@
     font-family: inherit;
 
     opacity: 0;
-    translate: -50% 150%;
+    translate: 0 150%;
     transition: translate 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.4s ease;
     pointer-events: none;
 }
 
 .user-msg.visible {
     opacity: 1;
-    translate: -50% 0;
-    bottom: 30%;
+    translate: 0 0;
     pointer-events: auto;
 }
 
@@ -97,8 +96,14 @@
         width: calc(100% - 40px);
         max-width: none;
         bottom: 20px;
+        left: 50%;
         padding: 10px;
         padding-inline-end: 16px;
+        translate: -50% 150%;
+    }
+
+    .user-msg.visible {
+        translate: -50% 0;
     }
 
     .user-msg-img-container {
