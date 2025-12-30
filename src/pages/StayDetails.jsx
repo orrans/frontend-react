@@ -20,7 +20,7 @@ import {
     TV,
     Washer,
     Wifi,
-    FirstAidIcon,
+    // FirstAidIcon,
 } from '../cmps/icons/amenities'
 
 import { GoogleMap } from '../cmps/GoogleMaps'
@@ -64,7 +64,7 @@ export function StayDetails() {
         'Air conditioning': <AirConditioning />,
         Washer: <Washer />,
         Dryer: <Dryer />,
-        'First aid kit': <FirstAidIcon/>,
+        // 'First aid kit': <FirstAidIcon/>,
         // 'Fire extinguisher': 
     }
 
@@ -193,7 +193,6 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                             alt={stay.host.fullname}
                         />
                         <div className="host-info">
-                            {/* <h3>Hosted by {stay.host.fullname}</h3> */}
                             <span className="host-name">Hosted by {stay.host.fullname}</span>
                         </div>
                     </section>
@@ -201,7 +200,8 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                     <StayHighlights />
 
                     <section className="stay-description">
-                        <p className="description-preview">{description}</p>
+                        {/* <p className="description-preview">{description}</p> */}
+                        <p className="description-preview">{stay.summary}</p>
                         <button className="show-more-btn" onClick={() => setIsDescOpen(true)}>
                             Show more
                         </button>
@@ -385,7 +385,8 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                         <div className="modal-body">
                             <h2>About this place</h2>
                             <p style={{ whiteSpace: 'pre-line', lineHeight: '1.6' }}>
-                                {description}
+                                {/* {description} */}
+                                {stay.summary}
                             </p>
                         </div>
                     </div>

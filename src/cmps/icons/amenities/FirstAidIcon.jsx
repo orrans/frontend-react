@@ -27,7 +27,7 @@ export function FirstAidIcon({size=24}){
 </svg>
 }
 
-<svg
+{/* <svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
@@ -52,4 +52,4 @@ export function FirstAidIcon({size=24}){
     stroke-linejoin="round"
   />
   <circle cx="11.4" cy="8.2" r="0.9" fill="#FF385C"/>
-</svg>
+</svg> */}
