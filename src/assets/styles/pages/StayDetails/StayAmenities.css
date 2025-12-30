@@ -3,6 +3,10 @@
   border-top: 1px solid var(--clr-border);
   padding-top: 32px;
   margin-top: 32px;
+  /* grid-column: 1; */
+  grid-column: 1 / 2;
+  overflow: hidden;
+  justify-self: start;
 }
 
 .stay-amenities h2 {
@@ -27,6 +31,7 @@
   font-size: 16px;
   color: #222;
   line-height: 1.4;
+  padding-inline-end: 64px;
 }
 
 

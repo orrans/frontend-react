@@ -86,7 +86,6 @@
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* gap: 32px; */
   border-bottom: 1px solid #ddd;
   padding-bottom: 48px;
   margin-bottom: 48px;
