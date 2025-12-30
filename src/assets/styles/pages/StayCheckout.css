@@ -10,7 +10,7 @@
 
     .back-btn {
         position: sticky;
-        top: 100px;
+        top: 205px;
         left: 0;
         margin-left: -60px;
         float: left;
@@ -61,6 +61,7 @@
                 font-size: 22px;
                 font-weight: 600;
                 margin-bottom: 24px;
+                padding: 20px;
             }
 
             .payment-option {
@@ -75,6 +76,13 @@
                     display: flex;
                     justify-content: space-between;
                     font-weight: 500;
+                    align-items: center;
+
+                    .payment-method-icon {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                    }
                 }
 
                 input {

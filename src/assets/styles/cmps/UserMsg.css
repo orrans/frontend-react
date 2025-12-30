@@ -15,9 +15,10 @@
     background-color: var(--clr-bg);
     color: var(--clr-text-main);
 
-    border-radius: 999px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 
+                0 12px 40px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgb(221, 221, 221);
 
     font-family: inherit;
 
@@ -30,6 +31,7 @@
 .user-msg.visible {
     opacity: 1;
     translate: -50% 0;
+    bottom: 30%;
     pointer-events: auto;
 }
 
@@ -48,6 +50,7 @@
 
 .user-msg-content {
     flex-grow: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +70,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 280px;
 }
 
 .user-msg .close-btn {

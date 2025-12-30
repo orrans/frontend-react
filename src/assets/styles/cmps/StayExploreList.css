@@ -55,6 +55,7 @@
     position: relative;
     padding: 0px var(--padding);
     max-width: 1920px;
+    margin-bottom: 32px;
 }
 
 .explore-grid-container {

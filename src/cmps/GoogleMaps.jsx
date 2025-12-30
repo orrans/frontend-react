@@ -80,7 +80,7 @@ export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), w
                                             event.stopPropagation()
                                             event.preventDefault()
                                         }}>
-                                        <ClearIcon onClick={() => setSelectedStay(null)} />
+                                        <ClearIcon onClick={() => setSelectedStay(null)} size={16} strokeWidth={3} />
                                     </button>
                                     <StayPreview
                                         stay={selectedStay}
@@ -88,6 +88,7 @@ export function GoogleMap({ stays, fromDate = new Date(), toDate = new Date(), w
                                         toDate={toDate}
                                         variant="explore"
                                         showPrice={!wishlist}
+                                        isMapPreview={true}
                                     />
                                 </div>
                             </AdvancedMarker>
