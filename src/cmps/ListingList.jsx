@@ -10,8 +10,8 @@ export function ListingList() {
     const [isLoading, setIsLoading] = useState(true)
     const loggedInUser = useSelector((state) => state.userModule.user)
     const allStays = useSelector((state) => state.stayModule.stays)
-    const listings = useMemo(() =>
-        allStays.filter((stay) => stay.host._id === loggedInUser?._id),
+    const listings = useMemo(
+        () => allStays.filter((stay) => stay.host._id === loggedInUser?._id),
         [allStays, loggedInUser?._id]
     )
     const isMobile = useIsMobile()
@@ -43,11 +43,11 @@ export function ListingList() {
             </div>
         )
     }
-    
+
     return (
         <div className="listing-list-container">
             <h3 className="listing-count">{listings.length} listings</h3>
-            
+
             <div className="listings-table">
                 <table>
                     <thead>

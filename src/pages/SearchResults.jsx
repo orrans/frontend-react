@@ -3,11 +3,11 @@ import { useSearchParams } from 'react-router-dom'
 import { GoogleMap } from '../cmps/GoogleMaps'
 import { useSelector } from 'react-redux'
 import { StayList } from '../cmps/StayList'
-import { loadStays, setFilterBy } from '../store/actions/stay.actions'
+import { clearStays, loadStays, setFilterBy } from '../store/actions/stay.actions'
 import { add } from 'date-fns'
 import { stayService } from '../services/stay'
 
-export function SearchResults({ }) {
+export function SearchResults({}) {
     const [hoveredStayId, setHoveredStayId] = useState(null)
     const [searchParams] = useSearchParams()
     const stays = useSelector((storeState) => storeState.stayModule.stays)
@@ -27,13 +27,26 @@ export function SearchResults({ }) {
     }, [searchParams])
 
     useEffect(() => {
+        clearStays()
+
         loadStays(filterBy)
     }, [filterBy])
 
     return (
         <main className="stay-index">
-            <StayList stays={stays} fromDate={fromDate} toDate={toDate} location={filterBy?.loc} onStayHover={setHoveredStayId} />
-            <GoogleMap stays={stays} fromDate={fromDate} toDate={toDate} hoveredStayId={hoveredStayId} />
+            <StayList
+                stays={stays}
+                fromDate={fromDate}
+                toDate={toDate}
+                location={filterBy?.loc}
+                onStayHover={setHoveredStayId}
+            />
+            <GoogleMap
+                stays={stays}
+                fromDate={fromDate}
+                toDate={toDate}
+                hoveredStayId={hoveredStayId}
+            />
         </main>
     )
 }
