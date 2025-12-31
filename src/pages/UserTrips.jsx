@@ -45,9 +45,11 @@ useEffect(() => {
                 <div className="empty-state-content">
                     <h2>Build the perfect trip</h2>
                     <p>Explore homes, experiences, and services. When you book, your reservations will show up here.</p>
-                    <button className="airbnb-btn-pink" onClick={() => navigate('/')}>
+                    {/* <button className="airbnb-btn-pink" onClick={() => navigate('/')}>
                         Get started
-                    </button>
+                    </button> */}
+
+                    <SpecialBtn txt="Get started" onClick={() => navigate('/')} />
                 </div>
             </div>
         </section>
