@@ -10,6 +10,8 @@ import { LoginModal } from '../cmps/LoginModal.jsx'
 import { ReservationSuccessModal } from '../cmps/ReservationSuccessModal'
 import { StarIcon } from '../cmps/icons/StarIcon'
 import { CreditCardIcon } from '../cmps/icons/CreditCardIcon.jsx'
+import { differenceInDays } from 'date-fns'
+import { formatPrice} from '../services/util.service'
 
 export function StayCheckout() {
     const { stayId } = useParams()
@@ -42,9 +44,11 @@ export function StayCheckout() {
 
             const order = orderService.getEmptyOrder()
 
+            const days = differenceInDays(order.endDate, order.startDate)
+
             order.startDate = checkIn
             order.endDate = checkOut
-            order.totalPrice = totalPrice
+            order.totalPrice = formatPrice(pricePerNight * days)
             order.guests = guests
             order.stay._id = stay._id
             order.stay.name = stay.name

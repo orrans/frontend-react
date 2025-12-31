@@ -19,6 +19,7 @@
 @import 'pages/StayCheckout.css';
 @import 'pages/Explore.css';
 @import 'pages/UserProfile.css';
+@import 'pages/MyTrips.css';
 
 /*  Components*/
 @import 'cmps/list.css';

@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { loadUserOrders } from '../store/actions/order.actions'
+import { SpecialBtn } from '../cmps/SpecialBtn'
+
 
 export function UserTrips() {
     const orders = useSelector(storeState => storeState.orderModule.userOrders)
@@ -13,6 +15,14 @@ export function UserTrips() {
             loadUserOrders(user._id)
         }
     }, [user])
+
+useEffect(() => {
+  document.body.classList.add('hide-collapsed-search')
+
+  return () => {
+    document.body.classList.remove('hide-collapsed-search')
+  }
+}, [])
 
 
     const sortedOrders = orders?.slice().sort((a, b) => {
@@ -67,6 +77,10 @@ export function UserTrips() {
                                     <span className={`status-label ${order.status.toLowerCase()}`}>
                                         {order.status}
                                     </span>
+
+                                    {/* <span className={`status-label ${order.status.toLowerCase()}`}>
+                                        {order.status.charAt(0) + order.status.slice(1).toLowerCase()}
+                                    </span> */}
                                 </div>
                             </div>
                         </div>
@@ -75,9 +89,8 @@ export function UserTrips() {
                 ))}
             </div>
 
-            <button className="back-home-btn airbnb-btn-pink" onClick={() => navigate('/')}>
-                Look for more places to stay
-            </button>
+            <SpecialBtn txt="Look for more places to stay" onClick={() => navigate('/')} />
+
         </section>
     )
 }
