@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { loadUserOrders } from '../store/actions/order.actions'
+import { SpecialBtn } from '../cmps/SpecialBtn'
+
 
 export function UserTrips() {
     const orders = useSelector(storeState => storeState.orderModule.userOrders)
@@ -75,9 +77,8 @@ export function UserTrips() {
                 ))}
             </div>
 
-            <button className="back-home-btn airbnb-btn-pink" onClick={() => navigate('/')}>
-                Look for more places to stay
-            </button>
+<SpecialBtn txt="Look for more places to stay" onClick={() => navigate('/')} />
+
         </section>
     )
 }
