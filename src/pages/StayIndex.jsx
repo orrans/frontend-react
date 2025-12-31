@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { loadStays, setFilterBy } from '../store/actions/stay.actions'
+import { clearStays, loadStays, setFilterBy } from '../store/actions/stay.actions'
 import { stayService } from '../services/stay'
 import { StayExploreList } from '../cmps/StayExploreList.jsx'
 import { groupBy } from '../services/util.service.js'
@@ -14,7 +14,7 @@ export function StayIndex() {
     useEffect(() => {
         const emptyFilter = stayService.getDefaultFilter()
         setFilterBy(emptyFilter)
-
+        clearStays()
         loadStays()
         if (userService.getLoggedinUser()) {
             loadOrders()
