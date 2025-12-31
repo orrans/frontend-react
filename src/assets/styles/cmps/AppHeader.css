@@ -334,7 +334,7 @@
 
 
 .app-header .logo-img {
-    height: 100px;
+    height: 60px;
     object-fit: contain;
     display: block;
 }
@@ -342,7 +342,7 @@
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .app-header .logo-img {
-        height: 60px;
+        height: 40px;
         width: auto;
         max-width: 100%;
     }
