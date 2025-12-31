@@ -16,6 +16,8 @@
         sans-serif;
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-bottom: 96px;
 }
 
 .page-title {
@@ -139,11 +141,11 @@
 }
 
 .status-label {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     padding: 6px 12px;
     border-radius: 8px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.5px;
 }
 
