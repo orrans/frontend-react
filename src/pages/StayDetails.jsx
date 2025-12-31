@@ -20,7 +20,8 @@ import {
     TV,
     Washer,
     Wifi,
-    // FirstAidIcon,
+    FireExt,
+    FirstAidIcon,
 } from '../cmps/icons/amenities'
 
 import { GoogleMap } from '../cmps/GoogleMaps'
@@ -64,8 +65,8 @@ export function StayDetails() {
         'Air conditioning': <AirConditioning />,
         Washer: <Washer />,
         Dryer: <Dryer />,
-        // 'First aid kit': <FirstAidIcon/>,
-        // 'Fire extinguisher': 
+        'First aid kit': <FirstAidIcon/>,
+        'Fire extinguisher': <FireExt />,
     }
 
     const getAmenityIcon = (amenity) => AMENITY_ICON_MAP[amenity] || <PetsIcon />
