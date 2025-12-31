@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom'
+import { SpecialBtn } from '../cmps/SpecialBtn'
+
 
 export function StayBooking({ stay, checkIn, checkOut, guests, nights, totalPrice, pricePerNight, getGuestsText }) {
     const navigate = useNavigate()
@@ -40,16 +42,14 @@ export function StayBooking({ stay, checkIn, checkOut, guests, nights, totalPric
                         </div>
                     </div>
 
-                    <button
-                        className="reserve-btn"
-                        onClick={() =>
-                            navigate(`/stay/${stay._id}/checkout`, {
-                                state: { checkIn, checkOut, guests, nights, pricePerNight, totalPrice }
-                            })
-                        }
-                    >
-                        Reserve
-                    </button>
+                    
+
+                    <SpecialBtn txt="Reserve" onClick={() =>
+                        navigate(`/stay/${stay._id}/checkout`, {
+                            state: { checkIn, checkOut, guests, nights, pricePerNight, totalPrice }
+                        })}
+                        
+                    />
 
                     <p className="booking-note">You won’t be charged yet</p>
                 </div>

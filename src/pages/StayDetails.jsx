@@ -11,6 +11,7 @@ import { PlatypusLoader } from '../cmps/PlatypusLoader'
 import { UseBookingDetails } from '../customHooks/UseBookingDetails'
 import { useSelector } from 'react-redux'
 
+
 import {
     AirConditioning,
     Dryer,
