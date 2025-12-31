@@ -58,7 +58,7 @@ useEffect(() => {
             <h1 className="page-title">My Trips</h1>
 
             <div className="orders-list">
-                {orders.map(order => (
+                {sortedOrders.map(order => (
                     <div key={order._id} className="trip-row-wrapper">
                         <div className="trip-row">
                             <div className="img-container">
