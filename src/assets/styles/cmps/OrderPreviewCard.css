@@ -14,9 +14,10 @@
 
         img {
             width: 72px;
-            height: auto;
+            height: 72px;
             border-radius: 50%;
             object-fit: cover;
+            flex-shrink: 0;
         }
 
         .guest-title-data {
