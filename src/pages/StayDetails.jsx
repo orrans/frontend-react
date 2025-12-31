@@ -189,6 +189,8 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                         <img
                             className="host-avatar"
                             // src={'/img/platy.jpg'}
+
+                            // bring this one back after the demo 
                             // src={`https://i.pravatar.cc/150?u=${Math.random()}`}
                             src={`https://i.ibb.co/QF359h8M/aviad.jpg}`}
                             alt={stay.host.fullname}
