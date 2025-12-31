@@ -16,6 +16,16 @@ const POPULAR_DESTINATIONS = [
     'Barcelona, Spain',
 ]
 
+const DESTINATION_IMAGES = [
+    "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/d2d9f652-03f0-4c23-9246-f825ffd1f0d4.png",
+    "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/bc970695-dc66-46a9-962d-d582cbea0bdb.png",
+    "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/aeba68c0-44ba-4ee6-9835-da23d7fb0a65.png",
+    "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-1/original/0dffff5d-721f-4ca3-abb7-dbee55a72ff8.png",
+    "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/e9efb4fc-a002-40cf-8811-42ef5ce74518.png",
+    "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/ac6addb7-72ea-4e07-9abd-cd685b7e91b8.png",
+    "https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/bac96687-79f5-4056-9f47-c10f2e3f1ffc.png",
+]
+
 export function StaySearch({ onSearchFocus, onSearchCompleted }) {
     const filterBy = useSelector(storeState => storeState.stayModule.filterBy)
     const [loc, setLoc] = useState(filterBy.loc || '')
@@ -280,7 +290,7 @@ export function StaySearch({ onSearchFocus, onSearchCompleted }) {
                                     className="suggestion-item"
                                     onClick={() => handleLocSelect(dest)}>
                                     <div className="icon-box">
-                                        <img src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-hawaii-autosuggest-destination-icons-2/original/d2d9f652-03f0-4c23-9246-f825ffd1f0d4.png" alt="Location" />
+                                        <img src={DESTINATION_IMAGES[POPULAR_DESTINATIONS.indexOf(dest)]} alt="Location" />
                                     </div>
                                     <span className="suggestion-text">{dest}</span>
                                 </div>

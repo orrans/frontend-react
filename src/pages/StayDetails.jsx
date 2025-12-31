@@ -20,6 +20,7 @@ import {
     TV,
     Washer,
     Wifi,
+    // FirstAidIcon,
 } from '../cmps/icons/amenities'
 
 import { GoogleMap } from '../cmps/GoogleMaps'
@@ -63,6 +64,8 @@ export function StayDetails() {
         'Air conditioning': <AirConditioning />,
         Washer: <Washer />,
         Dryer: <Dryer />,
+        // 'First aid kit': <FirstAidIcon/>,
+        // 'Fire extinguisher': 
     }
 
     const getAmenityIcon = (amenity) => AMENITY_ICON_MAP[amenity] || <PetsIcon />
@@ -159,6 +162,7 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                 </div>
             </div>
 
+
             <div className="stay-details-layout">
                 <div className="stay-details-main">
                     <div className="stay-overview">
@@ -185,11 +189,13 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                         <img
                             className="host-avatar"
                             // src={'/img/platy.jpg'}
-                            src={`https://i.pravatar.cc/150?u=${Math.random()}`}
+
+                            // bring this one back after the demo 
+                            // src={`https://i.pravatar.cc/150?u=${Math.random()}`}
+                            src={`https://i.ibb.co/QF359h8M/aviad.jpg}`}
                             alt={stay.host.fullname}
                         />
                         <div className="host-info">
-                            {/* <h3>Hosted by {stay.host.fullname}</h3> */}
                             <span className="host-name">Hosted by {stay.host.fullname}</span>
                         </div>
                     </section>
@@ -197,26 +203,14 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                     <StayHighlights />
 
                     <section className="stay-description">
-                        <p className="description-preview">{description}</p>
+                        {/* <p className="description-preview">{description}</p> */}
+                        <p className="description-preview">{stay.summary}</p>
                         <button className="show-more-btn" onClick={() => setIsDescOpen(true)}>
                             Show more
                         </button>
                     </section>
-                </div>
 
-                <StayBooking
-                    stay={stay}
-                    checkIn={checkIn}
-                    checkOut={checkOut}
-                    guests={guests}
-                    nights={nights}
-                    totalPrice={totalPrice}
-                    pricePerNight={pricePerNight}
-                    getGuestsText={getGuestsText}
-                />
-            </div>
-
-            <section className="stay-amenities">
+<section className="stay-amenities">
                 <h2>What this place offers</h2>
 
                 <ul className="amenities-list">
@@ -237,11 +231,31 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                 <h2>Where you’ll sleep</h2>
 
                 <div className="sleep-card">
-                    <img src={stay.imgUrls[0]} alt="Where you’ll sleep" />
-                </div>
-            </section>
 
-            {/* </div> */}
+                  {/* change back after demo  */}
+
+                    {/* <img src={stay.imgUrls[3]} alt="Where you’ll sleep" /> */}
+                    <img src={stay.imgUrls[4]} alt="Where you’ll sleep" />
+                    {/* <img src=
+                    "http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436815/ou3m2jicqonj8yhxdshq.jpg"
+ alt="Where you’ll sleep" /> */}
+                </div>
+</section>
+                </div>
+
+                <StayBooking
+                    stay={stay}
+                    checkIn={checkIn}
+                    checkOut={checkOut}
+                    guests={guests}
+                    nights={nights}
+                    totalPrice={totalPrice}
+                    pricePerNight={pricePerNight}
+                    getGuestsText={getGuestsText}
+                />
+            </div>
+
+          
             <section className="stay-reviews">
                 {stay.reviews &&
                     stay.reviews.slice(0, 6).map((review, idx) => (
@@ -374,7 +388,8 @@ Looking for a serene and unforgettable escape on the edge of nature, far from th
                         <div className="modal-body">
                             <h2>About this place</h2>
                             <p style={{ whiteSpace: 'pre-line', lineHeight: '1.6' }}>
-                                {description}
+                                {/* {description} */}
+                                {stay.summary}
                             </p>
                         </div>
                     </div>

@@ -7,6 +7,7 @@ import { LoginModal } from './LoginModal.jsx'
 import { logout } from '../store/actions/user.actions'
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
 import { useIsMobile } from '../customHooks/useIsMobile.js'
+import logoImg from '../assets/logo.png'
 
 export function AppHeader() {
     const navigate = useNavigate()
@@ -116,7 +117,7 @@ export function AppHeader() {
                     <div className="header-top">
                         <div className="logo">
                             <Link to="/">
-                                <h1 className="logo-text">PlatypusBNB</h1>
+                                <img src={logoImg} alt="PlatypusBNB" className="logo-img" />
                             </Link>
                         </div>
 

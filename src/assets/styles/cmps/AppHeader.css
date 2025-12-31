@@ -301,12 +301,10 @@
     }
 }
 
-/* Responsive padding for smaller screens */
-@media (max-width: 1200px) {
-    .app-header .header-container {
-        padding: 0 40px;
-    }
-}
+
+
+
+
 
 @media (max-width: 768px) {
     .app-header {
@@ -318,16 +316,34 @@
         max-width: 100%;
 
         .logo {
-            flex: 0;
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
         }
 
-        .user-actions{
-            flex:0;
+        .user-actions {
+            flex: 0 0 auto;
         }
     }
 
     .app-header .header-bottom {
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+
+.app-header .logo-img {
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .app-header .logo-img {
+        height: 60px;
+        width: auto;
+        max-width: 100%;
     }
 }
